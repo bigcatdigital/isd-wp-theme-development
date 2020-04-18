@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="style.css" /> 
+	<link rel="stylesheet" href="css/style.css" />
 </head>  
 <body> 
 	<?xml version="1.0" encoding="utf-8"?>
@@ -71,6 +71,7 @@
 						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
 							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
+							
 							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
 					</svg>
 				</a>
@@ -78,10 +79,10 @@
 		</div>
 		<div class="bc-main-navigation__underlay"></div>
 	</header>
-	<section class="bc-inner-page-header bc-content-section">   
+	<section class="bc-inner-page-header bc-content-section has-inner-sub-nav">   
 		<div class="bc-inner-page-header__bg-svg">
-			<svg class="header-svg about-isd" viewbox="0 0 100 100">
-				<use xlink:href="media/svg/images/about-isd.svg#about-isd-cap"></use> 
+			<svg class="families-svg" viewbox="0 0 100 100">
+				<use xlink:href="media/svg/images/families.svg#familiy_3"></use> 
 			</svg>
 		</div>
 		<div class="bc-elipses"> 
@@ -95,8 +96,26 @@
 			</svg>
 		</div>
 		<div class="bc-inner-page-header__content">
-			<h1 class="bc-inner-page-header__heading">About ISD</h1>
-			
+			<h1 class="bc-inner-page-header__heading">Learning</h1>
+			<h2 class="bc-inner-page-header__sub-heading">Be part of the progress</h2>
+			<nav class="bc-inner-page-header__sub-nav">
+				<div class="bc-inner-page-header__sub-nav__toggle"> 
+					<h3 class="bc-inner-page-header__sub-nav__toggle__label">More about Teaching &amp; Learning:</h3> 
+					<a href="javascript:void(0)" class="bc-inner-page-header__sub-nav__toggle__icon"> 
+						<svg class="bc-svg-icon" viewbox="0 0 100 100">
+							<use xlink:href="./media/svg/icons/bc-svgs.svg#carat"></use> 	
+						</svg>
+					</a>	
+				</div>
+				
+				<ul class="bc-inner-page-header__sub-nav__links is-floating-nav"> 
+					<li class="bc-inner-page-header__sub-nav__item"><a href="javascript:void(0)" class="bc-inner-page-header__sub-nav__link">Sub-section #1</a></li>
+					<li class="bc-inner-page-header__sub-nav__item"><a href="javascript:void(0)" class="bc-inner-page-header__sub-nav__link">Sub-section #2</a></li>
+					<li class="bc-inner-page-header__sub-nav__item"><a href="javascript:void(0)" class="bc-inner-page-header__sub-nav__link">Sub-section #3</a></li>
+					<li class="bc-inner-page-header__sub-nav__item"><a href="javascript:void(0)" class="bc-inner-page-header__sub-nav__link">Sub-section #4</a></li>
+					<li class="bc-inner-page-header__sub-nav__item"><a href="javascript:void(0)" class="bc-inner-page-header__sub-nav__link">Sub-section #5</a></li>
+				</ul>
+			</nav>
 		</div><!-- // .bc-innerpage-header__content -->
 	</section><!-- // .bc-innerpage-header -->
 	<nav class="bc-breadcrumbs">
@@ -122,132 +141,49 @@
 	</nav><!-- // .bc-breadcrumbs -->
 	<section class="bc-inner-page-content bc-content-section">   
 		<div class="bc-inner-page-content__content">
-			<header class="bc-inner-page-content__header">
-				<h1 class="bc-inner-page-content__heading--large">A warm welcome</h1>
-			</header><!-- // .bc-inner-page-content__header -->
-			<article class="bc-inner-page-content__main">
-				<div class="bc-featured-quote ">
-					<h2 class="bc-featured-quote__heading">Welcome from Head of School, Cristen Schwab</h2> 
-					<div class="bc-featured-quote__icon">
-						<svg class="bc-svg-icon">
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#quotes"></use> 
-						</svg>	
-					</div>
-					<div class="bc-featured-quote__body">
-						<p class="bc-inner-page-content__intro">For instance, whenever I go back to the guest house during the morning to copy out the contract.</p>
-						<p>These gentlemen are always still sitting there eating their breakfasts. I ought to just try that with my boss; I’d get kicked out on the spot. But who knows, maybe that would be the best thing for me.</p>
-						<p>If I didn’t have my parents to think about I’d have given in my notice a long time ago, I’d have gone up to the boss and told him just what I think, tell him everything I would, let him know just what I feel. He’d fall right off his desk!</p>		
-					</div>	
-				</div><!-- // .bc-featured-quote -->
-				<div class="bc-card bc-card--person--featured">
-					<figure class="bc-card__media">
-						<img src="media/people/cristen-schwab.jpg" alt="Head of School, Cristen Schwab" class="bc-person-card__figure" />
-					</figure>
-					<div class="bc-card__text">
-						<h2 class="bc-card__heading">Cristen Schwab</h2>
-						<h3 class="bc-card__sub-heading">Head of School</h3>
-						<a class="bc-card__cta bc-icon-link" href="javascript:void(0)">
-							Read Cristen's profile
-							<svg class="bc-svg-icon">
-								<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 
-							</svg>
-						</a>	
-					</div>
-				</div><!-- // .bc-featured--person--featured -->
-			</article><!-- // .bc-inner-page-content__main -->
-			<aside class="bc-inner-page-content__sidebar">
-				<h2 class="bc-inner-page-content__sidebar__heading is-primary-text">More About ISD</h2>
-				<nav class="bc-sidebar-widget">
-					<ul class="bc-section-navigation__links"> 
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">After school care</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">School Calendar</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">School Bus</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">Catered Lunch Program</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">Additional Services</a></li>
-					</ul>
-				</nav>
-				<div class="bc-sidebar-widget">
-					<figure class="bc-sidebar-widget__fig">
-						<img src="media/people/perdro-perez-laplaza.jpg" alt="Meet the people at ISD" class="bc-sidebar-widget__fig__img">
-					</figure>
-					<h3>Meet the team</h3>
-					<p>The people who make it happen at ISD</p>
-					<a href="javascript:void(0)" class="bc-icon-link">
-						The ISD Team
-						<svg class="bc-svg-icon">
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 
-						</svg>
-					</a> 	
-				</div><!-- // .bc-sidebar-widget -->
-			</aside><!-- // .bc-inner-page-content__sidebar -->
+			<h1 class="bc-inner-page-content__heading--large">A warm welcome</h1>
+			<p class="bc-inner-page-content__intro">Welcome from Principal Schwab. For instance, whenever I go back to the guest house during the morning to copy out the contract.</p>
+			<p>These gentlemen are always still sitting there eating their breakfasts. I ought to just try that with my boss; I’d get kicked out on the spot. But who knows, maybe that would be the best thing for me.</p>
+			<p>If I didn’t have my parents to think about I’d have given in my notice a long time ago, I’d have gone up to the boss and told him just what I think, tell him everything I would, let him know just what I feel. He’d fall right off his desk!</p>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content -->
 	<section class="bc-inner-page-content has-shade-01 bc-content-section">   
 		<div class="bc-inner-page-content__content">
-			<header class="bc-inner-page-content__header">
-				<h1 class="bc-inner-page-content__heading">Our Story</h1>
-			</header>
-			<article class="bc-inner-page-content__main">
-				<div class="bc-media-embed">
-					<div class="bc-media-embed__media">
-						<iframe width="" height="" src="https://videopress.com/embed/BnS1zBSC?hd=0&autoPlay=0&permalink=0&loop=0" frameborder="0" title="The International School of Dublin Story"></iframe>
-					</div>
-					<div class="bc-media-embed__caption">The ISD Story</div>
+			<h1 class="bc-inner-page-content__heading">Our Story</h1>
+			<div class="bc-media-embed">
+				<div class="bc-media-embed__media">
+					<iframe width="" height="" src="https://videopress.com/embed/BnS1zBSC?hd=0&autoPlay=0&permalink=0&loop=0" frameborder="0" title="The International School of Dublin Story"></iframe>
 				</div>
-				<p class="bc-inner-page-content__intro">The International School of Dublin (ISD) was established in 2007 to meet a need for educational diversity in Ireland.  At present our students are aged 3-12 and represent over 20 different nationalities.</p>
-				<p>ISD is the only accredited IB World Primary School in Ireland. It is a small, private, non-profit school that is co-educational, non-denominational and culturally diverse.</p>
-				<p>We believe that our school’s success is due to our internationally regarded curriculum (<a href="https://www.ibo.org/programmes/primary-years-programme/">IBPYP</a>) and the manner in which it is lived out by our students, staff and parents.</p>
-				<p>At ISD you will find a welcoming and lively environment, which is characterised by collaborative and purposeful activity. ISD students benefit from an innovative form of schooling, a broad education that promotes inquiring, open-minded and principled learners who are reflective risk-takers.</p>
-				<p>Small class sizes are guided by internationally experienced staff.  Students inquire into the world in which they live and ultimately development themselves as global, internationally-minded citizens. Our students are encouraged, guided and challenged to engage with real-life learning experiences. We aim for the success and achievement for each individual child.</p>
-			</article>
-			<aside class="bc-inner-page-content__sidebar">
-				<div class="bc-sidebar-widget">
-					<figure class="bc-sidebar-widget__fig">
-						<img src="media/people/perdro-perez-laplaza.jpg" alt="Meet the people at ISD" class="bc-sidebar-widget__fig__img">
-					</figure>
-					<h3>Student Experience</h3>
-					<p>Hear from the students themselves about their experience.</p>
-					<a href="javascript:void(0)" class="bc-icon-link">
-						Meet the ISD students
-						<svg class="bc-svg-icon">
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 
-						</svg>
-					</a> 	
-				</div><!-- // .bc-sidebar-widget -->
-				<div class="bc-sidebar-widget bc-enrolement-cta has-high-chroma">
-					<h3>Get started at ISD</h3>
-					<p>Make your expression of interest and we will book a School tour.</p>
-					<a href="javascript:void(0)" class="bc-icon-link">
-						Start here
-						<svg class="bc-svg-icon">
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 
-						</svg>
-					</a> 
-					<?xml version="1.0" encoding="utf-8"?>
-						<svg class="bc-svg-image bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
-							<title>A decorative image of elipses</title>
-							<!-- fill:url(#linear-gradient) -->
-							<circle class="bc-elipses__elipse" /> 
-							<circle class="bc-elipses__elipse" /> 
-							<circle class="bc-elipses__elipse" />
-							<circle class="bc-elipses__elipse" /> 
-							<circle class="bc-elipses__elipse" /> 
-						</svg>
-					
-	
-				</div><!-- // .bc-sidebar-widget -->
-			</aside>
+				<div class="bc-media-embed__caption">The ISD Story</div>
+			</div>
+			<p class="bc-inner-page-content__intro">The International School of Dublin (ISD) was established in 2007 to meet a need for educational diversity in Ireland.  At present our students are aged 3-12 and represent over 20 different nationalities.</p>
+			<p>ISD is the only accredited IB World Primary School in Ireland. It is a small, private, non-profit school that is co-educational, non-denominational and culturally diverse.</p>
+			<p>We believe that our school’s success is due to our internationally regarded curriculum (IBPYP) and the manner in which it is lived out by our students, staff and parents.</p>
+			<p>At ISD you will find a welcoming and lively environment, which is characterised by collaborative and purposeful activity. ISD students benefit from an innovative form of schooling, a broad education that promotes inquiring, open-minded and principled learners who are reflective risk-takers.</p>
+			<p>Small class sizes are guided by internationally experienced staff.  Students inquire into the world in which they live and ultimately development themselves as global, internationally-minded citizens. Our students are encouraged, guided and challenged to engage with real-life learning experiences. We aim for the success and achievement for each individual child.</p>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Our Story-->
+	<section class="bc-inner-page-content has-brand-darker-background bc-content-section">     
+		<div class="bc-inner-page-content__content">
+			<h1 class="bc-inner-page-content__heading">Mission statement</h1>
+			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+		</div><!-- // .bc-inner-page-content__content -->
+	</section><!-- // .bc-inner-page-content Mission Statement -->
+	<section class="bc-inner-page-content bc-inner-page-content--minor-section has-shade-02 bc-content-section">     
+		<div class="bc-inner-page-content__content">
+			<h1>Values</h1>
+			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+		</div><!-- // .bc-inner-page-content__content -->
+	</section><!-- // .bc-inner-page-content Values-->
 	
 	<section class="bc-inner-page-content has-shade-01">     
 		<div class="bc-inner-page-content__content">
-			<header class="bc-inner-page-content__header">
-				<h1 class="bc-inner-page-content__heading">Frquently Asked Questions</h1>
-				<p class="bc-inner-page-content__intro">We got you covered right here.</p>
-			</header>
-			<article class="bc-inner-page-content__main">
-			 	
+			
+			
+			<h1 class="bc-inner-page-content__heading">Frquently Asked Questions</h1>
+			<p class="bc-inner-page-content__intro">We got you covered right here.</p> 	
 			<div class="bc-accordion"> 
 				<h2 class="bc-accordion__block-heading">
 					<a href="javascript:void(0)" data-target='accordion-body1' class="bc-accordion__block-trigger">
@@ -385,16 +321,11 @@
 					</p>
 				</div><!-- // .accordion-block#6 -->
 			</div><!-- // .bc-accordion -->
-			</article>
-			<aside class="bc-inner-page-content__sidebar"></aside>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Frequently asked questions-->
 	<section class="bc-inner-page-content has-shade-01">     
 		<div class="bc-inner-page-content__content">
-			<div class="bc-inner-page-content__header">
-				<h1 class="bc-inner-page-content__heading">Frquently Asked Questions#2</h1>
-			</div>
-			<div class="bc-inner-page-content__main">
+			<h1 class="bc-inner-page-content__heading">Frquently Asked Questions#2</h1>
 			<p class="bc-inner-page-content__intro">We got you covered right here.</p> 	
 			<div class="bc-accordion"> 
 				<h2 class="bc-accordion__block-heading">
@@ -467,11 +398,20 @@
 					</p>
 				</div><!-- // .accordion-block#3 -->
 			</div><!-- // .bc-accordion -->
-			</div><!-- // .__main -->
-			<div class="bc-inner-page-content__sidebar"></div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Frequently asked questions-->
-
+	<nav class="bc-section-navigation has-shade-02 has-inset-shadow">
+		<div class="bc-section-navigation__content">
+			<h1 class="bc-section-navigation__heading">More about Teaching &amp; Learning</h1>
+			<ul class="bc-section-navigation__links"> 
+				<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">After school care</a></li>
+				<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">School Calendar</a></li>
+				<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">School Bus</a></li>
+				<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">Catered Lunch Program</a></li>
+				<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">Additional Services</a></li>
+			</ul>
+		</div>
+	</nav>
 	<script src="scripts/app-concat.js"></script>  
 </body>
 </html> 
