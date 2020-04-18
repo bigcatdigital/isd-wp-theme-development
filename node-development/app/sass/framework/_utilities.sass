@@ -1,0 +1,178 @@
+/* Utilities */
+.media-overlay 
+	position: absolute 
+	top: 0
+	left: 0
+	width: 	100%
+	height: 100%
+	z-index: 10 
+	background-color: rgba($black, 0.36)
+.bc-icon-link 
+	display: flex
+	align-items: center
+	text-decoration: none
+	.bc-svg-icon
+		max-height: 1.4rem
+		fill: $link-color
+	@include linkHover
+		background-color: transparent 
+		text-decoration: underline
+		.bc-svg-icon
+				fill: $link-color
+	&--featured
+		@extend .bc-icon-link
+		font-size: $text-02
+		
+		.bc-svg-icon
+			max-height: $text-02*$line-height
+		&:hover, &:active, &:focus
+			background-color: transparent 
+			text-decoration: underline
+.bc-svg-icon
+	max-width: $vertical-unit * 2 
+	max-height: $vertical-unit * 2
+
+//Embeds an iframe, makes it responsive
+.bc-responsive-embed
+	width: 100%
+	position: relative
+	padding-top: 100%
+	iframe
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+	transition: opacity 480ms ease-out
+	&.is-not-loaded
+		opacity: 0
+@media screen and (min-width: 600px)
+	.bc-responsive-embed
+		padding-top: (9/16 * 100%)
+	
+//Button
+.bc-button
+	padding: $gutter/4 $gutter/2 $gutter/4 $gutter
+	color: $brand-primary
+	background-color: $white
+	border: 1px solid $black
+	transition: background-color 360ms ease-out
+	.bc-svg-icon
+		fill: $black
+		max-height: 	$vertical-unit*1.25
+	&:active, &:focus, &:hover
+		background-color: $black
+		color: $white
+		.bc-svg-icon
+			fill: $white
+.has-inset-shadow
+	position: relative
+	overflow: hidden
+	&:before, &:after
+		content: ""
+		position: absolute
+		left: 0
+		right: 0
+		width: 100%
+		height: #{(10/14)}rem
+		z-index: 10
+	&:before
+		top: -#{(10/14)}rem
+		box-shadow: #{(16/14)}rem 0px #{(16/14)}rem rgba($black, 0.16)
+	&:after
+		bottom: -#{(10/14)}rem 
+		box-shadow: -#{(16/14)}rem 0px #{(16/14)}rem rgba($black, 0.16)
+
+/* Shading */
+@each $name, $shade in $shades	
+	.has-#{$name}
+		background-color: $shade
+
+@each $name, $shade in $shades	
+	.has-#{$name}-gradient
+		@include gradOverlay($start-colour: $shade, $mid-colour: darken($shade, 6%), $end-colour: darken($shade, 12.5%), $stop: 100%)
+	
+.has-mark-right
+	position: relative
+	&:after
+		content: ""
+		height: 4px 
+		width: 9%
+		position: absolute
+		bottom: 1px
+		right: 0
+		background-color: $brand-secondary
+@mixin makeMarkRight($color)
+	position: relative
+	&:after
+		content: ""
+		height: 4px 
+		width: 9%
+		position: absolute
+		bottom: 0px
+		right: 0
+		background-color: $color
+
+/* Coloring */
+@each $name, $color in $colors	
+	$color-invert: nth($color, 2) 
+	$color: nth($color, 1)
+	.has-#{$name}-background 
+		background-color: $color
+		@include makeForgroundColour($color-invert, $color)
+	@if $name != 'secondary' and $name != 'yellow'
+		.has-#{$name}-text
+			color: $color
+	
+@each $name, $color in $colors
+	.has-mark-right--#{$name}
+		@include makeMarkRight($color)
+.has-shade-gradient
+	@include gradOverlay('grey-fill')
+.has-high-chroma
+	@include makeHighChroma
+	@include makeWhiteText
+		
+@each $name, $color in $colors
+	$color-invert: nth($color, 2) 
+	$color: nth($color, 1)
+	.has-high-chroma--#{$name}
+		@include makeHighChroma($color, darken($color, 12%), $color-invert)
+
+	
+/* Sizing */
+.is-full-vh
+	min-height: 100vh !important
+/* Fixed aspect ratio media containers */
+.is-square-media
+	@include mediaContainer 
+.is-16x9-media
+	@include mediaContainer(16, 9) 
+
+.bc-media-embed
+	margin-bottom: $vertical-unit
+	width: 100%
+	&__media
+		@include mediaContainer(16, 9)
+	&__caption
+		padding-top: $vertical-unit*0.5
+		color: $shade-05
+	
+.bc-content-label
+	font-size: $text--1
+	text-transform: uppercase
+	font-weight: 300
+	//font-weight: 200
+	display: flex
+	margin-bottom: 0
+	align-items: center
+	.bc-svg-icon
+		max-width: 	1.5rem
+		max-height: 1.5rem
+		margin-right: $gutter/2
+.bc-intro-paragraph
+	font-size: 1.25rem
+	font-weight: 300
+		
+	
+	

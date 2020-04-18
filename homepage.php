@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Document</title>
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+	<link rel="stylesheet" href="style.css" />
+</head>  
+<body class="bc-feature-page"> 
+			<?php
+				echo '<?xml version="1.0" encoding="utf-8"?>'
+			?>
+			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 0 0" class="bc-svg-defs" xml:space="preserve">
+				<defs>
+					<linearGradient id="isd-rainbow-grad" class="bc-svg-defs__rainbow-grad" gradientUnits="userSpaceOnUse" x1="0" y1="25.5" x2="1440" y2="25.5">
+						<stop offset="0" 		class="isd-rainbow-grad__stop1"style="stop-color:#05D1D1"/>
+						<stop offset="0.25" class="isd-rainbow-grad__stop2"style="stop-color:#6881DB"/>
+						<stop offset="0.5" 	class="isd-rainbow-grad__stop3"style="stop-color:#D02CE5"/>
+						<stop offset="0.75" class="isd-rainbow-grad__stop3"style="stop-color:#F2EF11"/>
+						<stop offset="1" 		class="isd-rainbow-grad__stop5"style="stop-color:#3B857E"/>
+					</linearGradient>	
+					<linearGradient id="linear-gradient" class="bc-svg-defs__linear-gradient" viewBox="0 0 100 100" gradientTransform="rotate(135)">
+						<stop offset="0%" stop-opacity="1"  class="bc-svg-defs__linear-gradient__col-stop1"/> 
+						<stop offset="72%" stop-opacity="1" class="bc-svg-defs__linear-gradient__col-stop2"/>
+					</linearGradient>
+					<linearGradient id="linear-gradient--shade" class="bc-svg-defs__linear-gradient--shade" viewBox="0 0 100 100" gradientTransform="rotate(135)">
+						<stop offset="0%" stop-opacity="1"  class="bc-svg-defs__linear-gradient__col-stop1"/> 
+						<stop offset="72%" stop-opacity="1" class="bc-svg-defs__linear-gradient__col-stop2"/>
+					</linearGradient>
+					<linearGradient id="linear-gradient--orange" class="bc-svg-defs__linear-gradient--orange" viewBox="0 0 100 100" gradientTransform="rotate(135)">
+						<stop offset="0%" stop-opacity="1"  class="bc-svg-defs__linear-gradient__col-stop1"/> 
+						<stop offset="72%" stop-opacity="1" class="bc-svg-defs__linear-gradient__col-stop2"/>
+					</linearGradient>
+				</defs>
+			</svg>
+	<header class="bc-site-header is-overlay">
+		<div class="bc-site-header__content">
+			<div class="bc-site-header__logo">
+				<img src="./media/isd-logo.png" alt="International School of Dublin" class="">					
+			</div>
+			<nav class="bc-main-navigation"> 
+				<h1 class="bc-site-header__heading">Welcome to International School of Dublin</h1>
+				<div class="bc-main-navigation__navs">
+					<div class="bc-main-navigation__main-nav">
+						<ul class="bc-main-navigation__links">
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Teaching &amp; Learning</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Admissions</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">About the School</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Student experience</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Community</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">For Irish families</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Contact</a></li>
+						</ul>		
+					</div>
+
+					<div class="bc-main-navigation__sub-navigation"> 
+						<h3 class="bc-site-header__sub-sub-heading">Quick links</h3>
+						<ul class="bc-main-navigation__links">
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">School calendar</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">School bus</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Student experience</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Community</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">For Irish families</a></li>
+							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Contact</a></li>
+						</ul>	
+					</div>
+				</div>
+			</nav>
+			<div class="bc-main-navigation-toggle">
+				<a href="javascript:void(0)" class="bc-navigation-toggle">
+					<?php
+						echo '<?xml version="1.0" encoding="utf-8"?>'
+					?>
+					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
+							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
+							
+							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
+						
+					</svg>
+				</a>
+			</div><!-- // .bc-main-navigation-toggle -->
+		</div>
+		<div class="bc-main-navigation__underlay"></div>
+	</header>
+	<section class="bc-hero bc-hero--is-feature has-waves is-full-vh">
+		<div class="bc-hero__background-image">
+		</div>    
+		<div class="bc-hero__content">
+			<div class="bc-hero__header">
+				<!-- empty -->
+			</div><!-- // .hero-header -->
+			<div class="bc-hero__body bc-fade-in-up--is-not-visible">
+				<div class="bc-hero__body__text__IB">
+					<img src="./media/ib-world-school-logo-2-colour-rev.svg" alt="ISD is an International Baccalaureate World School">
+					<p>ISD is an International Baccalaureate World School</p> 
+				</div>
+				<div class="bc-hero__body__text">
+					<h1 class="bc-hero__heading">International School of Dublin</h1>
+					<p class="bc-hero__tagline">International Education in the heart of Dublin</p> 
+				</div><!-- // .bc-hero__body__text -->
+			</div><!-- // .bc-hero__body -->
+			<div class="bc-hero__footer feature-page-navigation">
+				
+			</div><!-- // .feature-page-navigation-->
+		</div><!-- // .bc-hero__content -->
+		<div class="media-overlay"></div> 
+		<div class="wave-wrap">
+			<?php
+				echo '<?xml version="1.0" encoding="utf-8"?>'
+			?>
+			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 1440 50" xml:space="preserve">
+				<path style="fill: url(#isd-rainbow-grad)" id="isd-rainbow-wave" class="st1" d="M0,1v1v25.2c0,0,200.9-24.7,360-24.7S923.9,50,1080,50s360-23.5,360-23.5V2V1H0z"/>
+				<path class="isd-wave" id="isd-wave" d="M0,0v1v24.7C0,25.7,200.9,1,360,1s563.9,47,720,47s360-22.5,360-22.5V1V0H0z"/>
+			</svg>
+		</div><!-- // .bc-wave-wrap -->
+	</section><!-- // .bc-hero -->
+	<section class="bc-feature-component feature-page-navigation feature-page-navigation--site-quicklinks">
+		<nav class="feature-page-navigation__content">
+			<h2 class="feature-page-navigation__heading">
+				<a class="feature-page-navigation__heading__link" href="javacript:void(0)">What would you like to know?</a>
+				<a href="javascript:void(0)" class="feature-page-navigation__toggle bc-navigation-toggle">
+						<?php
+							echo '<?xml version="1.0" encoding="utf-8"?>'
+						?>
+						<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+						<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+							 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+							<g id="bc-menu-icon__icon">
+								<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
+								<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
+								
+								<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
+							</g>
+						</svg>
+				</a>
+			</h2>
+			<div class="feature-page-navigation__wrapper">
+				<ul class="feature-page-navigation__list" style="padding-bottom: 0.75rem"> 
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="landing-page-2.html">Admissions</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#community">About the School</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#teaching-learning">Teaching and Learning at ISD</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">The International Baccalaureate</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Support for your transition</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Language support for your children</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Parents&apos; Community</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">After School Care</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">International Mix</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Our Mission &amp; Values</a></li>
+					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Meet the people at ISD</a></li>
+				</ul>		
+			</div>
+			
+		</nav>
+	</section><!-- // .feature-page-navigation-->
+	<section class="bc-one-col-feature bc-feature-component" aria-label="Welcome to ISD"> 
+		<article class="bc-feature-component__content"> 
+			<p class="bc-content-label">
+				<svg class="bc-svg-icon">
+					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
+				</svg>
+				About ISD
+			</p>
+			<h1 class="bc-feature-component__heading">Innovative, inclusive, progressive</h1>
+			<p class="bc-feature-component__intro">The International School of Dublin (ISD) was established in 2007 and is the first accredited <a href="https://www.ibo.org/">International Baccalaureate</a> World Primary School in Ireland. It is a culturally diverse, private, not for profit school that is co-educational and non-denominational.</p>
+			<p>At ISD, we feel a fundamental goal of education is to encourage a love of learning. Upon a visit, you will find a welcoming and lively environment which is characterised by collaborative and purposeful activity. Students benefit from an innovative form of engagement and a broad education that promotes learning how to think instead of what to think.</p>
+		</article><!-- // .bc-feature-component__content -->
+		<div class="bc-feature-component__cta">
+			<a class="bc-icon-link--featured" href="about-isd.html">
+				Find out what sets us apart
+				<svg class="bc-svg-icon">
+					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+				</svg>
+			</a>
+			<!--<a href="javascript:void(0)" class="bc-feature-component__next">
+				<span class="bc-feature-component__next__text">Next content</span>
+				<span class="bc-feature-component__next__icon">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+					</svg>
+				</span>
+			</a>-->
+		</div><!-- // .bc-feature-component__cta -->
+		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
+	</section><!-- // .bc-one-col-feature -->
+	<section class="bc-one-col-feature bc-feature-component is-white" aria-label="An International Baccalaureate World School"> 
+		<article class="bc-feature-component__content"> 
+			<p class="bc-content-label ib-world-school">
+				<img src="./media/ib-world-school-logo-2-colour.svg" alt="International School of Dublin is an IB World School">
+				The International Baccalaureate
+			</p>
+			<h1 class="bc-feature-component__heading">An IB World School</h1>
+			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+		</article><!-- // .bc-feature-component__content -->
+		<div class="bc-feature-component__cta">
+			<a class="bc-button" href="about.html">
+				Find out more about
+				<svg class="bc-svg-icon">
+					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+				</svg>
+			</a>
+			<a href="javascript:void(0)" class="bc-feature-component__next">
+				<span class="bc-feature-component__next__text">Next content</span>
+				<span class="bc-feature-component__next__icon">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+					</svg>
+				</span>
+			</a>
+		</div><!-- // .bc-feature-component__cta -->
+		
+	</section><!-- // .bc-one-col-feature -->
+	<section class="bc-4-col-feature bc-feature-component is-full-vh first" aria-label="Learning for Life"> 
+		<header class="bc-feature-component__header "> 
+			<p class="bc-content-label ib-world-school">
+				<img src="./media/ib-world-school-logo-2-colour.svg" alt="International School of Dublin is an IB World School">
+				The International Baccalaureate
+			</p>
+			<h1 class="bc-feature-component__heading">A Child Focussed Learning Environment</h1>
+			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+		</header>
+		<article class="bc-feature-component__content">
+			<div class="bc-card has-image bc-fade-in-up--is-not-visible">	
+				<picture class="bc-card__media">
+					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+				</picture>
+				<h2 class="bc-card__heading">Inquiry learning</h2>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
+				<div class="bc-card__cta">
+					<a href="javascript:void(0)" class="bc-card__link">Find out more</a>	
+				</div>
+			</div>
+			<div class="bc-card has-image bc-fade-in-up--is-not-visible">
+				<picture class="bc-card__media">
+					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+				</picture>
+				<h2 class="bc-card__heading">Learning for life</h2>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
+				<div class="bc-card__cta">
+					<a href="javascript:void(0)" class="bc-card__link">Find out more</a>	
+				</div>
+			</div>
+			<div class="bc-card has-image bc-fade-in-up--is-not-visible">
+				<picture class="bc-card__media">
+					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+				</picture>
+				<h2 class="bc-card__heading">Child-focussed</h2>	
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
+				<div class="bc-card__cta">
+					<a href="javascript:void(0)" class="bc-card__link">Find out more</a>	
+				</div>
+			</div>
+			<div class="bc-card has-image bc-fade-in-up--is-not-visible">
+				<picture>
+					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+				</picture>
+				<h2 class="bc-card__heading">Global citizens</h2>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit. </p>
+				<div class="bc-card__cta">
+					<a href="javascript:void(0)" class="bc-card__link">Find out more</a>	
+				</div>
+			</div>
+		</article><!-- // .bc-4-col-feature__content -->
+		<div class="bc-feature-component__cta ">
+			<a class="bc-button " href="javascript:void(0)">
+				Find out more about
+				<svg class="bc-svg-icon">	
+					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+				</svg>
+			</a>
+			<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
+				<span class="bc-feature-component__next__text">Next content</span>
+				<span class="bc-feature-component__next__icon">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+					</svg>
+				</span>
+			</a>
+		</div>
+	</section><!-- // .bc-4-col-feature -->
+	
+	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad is-full-vh"> 
+		<div class="bc-hero__background-image"></div>   
+		<div class="bc-hero__content">
+			<div class="bc-hero__body">
+				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
+					<p class="bc-content-label">
+						<svg class="bc-svg-icon"> 
+							<use xlink:href="./media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
+						</svg>
+						For Families in Ireland
+					</p>
+					<h1 class="bc-hero__heading">A progressive learning alternative</h1>
+					<p class="bc-hero__tagline">IB as a real alternative for families in Ireland</p>
+					<p class="">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue.</p>
+					<div class="bc-hero__cta">
+						<a href="javascript:void(0)" class="bc-button">
+							Find out more
+							<svg class="bc-svg-icon">
+								<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+							</svg>
+						</a> 
+						<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
+							<span class="bc-feature-component__next__text">Next content</span>
+							<span class="bc-feature-component__next__icon">
+								<svg class="bc-svg-icon">
+									<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+								</svg>
+							</span>
+						</a>
+					</div>
+				</div> 
+			</div>
+		</div><!-- // .bc-hero__content -->
+		<div class="media-overlay"></div> 
+		<div class="wave-wrap">
+			<?php
+				echo '<?xml version="1.0" encoding="utf-8"?>'
+			?>
+			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg version="1.1" id="Layer_1" class="wave-wrap__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 1440 50" xml:space="preserve">
+				<path id="isd-rainbow-wave" class="wave-wrap__rainbow" d="M0,1v1v25.2c0,0,200.9-24.7,360-24.7S923.9,50,1080,50s360-23.5,360-23.5V2V1H0z"/>
+				<path class="isd-wave"class="wave-wrap__wave" id="isd-wave" d="M0,0v1v24.7C0,25.7,200.9,1,360,1s563.9,47,720,47s360-22.5,360-22.5V1V0H0z"/>
+			</svg>
+		</div><!-- // .bc-wave-wrap -->
+	</section><!-- // .bc-hero--inpage -->
+	
+	<section class="bc-feature-component bc-one-col-feature  has-shade-02">     
+		<div class="bc-feature-component__content">
+			<h1 class="bc-feature-component__heading">Mission statement</h1>
+			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+		</div><!-- // .bc-inner-page-content__content -->
+	</section><!-- // .bc-inner-page-content Mission Statement -->
+	<section class="bc-feature-component bc-one-col-feature has-brand-darker-background">     
+		<div class="bc-feature-component__content">
+			<h1>Values</h1>
+			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+		</div><!-- // .bc-inner-page-content__content -->
+	</section><!-- // .bc-inner-page-content Values-->
+
+	<section class="bc-cta-feature bc-feature-component bc-one-col-feature has-shade-gradient"> 
+		<div class="bc-elipses"> 
+			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
+				<title>Elipses</title>
+				<!-- fill:url(#linear-gradient) -->
+				<circle class="bc-elipses__elipse" /> 
+				<circle class="bc-elipses__elipse" /> 
+				<circle class="bc-elipses__elipse" />
+				<circle class="bc-elipses__elipse" /> 
+				<circle class="bc-elipses__elipse" /> 
+			</svg>
+		</div> 
+		<article class="bc-feature-component__content">
+			<p class="bc-content-label">
+				<svg class="bc-svg-icon bc-svg-icon--admissions">
+					<use xlink:href="./media/svg/icons/bc-svgs.svg#admissions-icon"></use> 
+				</svg>
+				Admissions
+			</p> 
+			<h1 class="bc-feature-component__heading">Get started at ISD
+				<svg class="bc-svg-icon isd-cta-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.2 99">
+					<title>Get started with ISD</title> 
+					<circle class="isd-cta-arrow__circle" cx="290.7" cy="49.5" r="48"/>
+					<line class="isd-cta-arrow__line" y1="49.39" x2="265.98" y2="49.39"/>
+					<path class="isd-cta-arrow__carat" d="M302,49.91,279.7,27.6l2.87-2.82L307.7,49.91,282.57,75l-2.82-2.82Z" transform="translate(0 -1.5)"/>
+				</svg>
+			</h1>
+			<p class="bc-feature-component__intro">Make your expression of interest and we will book a School tour.</p>
+			<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+		</article>
+		<div class="bc-feature-component__cta"> 
+			<a href="javascript:void(0)" class="bc-button">
+				Enrol now
+				<svg class="bc-svg-icon">
+					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+				</svg>
+			</a>
+		</div>
+	</section>
+	<script src="./scripts/app-concat.min.js"></script> 
+</body>
+</html> 

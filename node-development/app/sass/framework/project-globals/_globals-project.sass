@@ -1,0 +1,88 @@
+@import '../globals'
+//Project global variables
+
+$content-max-width: 88%
+$text-max-width: 		44rem
+
+//Spacing
+$line-height:			1.45
+$feature-padding: $gutter * 3
+
+// ** Colour
+$brand-primary: 		#017CC0	
+$brand-darker: 			#02659B	
+$brand-secondary: 	#F2EF11
+
+// * Spot colours
+$red:								#EC1C24
+$dark-red:					#CA1622	
+$orange:						#F6921E
+$yellow:						$yellow
+$light-green:				#37B34A 
+$green:							$green 
+$mid-green:					#3B857E
+$blue:							$blue
+$light-blue:				#57b6dd
+$purple:						#651A7B	
+$indigo:						#2E3191
+$violet:						#C934F5
+
+
+$brand-primary-invert:		$white										
+$brand-secondary-invert:	$brand-primary										
+$brand-darker-invert:			$white										
+$red-invert:							$white										
+$dark-red-invert:					$white							
+$orange-invert:						invert($orange)						
+$yellow-invert:						invert($yellow)						
+$light-green-invert:			$white		 
+$mid-green-invert:				$mid-green				
+$blue-invert:							$white					
+$light-blue-invert:				darken($light-blue, 50%)	
+$purple-invert:						$white						
+$indigo-invert:						invert($indigo)					
+$violet-invert:						$white					
+
+$colors: ('primary': ($brand-primary, $brand-primary-invert), 'secondary': ($brand-secondary, $brand-secondary-invert), 'brand-darker': ($brand-darker, $brand-darker-invert), 'red':  ($red, $red-invert), 'dark-red':  ($dark-red, $dark-red-invert), 'orange': ($orange, $orange-invert), 'yellow': ($yellow, $yellow-invert), 'light-green': ($light-green, $light-green-invert), 'mid-green': ($mid-green, $mid-green-invert), 'blue': ($blue, $blue-invert), 'light-blue': ($light-blue, $light-blue-invert), 'purple': ($purple, $purple-invert), 'indigo': ($indigo, $indigo-invert), 'violet': ($violet, $violet-invert))
+
+
+//** Typography
+$base-font-family: 			'Poppins', sans-serif
+$heading-font-family: 	$base-font-family 
+
+//$heading-colour: 				$brand-primary
+$link-color:						$brand-primary
+$link-active-color:			darken($brand-primary, 20%)
+
+$text-line-height: $line-height
+$heading-font-weight: 300
+
+//* Pentatonic scale n = 5; r = 2
+$text--2:		0.758rem		!default
+$text--1:		0.8706rem		!default
+$text-00: 	1rem				!default
+$text-01: 	1.1487rem		!default
+$text-02: 	1.3195rem		!default
+$text-03: 	1.5157rem  	!default
+$text-04: 	1.7411rem		!default
+$text-10: 	2.0rem			!default
+$text-11: 	2.2974rem		!default 
+$text-12: 	2.6390rem		!default
+
+$small-text:				$text--1
+$regular-text: 			$text-00
+$h5-text: 					$text-00
+$h4-text: 					$text-00
+$h3-text: 					$text-01
+$h2-text: 					$text-03
+$h1-text: 					$text-10
+$large-text: 				$text-11
+$super-large-text: 	$text-12
+
+$h5:			$h5-text
+$h4:			$h4-text
+$h3:			$h3-text
+$h2:			$h2-text
+$h1:			$h1-text
+
+$feature-vertical-padding: $vertical-unit * 3

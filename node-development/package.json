@@ -1,0 +1,122 @@
+{
+  "name": "basic-html-builder",
+  "version": "0.0.1",
+  "description": "A basic HTML builder",
+  "http-server": "./dist",
+  "keywords": [
+    "HTML",
+    "builder"
+  ],
+  "author": "Michael Mason",
+  "license": "ISC",
+  "browserslist": [
+    "> 1.5%"
+  ],
+  "watch": {
+    "sass": {
+      "patterns": [
+        "app/*"
+      ],
+      "extensions": "sass"
+    },
+    "copy:php": {
+      "patterns": [
+        "app"
+      ],
+      "extensions": "php"
+    },
+    "copy:media": {
+      "patterns": [
+        "app/media/"
+      ],
+      "extensions": "jpg,png"
+    },
+    "svgstore": {
+      "patterns": [
+        "app/media/svg/icons"
+      ],
+      "extensions": "svg"
+    },
+    "svgstore:imgs": {
+      "patterns": [
+        "app/media/svg/images"
+      ],
+      "extensions": "svg"
+    },
+    "js:dev": {
+      "patterns": [
+        "app/scripts"
+      ],
+      "extensions": "js"
+    },
+    "lintcss": {
+      "patterns": [
+        "app"
+      ],
+      "extensions": "css"
+    },
+    "copy:css": {
+      "patterns": [
+        "app"
+      ],
+      "extensions": "css"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run sass & npm run watch:media & npm run watch:svg & npm run watch:svgimgs & npm run watch:js & npm run watch:css",
+    "build": "npm run sass:build && npm run copy:css && npm run babeljs && npm run uglifyjs && npm run concatjs && npm run postcss && npm run criticalcss ",
+    "stop": "stop http-server",
+    "sass": "node-sass --sourceMap=true -w ./app/sass/ -o ./app/css/",
+    "sass:build": "node-sass ./app/sass/ -o ./app/css/",
+    "watch:sass": "npm-watch sass",
+    "watch:php": "npm-watch copy:php",
+    "watch:js": "npm-watch js:dev",
+    "watch:css": "npm-watch copy:css",
+    "watch:postcss": "npm-watch postcss",
+    "watch:media": "npm-watch copy:media",
+    "watch:svg": "npm-watch svgstore",
+    "watch:svgimgs": "npm-watch svgstore:imgs",
+    "svgstore": "node ./bc_modules/svgstore.js",
+    "svgstore:imgs": "node ./bc_modules/svgstore.js --images",
+    "js:dev": "npm run js:lint && npm run concatjs",
+    "js:lint": "./node_modules/.bin/eslint ./app/scripts/",
+    "babeljs": "./node_modules/.bin/babel ./app/scripts/app.js -o ./app/scripts/app.js",
+    "uglifyjs": "uglifyjs ./app/scripts/app.js -o ./app/scripts/app.js",
+    "lintcss": "csslint ./app/css/style.css && copy:css",
+    "concatjs": "node ./bc_modules/concatente-js.js",
+    "postcss": "find app/. -type f -name \"*.css\" | xargs -Ifile ./node_modules/.bin/postcss file -d ../",
+    "copy:php": "find app/. -type f -name \"*.php\" | xargs -Ifile rsync -vR file ../ && echo '\n'",
+    "copy:css": "find app/. -type f \"(\" -name \"*.css\" -o -name \"*.css.map\" \")\" | xargs -I % cp -v % ../ && echo '** [copy:css] **\n'",
+    "copy:js": "find app/. -type f -name \"*.js\" | xargs -Ifile rsync -vR file ../ && echo '\n'",
+    "copy:media": "find app/. -type f \"(\" -iname \"*.jpg\" -o -iname \"*.png\" \")\" | xargs -I % rsync -vR % ../ && echo '\n'",
+    "copy:docs": "cp -r ./dist/. ./docs/",
+    "criticalcss": "node ./bc_modules/critical-css.js",
+    "server": "node live-server.js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.7.5",
+    "@babel/core": "^7.7.5",
+    "@babel/preset-env": "^7.7.6",
+    "autoprefixer": "^9.7.3",
+    "browserslist": "^4.7.3",
+    "copyfiles": "^2.1.1",
+    "critical": "^1.3.9",
+    "csslint": "^1.0.5",
+    "cssnano": "^4.1.10",
+    "eslint": "^6.6.0",
+    "flickity": "^2.2.1",
+    "gsap": "^3.0.5",
+    "live-server": "^1.2.1",
+    "node-sass": "^4.12.0",
+    "npm-watch": "^0.6.0",
+    "postcss": "^7.0.23",
+    "postcss-cli": "^6.1.3",
+    "postcss-load-config": "^2.1.0",
+    "puppeteer": "^2.0.0",
+    "svgstore": "^3.0.0-2",
+    "uglify-js": "^3.7.2",
+    "yargs": "^15.0.2"
+  }
+}

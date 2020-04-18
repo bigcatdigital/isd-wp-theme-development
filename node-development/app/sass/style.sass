@@ -1,0 +1,1056 @@
+/*
+	Theme Name: International School of Dublin 2020 Theme
+	Author: Michael Mason
+	Author URI: https://internationalschoolofdublin.com
+	Description: International School of Dublin 2020 Custom Theme
+	Version: 1.0
+	License: GNU General Public License v2 or later
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+	Text Domain: internationalschoolofdublin
+	This theme, like WordPress, is licensed under the GPL. */
+
+//Globals
+@import 'framework/project-globals/globals-project' 
+@import 'framework/project-globals/mixins-project' 
+@import 'framework/typography' 
+@import 'framework/utilities'
+
+
+@import 'framework/navigation-schemes'   
+@import 'framework/grid'  
+@import 'framework/hero' 
+@import 'framework/site-header'
+@import 'framework/components/full-width-slider'   
+@import 'framework/components/bc-feature-component'   
+@import 'framework/components/bc-inner-page-header'   
+@import 'framework/components/bc-inner-page-content'    
+@import 'framework/components/bc-accordion'    
+
+/* Normalize overrides and resets */ 
+*
+	box-sizing: border-box
+body
+	margin: 	$body-margin 
+	padding: 	$body-padding
+picture
+	display: block
+img
+	display: block
+	max-width: 100% 
+figure
+	margin: 0
+/* Project custom utilities */
+.bc-svg-icon
+	fill: $brand-darker
+.bc-button
+	font-weight: 500
+	display: inline-flex
+	justify-content: space-between
+	align-items: center
+	background-color: transparent
+	color: $brand-primary
+	border-radius: 2rem
+	border-color: $brand-primary
+	.bc-svg-icon
+		fill: $brand-primary
+	@include linkHover
+		background-color: $brand-primary
+		color: $white
+		.bc-svg-icon
+			fill: $white
+.bc-content-label
+	font-size: $text--2
+	margin-top: 0
+	.bc-svg-icon, img
+		margin-right: $gutter/2
+		max-width: 	2.4rem
+		max-height: 2.4rem
+.has-high-chroma
+	&--orange
+		@include makeHighChroma($start-colour: rgba($orange, 1), $end-colour: $dark-red)
+		@include makeWhiteText
+		.bc-elipses__elipse
+			fill: url(#linear-gradient--orange)
+
+/* SVGs as background-images */
+.has-background-svg, .has-background-svg--centered
+	.bc-feature-svg
+		position: absolute
+		width: 100%
+		height: 100%
+		bottom: 0
+		z-index: 0
+		min-width: 61.5rem
+	
+.bc-fade-in-up--is-not-visible
+	opacity: 0
+	transform: translateY(4.28rem)
+/* Project custom site header */
+.bc-site-header
+	&__logo
+		background-color: $white
+		border-bottom-left-radius: 	2.55rem
+		border-bottom-right-radius: 2.55rem
+		flex-basis: 14%
+.bc-main-navigation
+	&__item
+		&__link
+			padding-left: 	$gutter/2
+			padding-right: 	$gutter/2
+@media screen and (min-width: $small)
+	.bc-site-header
+		&__logo
+			flex-basis: 12%
+	.bc-main-navigation-toggle
+		&__show
+			max-width: 2.125rem
+			max-height: 2.125rem
+
+@media screen and (min-width: $large+1)
+	.bc-main-navigation
+		&__item
+			&__link
+				font-size: $text--1
+				padding-left: 	$gutter/2
+				padding-right: 	$gutter/2
+	
+@media screen and (min-width: $small) and (orientation: landscape)
+	.bc-site-header
+		&__logo
+			flex-basis: 10%
+
+@media screen and (min-width: $med) 
+	.bc-site-header
+		&__logo
+			flex-basis: 10%
+	.bc-main-navigation-toggle
+		&__show
+			max-width: 	2.5rem
+			max-height: 2.5rem
+		&__hide
+			max-width: 	1.75rem
+			max-height: 1.75rem
+/* Navigation schemes overrides */
+.feature-page-navigation
+	&.feature-page-navigation--site-quicklinks
+		.feature-page-navigation__list
+			flex-direction: row
+			flex-wrap: wrap
+			padding-left: 	calc(#{$gutter/2} - 1%)
+			padding-top: 		(($text-01*$line-height)*1.75)+$vertical-unit/2
+			padding-right: 	calc(#{$gutter/2} - 1%)
+			
+		.feature-page-navigation__item 
+			flex: 1 1 50%
+			max-width: 50%
+			padding-left: $gutter/2
+			padding-right: $gutter/2
+			height: #{(80/14)}rem
+			display: flex
+			align-items: flex-end 
+			margin-top: $vertical-unit/4 
+			margin-bottom: $vertical-unit/4 
+			> a 
+				padding-left: 	$gutter/4
+				padding-right: 	$gutter/4
+				background-color: $shade-01
+				height: 100%
+				flex: 1 1 100%
+				display: inline-flex
+				align-items: flex-end
+			&:last-child
+				> a
+					border-bottom: 1px solid
+			&:nth-of-type(1n)
+				> a
+					color: $mid-green
+					border-bottom-color: $mid-green
+			&:nth-of-type(2n)
+				> a
+					color: $red
+					border-bottom-color: $red
+			&:nth-of-type(3n)
+				> a
+					color: $orange
+					border-bottom-color: $orange
+			&:nth-of-type(4n) 
+				> a
+					color: $purple
+					border-bottom-color: $purple
+		@media screen and (min-width: $large)
+			.feature-page-navigation__item
+				flex: 1 1 33.333%
+				max-width: 33.333%
+		
+/* Project custom Heroes */
+.bc-hero
+	.media-overlay 
+		background-color: transparent
+		@include gradOverlay('main-hero', $start-colour: rgba($brand-primary, 0.618), $mid-colour: rgba($brand-primary, 0.382), $end-colour: $brand-darker)
+	.bc-svg-icon
+		fill: white
+	&__body
+		justify-content: flex-end
+		align-items: flex-start
+		&__text
+			background-color: $brand-primary
+			padding: $vertical-unit $gutter/2
+			&__IB
+				display: flex
+				align-items: center
+				margin-bottom: $vertical-unit/2
+				img
+					flex: 0 1 6%  
+					max-width: 6%
+					margin-right: $gutter/2
+				p
+					flex: 0 1 auto
+	& &__heading
+		color: $brand-secondary
+		border-bottom: 1px solid $brand-secondary
+		padding-bottom: $vertical-unit/1.5
+		margin-bottom: $vertical-unit/1.5
+	&.bc-hero--inpage
+		.bc-hero__body
+			&__text
+				background-color: transparent
+				padding-left: 0
+				padding-right: 0
+				p 
+					margin-bottom: $vertical-unit/2
+		.bc-hero__heading
+			padding-bottom: 0
+			margin-bottom: $vertical-unit/2
+			border-bottom: none
+		.bc-hero__tagline
+			margin-bottom: $vertical-unit/2
+		&.has-mid-green-grad
+			.media-overlay
+			  background-image: linear-gradient(to bottom, rgba($mid-green, 0) 10%, rgba($mid-green, 1) 72%)
+			.wave-wrap
+				svg
+					.isd-wave
+						fill: $mid-green
+		&.has-brand-grad 
+			.wave-wrap
+				svg
+					.isd-wave
+						fill: $brand-primary
+	@media screen and (min-width: $large)
+		&.bc-hero--inpage
+			.bc-hero__body
+				max-width: $text-max-width
+	&.bc-hero--is-feature
+		.bc-hero__content
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				top: 0
+				right: 0
+				left: 0
+				bottom: 0
+				width: 100%
+				height: 100%
+				background-image: none
+				background-repeat: no-repeat
+				background-size: contain
+				background-position: 50% 90%
+				z-index: -10
+				opacity: 0.88
+				@media screen and (min-width: $med)
+					background-size: contain
+					background-image: url(../media/kids-carefree--lines.svg)
+				@media screen and (min-width: $med) and (orientation: portrait)
+					background-size: 150%
+				@media screen and (min-width: $large)
+					background-position: 50% 90%
+					
+			@media screen and (min-width: $large)
+				margin-left: auto
+				margin-right: auto
+				width: 100%
+				padding-left: (4.444rem + $gutter/2)
+				padding-right: (4.444rem + $gutter/2)
+		
+/* Project custom bc-cards */
+.bc-card, .bc-two-col-card
+	display: 				flex  
+	flex-direction: column
+	align-self: stretch
+	justify-content: flex-start 
+	margin-bottom: $vertical-unit*1.5
+	&__heading
+		margin-bottom: $vertical-unit * 0.5
+		@include doFeatureHeading($font-size: $h2) 
+	&__sub-heading
+		margin-bottom: $vertical-unit * 0.5
+	img
+		width: 100%
+	p 
+		flex: 1 1 100% 
+		margin-bottom: $vertical-unit * 0.5
+	&__cta  
+		flex: 1 1 100%  
+		display: flex
+		justify-content: stretch
+		align-items: flex-end 
+	&--person
+		&--featured		
+			background-color: $shade-01
+			.bc-card__heading, .bc-card__sub-heading, p, .bc-card__cta
+				margin-top: 0
+				flex: 0 1 auto
+			.bc-card__text
+				flex: 1 1 auto
+				display: flex
+				flex-direction: column
+				justify-content: center
+				padding-top: 		$vertical-unit
+				padding-bottom: $vertical-unit
+			.bc-card__text
+				padding-left: 	$gutter/2
+				padding-right: 	$gutter/2
+			
+			@media screen and (min-width: $med)
+				flex-direction: row	
+				.bc-card__media
+					max-width: 41.4% 
+				.bc-card__text
+					padding-top: $vertical-unit/2
+					padding-bottom: $vertical-unit/2
+					pading-left: $gutter
+				.bc-card__heading
+					font-size: $text-02
+
+/* Project custom feature components */
+.bc-feature-component
+	/* 4-col feature */
+	&.bc-4-col-feature
+		position: relative
+		.bc-feature-component__content, .bc-feature-component__header
+			position: relative
+			z-index: 20
+		.bc-feature-component__header
+			margin-bottom: $vertical-unit * 2
+		.bc-feature-component__heading
+			margin-bottom: $vertical-unit
+		.bc-card:not(.has-image)
+			.bc-card__heading 
+				padding-bottom: $vertical-unit*0.5
+				border-bottom: 2px solid $black		
+		.bc-card:nth-child(1)
+			.bc-card__heading 
+				color: $mid-green 
+				border-bottom-color: $mid-green 
+		.bc-card:nth-child(2)
+			.bc-card__heading
+				color: $red
+				border-bottom-color: $red
+		.bc-card:nth-child(3)
+			.bc-card__heading
+				color: $orange
+				border-bottom-color: $orange 
+		.bc-card:nth-child(4)
+			.bc-card__heading
+				color: $purple
+				border-bottom-color: $purple 
+		@media screen and (min-width: $large)
+			.bc-feature-component__content
+				grid-template: auto / repeat(2, 1fr)
+		@media screen and (min-width: $x-large)
+			.bc-feature-component__content
+				grid-template: auto / repeat(4, 1fr)
+	&.bc-2-col-media-feature
+		.bc-content-label
+			margin-bottom: $vertical-unit
+		@media screen and (min-width: 880px)
+			.bc-content-label
+				grid-row-start: 1
+				grid-column: 2
+			.bc-2-col-media-feature__media
+				grid-row-start: 2
+			.bc-2-col-media-feature__text
+				grid-row-start: 2
+				grid-column: 2
+			.bc-feature-component__content
+				grid-template: auto auto / repeat(2, 1fr)
+	&.has-high-chroma
+		@include makeWhiteText
+		.bc-card:nth-child(1)
+			.bc-card__heading 
+				color: $white
+		.bc-card:nth-child(2)
+			.bc-card__heading
+				color: $white
+		.bc-card:nth-child(3)
+			.bc-card__heading
+				color: $white
+		.bc-card:nth-child(4)
+			.bc-card__heading
+				color: $white
+
+	&.bc-2-col-media-feature
+		.bc-2-col-media-feature__media
+			border: 2px solid $shade-01
+
+	&.bc-one-col-feature	
+		&.is-white
+			background-image: none
+		&.has-background-svg
+			.bc-feature-component__content, .bc-feature-component__cta, bc-feature-component__heading
+				z-index: 10
+			.bc-feature-svg
+				bottom: 0
+				left: 50%
+				transform: translate(-50%, 0)
+		&.isd-kids-feature, &.isd-about-dublin, &.isd-community
+			background-repeat: no-repeat
+			.bc-feature-component__grad-overlay 
+				position: absolute
+				top: 0
+				left: 0
+				width: 100%
+				height: 100%
+				background-repeat: no-repeat
+				background-position: center bottom
+				background-image: url(../media/community.svg)
+		&.isd-kids-feature
+			@media screen and (min-width: $large)
+				background-image: url(../media/kids-carefree-playtime.svg)
+				background-repeat: no-repeat
+				background-position: center
+				background-size: 100% auto
+				.bc-feature-component__grad-overlay
+					position: absolute
+					top: 0
+					left: 0
+					width: 100%
+					height: 100%
+					background-image: linear-gradient(to right, rgba($white, 0) 0%, rgba($white, 0.8) 25%, rgba($white, 1) 50%, rgba($white, 0.8) 75%, rgba($white, 0) 100%)
+		&.isd-about-dublin
+			.bc-feature-component__grad-overlay 
+				background-image: url(../media/dublin.svg)
+		&.isd-community
+			padding-top: 		$vertical-unit * 3
+			padding-bottom: $vertical-unit * 6
+			@media screen and (min-width: $large)
+				padding-bottom: $vertical-unit * 8
+			.bc-feature-component__grad-overlay
+				background-width: auto
+
+/* 
+ *	2-column cards - they are pulled left and right consecutively into the page margin in larger screens 
+ */ 
+/* Card wrapper - pulls into the left and right page margins */
+
+	
+.bc-two-col-card-wrap
+	background-color: $white
+	&:nth-child(1n)
+		.bc-two-col-card__heading 
+			color: $mid-green 
+	&:nth-child(2n)
+		.bc-two-col-card__heading
+			color: $red
+	&:nth-child(3n)
+		.bc-two-col-card__heading
+			color: $orange
+	&:nth-child(4n)
+		.bc-two-col-card__heading
+			color: $purple
+	.bc-two-col-card__body 
+		order: 1
+	.bc-two-col-card__image
+		order: 0
+	@media screen and (min-width: 700px)
+		&:nth-child(odd)
+			.bc-two-col-card__body 
+				order: 0
+			.bc-two-col-card__image 
+				order: 1
+		&:nth-child(even)
+			.bc-two-col-card
+				grid-template: auto / 0.382fr 0.618fr
+
+	@media screen and (min-width: $med)
+		&:nth-child(even)
+			.bc-two-col-card
+				grid-template: auto / 1fr 2fr
+	@media screen and (min-width: $large)
+		&:nth-child(odd)
+			margin-left: -4.444rem
+			margin-right: $gutter/2
+			padding-left: calc(4.444rem + #{$gutter/2})
+			width: calc(100% + (4.444rem - #{$gutter/2})
+		&:nth-child(even)
+			margin-right: -4.444rem
+			margin-left: $gutter/2
+			padding-right: calc(4.444rem + #{$gutter/2})
+		&:nth-child(even)
+			.bc-two-col-card
+				grid-template: auto / 3fr 7fr
+.bc-two-col-card
+	margin-bottom: $vertical-unit * 2
+	&__body 
+		padding: $vertical-unit $gutter/2 
+		display: flex
+		flex-direction: column		
+		justify-content: center
+	&__heading, p, .bc-icon-link
+		flex: 0 1 auto
+		margin-top: 0
+		margin-bottom: $vertical-unit/2
+
+/* Heroes and content features next links */
+.bc-feature-component, .bc-hero
+	& &__cta
+		justify-content: space-between
+		align-items: center
+		margin-top: $vertical-unit
+		.bc-button
+			margin-top: 0
+	& &__next
+			display: none
+			justify-content: flex-end
+			align-items: center
+			font-size: $text--1
+			&__text
+				opacity: 1
+				margin-right: $gutter/2
+			&__icon
+				display: inline-flex
+				justify-content: center
+				align-items: center
+				height: 3.2rem
+				width: 	3.2rem
+				border: 1px solid $brand-primary
+				border-radius: 50%
+				background-color: $shade-04
+				.bc-svg-icon
+					//transform: rotate(90deg)
+					height: 78% 
+					width: 	78% 
+					padding: $gutter/3
+					background-color: $white
+					border: 1px solid $brand-primary
+					border-radius: 50%
+					fill: $brand-primary
+@media screen and (min-width: $med) 
+	.bc-feature-component, .bc-hero
+		& &__next
+			display: inline-flex
+.bc-featured-quote	
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: $vertical-unit*1.5
+	.bc-svg-icon
+		fill: $orange
+	&__heading
+		width: 100%
+	&__icon
+		flex: 1 1 9%
+		max-width: 9%
+		display: flex
+		justify-content: center
+		padding-top: $vertical-unit/4
+		.bc-svg-icon
+			max-width: 1.5rem
+			max-height: 1.5rem
+	&__body
+		flex: 0 1 100% - 9%
+		max-width: 100% - 9%
+		padding-left: $gutter/2
+		
+		
+/* Expandible blocks - custom for ISD */
+.bc-expandible-block
+	margin-bottom: $vertical-unit * 2
+	display: flex
+	flex-direction: column
+	&__intro, &__body
+		display: grid
+		grid-template: auto auto / 1fr
+		&__intro
+			font-weight: 500
+		&__text
+			order: 1
+		&__media
+			order: 0
+			picture
+				margin-bottom: $vertical-unit
+	&__intro
+		&__heading
+			margin-bottom: $vertical-unit
+	&__body
+		overflow: hidden
+		height: 0;
+		h2
+			font-size: $h3
+		h3 
+			font-size: $h4
+		h4 
+			font-size: $h5
+		&__media
+			img
+				width: 100%
+	&__expander
+		display: flex
+		justify-content: flex-end
+		&__button
+			display: inline-flex
+			align-items: stretch
+			color: lighten($text-black, 12.5%)
+			font-size: $text--2
+			font-weight: 300
+			text-transform: uppercase
+			border: 1px solid $text-black
+			border-radius: 1.125rem
+			background-color: $shade-01
+			transition: background-color 420ms ease-out
+			&:hover, &:active, &:focus
+				background-color: $white
+			&.is-active
+				.bc-expandible-block__expander__button__icon
+					.bc-svg-icon
+						transform: rotate(90deg) 
+				.bc-expandible-block__expander__button__text
+					.inactive-text
+						transform: translateY(-160%)	
+					.active-text
+						transform: translateY(-50%)	
+			&__text
+				position: relative
+				display: inline-flex
+				align-items: center
+				padding: $gutter/5 $gutter/3
+				padding-left: 5.2rem
+				padding-top: calc((#{$text--1} * #{$line-height}) + 0.125rem	)
+				overflow: hidden
+				.inactive-text, .active-text
+					width: 100%
+					position: absolute
+					left: $gutter/2 
+					top: 50%
+					transform: translateY(-50%)	
+					transition: transform 420ms ease-out
+				.active-text
+					transform: translateY(110%)
+			&__icon
+				display: inline-flex
+				justify-content: center
+				align-items: 			center
+				background-color: $shade-05
+				border-radius: 1.125rem
+				padding-left: 	$gutter/2
+				padding-right: 	$gutter/2
+				transition: background-color 420ms ease-out
+				.bc-svg-icon
+					transform: rotate(45deg)
+					fill: $white
+					max-width: 	$text--1
+					max-height: $text--1
+					transition: transform 380ms ease-out
+	&.is-active		
+		.bc-expandible-block__body
+			padding-top: $vertical-unit * 0.5  
+	&:nth-child(1n)
+		.bc-expandible-block__intro__heading
+			color: $mid-green
+		.bc-expandible-block__expander__button__icon 
+			background-color: darken($mid-green, 10%) 
+		.bc-expandible-block__expander__button
+				&:hover, &:active, &:focus
+					.bc-expandible-block__expander__button__icon
+						background-color: $mid-green
+	&:nth-child(2n)
+		.bc-expandible-block__intro__heading
+			color: $red
+		.bc-expandible-block__expander__button__icon
+			background-color: darken($red, 10%)
+		.bc-expandible-block__expander__button
+				&:hover, &:active, &:focus
+					.bc-expandible-block__expander__button__icon
+						background-color: $red
+	&:nth-child(3n)
+		.bc-expandible-block__intro__heading
+			color: $orange
+		.bc-expandible-block__expander__button__icon
+			background-color: darken($orange, 10%)
+		.bc-expandible-block__expander__button
+				&:hover, &:active, &:focus
+					.bc-expandible-block__expander__button__icon
+						background-color: $orange 
+	&:nth-child(4n)
+		.bc-expandible-block__intro__heading
+			color: $purple
+		.bc-expandible-block__expander__button__icon
+			background-color: darken($purple, 10%)
+		.bc-expandible-block__expander__button
+				&:hover, &:active, &:focus
+					.bc-expandible-block__expander__button__icon
+						background-color: $purple 
+		
+	@media screen and (max-width: #{$med - 1px})
+		&__body
+			&__media
+				width: 100%
+				display: flex
+				flex-wrap: wrap
+				picture
+					margin-bottom: 0
+					flex: 0 0 50%
+					@include mediaContainer()
+					padding-top: 50%
+	@media screen and (min-width: $small) and (max-width: #{$med - 1px})
+		&__body
+			&__media
+				picture
+					flex: 0 0 33.333%
+					padding-top: 33.333%
+	@media screen and (min-width: $med)
+		&__intro, &__body
+			grid-template: auto / 7fr 3fr
+			grid-column-gap: $gutter
+			&__media
+				grid-column: 2 / 3
+			&__text
+				order: 0
+			&__heading
+				//@include doFeatureHeading($font-size: $h2)
+				margin-top: 0
+		&__intro
+			&__heading
+				grid-column: span 2
+		&__body
+			h2:first-child, h3:first-child, h4:first-child, h4:first-child, p, ul
+				margin-top: 0
+
+.bc-feature-component
+	&.bc-expandible-blocks-component
+		+ .bc-feature-component.bc-expandible-blocks-component
+			padding-top: 0
+		.bc-feature-component__header, .bc-feature-component__content
+			max-width: none
+			width: 100%
+		.bc-feature-component__header
+			padding-bottom: 0
+			margin-bottom: $vertical-unit
+		@media screen and (min-width: $large)
+			.bc-feature-component__header, .bc-feature-component__content
+				width: calc(100% - 8.888rem)
+		
+.bc-inner-page-content
+	.bc-expandible-block
+		margin-top: $vertical-unit*1.5
+		&__body
+			display: initial
+		&__image
+			margin-bottom: $vertical-unit
+	@media screen and (min-width: $med)
+		.bc-expandible-block
+			&__image
+	@media screen and (min-width: $med)
+		.bc-expandible-block
+			&__image
+				
+		
+/* CTA feature */
+.bc-feature-component
+	&.bc-cta-feature
+		min-height: 100vh
+		display: flex
+		flex-direction: column
+		justify-content: center
+		.bc-svg-icon
+			&.bc-svg-icon--admissions
+				max-width: 	2.0rem
+				max-height: 2.0rem
+		.bc-feature-component__cta
+			align-self: flex-start
+			margin-left: 0 
+			.bc-button
+				background-color: $dark-red
+				color: $white
+				border: none
+				.bc-svg-icon
+					fill: $white
+				&:hover, &:active, &:focus
+					background-color: darken($dark-red, 10%)
+		.bc-svg-icon
+			&.isd-cta-arrow
+				margin-left: $gutter/2	
+				flex: 0 1 auto
+				display: none
+				height: $h1*1.05 
+				max-width: none
+				max-height: none
+				fill: transparent
+				.isd-cta-arrow__circle
+					fill: transparent
+					
+				.isd-cta-arrow__circle, .isd-cta-arrow__line, .isd-cta-arrow__carat
+					stroke-width: #{(3/14)}rem
+					stroke: $brand-primary	
+				//.isd-cta-arrow__carat
+				//	stroke: $brand-secondary
+		.bc-feature-component__heading
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+		&.has-high-chroma
+			.bc-svg-icon
+				&.isd-cta-arrow
+					.isd-cta-arrow__carat
+						stroke: $brand-secondary
+					.isd-cta-arrow__circle, .isd-cta-arrow__line
+						stroke: $white
+		@media screen and (min-width: $small)
+			.bc-svg-icon
+				&.isd-cta-arrow
+					display: initial
+		@media screen and (min-width: $large)
+			.bc-feature-component__cta
+				margin-left: auto
+			
+			.bc-feature-component__heading
+				display: flex
+				align-items: center
+				margin-bottom: $vertical-unit
+				.bc-card:nth-child(1)
+					.bc-card__heading 
+						color: $mid-green 
+						border-bottom-color: $mid-green 
+				.bc-card:nth-child(2)
+					.bc-card__heading
+						color: $red
+						border-bottom-color: $red
+				.bc-card:nth-child(3)
+					.bc-card__heading
+						color: $orange
+						border-bottom-color: $orange 
+				.bc-card:nth-child(4)
+					.bc-card__heading
+						color: $purple
+						border-bottom-color: $purple 
+		@media screen and (min-width: $large), (min-width: $med) and (orientation: portrait)
+			min-height: 0
+
+/** Index page for presentation */
+.bc-feature-component.bc-site-index
+	.bc-feature-component__content
+		grid-template-columns: 100%
+	
+.bc-inner-page-header
+	position: relative
+	padding-top: 		$vertical-unit * 5
+	padding-bottom: $vertical-unit * 5.5
+	&__bg-svg
+		position: absolute 
+		top: 50%
+		transform: translateY(-50%)
+		width: 100%
+		height: 100%
+		left: -2%
+		z-index: 1
+		svg
+			position: absolute
+			top: 50%
+			transform: translateY(-50%)
+			max-height: 100%
+			width: 72%
+			left: 0
+			fill: $brand-primary
+	&.has-inner-sub-nav
+		padding-bottom: 0
+@media screen and (min-width: $med)
+	.bc-inner-page-header
+		&__bg-svg
+			width: 48%
+			left: 2%
+
+/* SVG defs */
+.bc-svg-defs
+	position: absolute
+	height: 0px
+	width: 0px
+	&__linear-gradient
+		&__col-stop1 
+			stop-color: $brand-primary
+			stop-opacity: 0.618  
+		&__col-stop2
+			stop-color: darken($brand-darker, 20%)
+			stop-opacity: 1
+	& .bc-svg-defs__linear-gradient--orange
+			.bc-svg-defs__linear-gradient__col-stop1 
+				stop-color: $orange
+				stop-opacity: 0.618  
+			.bc-svg-defs__linear-gradient__col-stop2
+				stop-color: darken($dark-red, 20%)
+				stop-opacity: 1
+	& .bc-svg-defs__linear-gradient--shade
+			.bc-svg-defs__linear-gradient__col-stop1 
+				stop-color: $shade-01
+				stop-opacity: 0.618  
+			.bc-svg-defs__linear-gradient__col-stop2
+				stop-color: darken($shade-04, 20%)
+				stop-opacity: 1
+.bc-elipses
+	position: absolute 
+	top: 0
+	right: 0
+	width: 100%
+	height: 100%
+	z-index: 1
+	display: none
+	&__svg
+		position: absolute
+		width: 	100%
+		height: 100%
+		opacity: 0.50 
+	&__elipse
+		fill: url(#linear-gradient) 
+		&:nth-of-type(n+1)
+			cx: 	88%
+			cy:		12%
+			r: 		2% 
+		&:nth-of-type(n+2)
+			cx:		36%
+			cy:		16%
+			r:  	8%
+		&:nth-of-type(n+3)
+			cx: 	68%
+			cy: 	36%
+			r:  	4%
+		&:nth-of-type(n+4)
+			cx: 	92%
+			cy: 	72%
+			r:  	12% 
+		&:nth-of-type(n+5)
+			cx: 	16% 	
+			cy: 	56%
+			r: 		16% 		
+.has-orange-gradient
+	.bc-elipses
+		&__elipse
+			fill: url(#linear-gradient--orange) 
+.has-shade-gradient
+	.bc-elipses
+		&__elipse
+			fill: url(#linear-gradient--shade) 
+
+@media screen and (min-width: $med)
+	.bc-elipses
+		display: block
+		width: 66.666%
+	.bc-feature-component	
+		.bc-elipses
+			display: block
+			width: 80%
+	
+	
+
+/* Feature component waves */
+
+$waves-height: 50px
+/* svg rainbow gradient used in svg image **/
+.bc-feature-component
+	padding-top: 		calc(#{$vertical-unit} * 2 + (#{$waves-height} / 2))
+	padding-bottom: calc(#{$vertical-unit} * 2 + (#{$waves-height} / 2))
+
+
+
+.has-waves 
+	z-index: 10 
+	.wave-wrap
+		position: absolute
+		bottom: -$waves-height
+		width: 100%
+		height: $waves-height
+		svg
+			.isd-wave
+				fill: $brand-darker
+		&__rainbow
+			fill: url(#isd-rainbow-grad)
+		&__wave
+			width: 100%
+			height: $waves-height
+			fill: $brand-darker
+	&--at-top
+		.wave-wrap
+			&__wave
+				transform-origin: 50% 50%
+				transform: rotate(180deg)
+.bc-hero
+	&.has-waves
+		.wave-wrap
+			svg
+				.isd-wave
+					fill: $brand-darker
+.bc-feature-component
+	&.has-waves
+		.wave-wrap
+			svg
+				.isd-wave
+					fill: $shade-03
+		&.has-high-chroma
+			.wave-wrap
+			svg
+				.isd-wave
+					fill: $brand-darker
+		
+/* Accordion project overrides */
+.bc-accordion      
+	&__block-heading:nth-of-type(1n)
+		.bc-accordion__block-trigger
+			color: $mid-green 
+			.bc-svg-icon
+				fill: $mid-green
+	&__block-heading:nth-of-type(2n)
+		.bc-accordion__block-trigger
+			color: $red 
+			.bc-svg-icon
+				fill: $red
+	&__block-heading:nth-of-type(3n)
+		.bc-accordion__block-trigger
+			color: $orange
+			.bc-svg-icon
+				fill: $orange
+	&__block-heading:nth-of-type(4n)
+		.bc-accordion__block-trigger
+			color: $purple
+			.bc-svg-icon
+				fill: $purple
+	&__block-body
+		position: relative
+		padding-bottom: $vertical-unit * 0.125
+		border-bottom: 1px solid $brand-primary
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			right: 0
+			width: 12.94%  
+			height: $vertical-unit * 0.1125 
+			background-color: $brand-primary
+	&__block-body:nth-of-type(1n)
+		border-bottom: 1px solid $mid-green
+		&:after
+			background-color: $mid-green
+	&__block-body:nth-of-type(2n)
+		border-bottom: 1px solid $red
+		&:after
+			background-color: $red
+	&__block-body:nth-of-type(3n)
+		border-bottom: 1px solid $orange
+		&:after
+			background-color: $orange
+	&__block-body:nth-of-type(4n)
+		border-bottom: 1px solid $purple
+		&:after
+			background-color: $purple
+	
+	/*@media screen and (min-width: $large)
+		&__block-trigger
+			&__icon
+				margin-left: 2.8rem*/

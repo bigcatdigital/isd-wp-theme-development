@@ -1,0 +1,49 @@
+.bc-feature-component
+	&.bc-2-col-media-feature
+		.bc-feature-component__content
+			@include makeContentGrid(2, 880px)
+			max-width: none
+		.bc-feature-component__header
+			padding-left: 0	
+			padding-right: 0
+		.bc-feature-component__cta
+			margin-left: 0
+			padding-left: 0
+			padding-right: 0
+		.bc-feature-component__heading
+			margin-top: 0
+		.bc-2-col-media-feature__media
+			position: relative
+			align-self: start
+			margin-bottom: $vertical-unit
+			.play-icon
+				@include absoluteCenter
+				z-index: 20
+				width: 	$super-large-text*1.25
+				height: $super-large-text*1.25
+				fill: $white
+		@media screen and (min-width: $med)
+			.bc-2-col-media-feature__media
+				.play-icon
+					width: 	$super-large-text*2
+					height: $super-large-text*2
+		@media screen and (min-width: 880px)
+			&__content
+				grid-template-rows: auto auto
+				&__heading
+					grid-column-start: span 2
+				&__media
+					grid-row-start: auto
+			.bc-2-col-media-feature__media
+				margin-bottom: 0
+				.play-icon
+					width: 	$super-large-text*2
+					height: $super-large-text*2
+		@media screen and (min-width: $med)
+			.bc-2-col-media-feature__media
+				.play-icon
+					width: 	$super-large-text*1.5
+					height: $super-large-text*1.5		
+		
+		
+		

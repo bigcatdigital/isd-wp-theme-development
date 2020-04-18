@@ -1,0 +1,44 @@
+.bc-accordion
+	&__block-heading
+		flex: 1 1 100%
+		font-size: $h3
+		font-weight: 500
+		margin-top: $gutter
+		
+		> a
+			text-decoration: none
+		&.is-active
+			.bc-accordion__block-trigger		
+				.bc-svg-icon 
+					transform: rotate(45deg)
+		&:first-child
+			margin-top: 0
+	&__block-trigger
+		width: 100%
+		display: flex
+		align-items: stretch
+		justify-content: space-between
+		&__icon
+			flex: 1 1 12.94%
+			min-width: 12.94%
+			max-width: 12.94%
+			display: inline-flex
+			justify-content: center
+			align-items: flex-end 
+		.bc-svg-icon 
+			max-height: $h5 
+			max-width: 	$h5
+			transform: rotate(45deg)
+			transition: transform 380ms ease-out
+	&__block-body
+		height: 0
+		overflow: hidden
+	&__close
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		padding-right: $gutter/2
+	@media screen and (min-width: $large)
+		&__block-trigger
+			&__icon
+				margin-left: $gutter * 0.5
