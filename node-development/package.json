@@ -29,7 +29,7 @@
       "patterns": [
         "app/media/"
       ],
-      "extensions": "jpg,png"
+      "extensions": "jpg,png,svg"
     },
     "svgstore": {
       "patterns": [
@@ -89,7 +89,7 @@
     "copy:php": "find app/. -type f -name \"*.php\" | xargs -Ifile rsync -vR file ../ && echo '\n'",
     "copy:css": "find app/. -type f \"(\" -name \"*.css\" -o -name \"*.css.map\" \")\" | xargs -I % cp -v % ../ && echo '** [copy:css] **\n'",
     "copy:js": "find app/. -type f -name \"*.js\" | xargs -Ifile rsync -vR file ../ && echo '\n'",
-    "copy:media": "find app/. -type f \"(\" -iname \"*.jpg\" -o -iname \"*.png\" \")\" | xargs -I % rsync -vR % ../ && echo '\n'",
+    "copy:media": "find app/. \"(\" -iname \"*.jpg\" -o -iname \"*.png\" -o -iname \"*.svg\" -o -type d -name \"/media/svg/icons/\" \")\"  | xargs -I % rsync -vR % ../ && echo '\n'",
     "copy:docs": "cp -r ./dist/. ./docs/",
     "criticalcss": "node ./bc_modules/critical-css.js",
     "server": "node live-server.js"

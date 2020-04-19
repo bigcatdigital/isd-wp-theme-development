@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="style.css" /> 
 </head>  
 <body> 
-	<?xml version="1.0" encoding="utf-8"?>
+	<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 viewBox="0 0 0 0" class="bc-svg-defs" xml:space="preserve">
@@ -65,7 +65,7 @@
 			</nav>
 			<div class="bc-main-navigation-toggle">
 				<a href="javascript:void(0)" class="bc-navigation-toggle">
-					<?xml version="1.0" encoding="utf-8"?>
+					<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -223,7 +223,7 @@
 							<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 
 						</svg>
 					</a> 
-					<?xml version="1.0" encoding="utf-8"?>
+					<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 						<svg class="bc-svg-image bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
 							<title>A decorative image of elipses</title>
 							<!-- fill:url(#linear-gradient) -->

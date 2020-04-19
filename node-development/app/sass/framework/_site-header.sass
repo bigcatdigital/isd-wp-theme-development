@@ -26,6 +26,7 @@ $desktop-break: $x-large
 		color: $shade-05
 	& &__sub-sub-heading
 		margin-top: $vertical-unit	
+		margin-bottom: 0
 		font-size: $text-03
 		color: $white
 	a 
@@ -66,6 +67,9 @@ $desktop-break: $x-large
 		position: fixed 
 		height: 100vh
 		overflow: scroll
+		.bc-main-navigation
+			position: fixed 
+
 .bc-main-navigation
 	position: absolute
 	top: 0
@@ -118,13 +122,15 @@ $desktop-break: $x-large
 		background-color: $brand-primary
 		color: $white
 		.bc-main-navigation__item__link
-			padding-top: $vertical-unit/4
+			padding-top: 		$vertical-unit/4
+			padding-bottom: $vertical-unit/4
 			color: $white
 	& &__links
 		flex: 1 0 auto  
 		min-width: 100%
 		flex-direction: column
 		align-items: stretch
+		margin-top: $gutter
 		margin-bottom: $gutter
 	& &__item
 		color: $brand-primary
@@ -182,7 +188,6 @@ $desktop-break: $x-large
 		.bc-main-navigation-toggle
 			margin-right: $gutter/2
 	.bc-main-navigation
-		height: 100vh
 		min-height: 0
 		&__navs 
 			flex: 1 0 100%
@@ -202,9 +207,16 @@ $desktop-break: $x-large
 				&:last-child 
 					.bc-main-navigation__item__link
 							border-bottom: 1px solid $brand-primary
+				&__link 
+					padding-top: 		$vertical-unit / 1.5
+					padding-bottom: $vertical-unit / 1.5
 		& &__sub-navigation
 			.bc-main-navigation__links
 				grid-template: auto / repeat(2, 1fr)
+				.bc-main-navigation__item
+					&__link 
+						padding-top: 		$vertical-unit / 2
+						padding-bottom: $vertical-unit / 2
 @media screen and (min-width: $large)
 	.bc-site-header
 		& &__heading	
@@ -243,6 +255,7 @@ $desktop-break: $x-large
 			padding-right: $gutter/2
 			margin-right: 0
 		& &__links
+			margin-top: 0
 			grid-template: auto / repeat(2, 1fr)
 		& &__sub-navigation
 			padding-top: $vertical-unit + 0.25rem
@@ -250,8 +263,11 @@ $desktop-break: $x-large
 			.bc-main-navigation__links
 				display: flex
 				flex-direction: column
-			.bc-main-navigation__item__link
-				padding-bottom: $gutter/4
+				.bc-main-navigation__item
+					&__link 
+						padding-top: 		$vertical-unit / 3
+						padding-bottom: $vertical-unit / 3
+			
 @media screen and (min-width: $xx-large)
 	.bc-main-navigation
 		& &__links

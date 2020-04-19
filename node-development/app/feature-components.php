@@ -6,10 +6,10 @@
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>  
 <body class="bc-feature-page"> 
-	<?xml version="1.0" encoding="utf-8"?>
+	<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 0 0" class="bc-svg-defs" xml:space="preserve">
@@ -70,7 +70,7 @@
 			</nav>
 			<div class="bc-main-navigation-toggle">
 				<a href="javascript:void(0)" class="bc-navigation-toggle">
-					<?xml version="1.0" encoding="utf-8"?>
+					<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -106,7 +106,7 @@
 		</div><!-- // .bc-hero__content -->
 		<div class="media-overlay"></div> 
 		<div class="wave-wrap">
-			<?xml version="1.0" encoding="utf-8"?>
+			<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 1440 50" xml:space="preserve">
@@ -150,7 +150,7 @@
 		</div><!-- // .bc-hero__content --> 
 		<div class="media-overlay"></div> 
 		<div class="wave-wrap">
-			<?xml version="1.0" encoding="utf-8"?>
+			<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" class="wave-wrap__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 1440 50" xml:space="preserve">
@@ -164,7 +164,7 @@
 			<h2 class="feature-page-navigation__heading">
 				<a class="feature-page-navigation__heading__link" href="javacript:void(0)">Site quicklinks</a>
 				<a href="javascript:void(0)" class="feature-page-navigation__toggle bc-navigation-toggle">
-						<?xml version="1.0" encoding="utf-8"?>
+						<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 						<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 						<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 							 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
@@ -579,7 +579,7 @@
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Values-->
 
-	<section id="bc-cta-feature" class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma--primary"> 
+	<section id="bc-cta-feature" class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma"> 
 		<div class="bc-elipses"> 
 			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
 				<title>Elipses</title>
@@ -622,7 +622,7 @@
 		<div class="feature-page-navigation__navs">
 			<a href="javascript:void(0)" class="feature-page-navigation__to-top">
 				Scroll to top
-				<?xml version="1.0" encoding="utf-8"?>
+				<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 				<svg version="1.1" class="bc-svg-icon bc-svg-icon--arrow-up"id="bc-arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 					 viewBox="0 0 100 100" >
 					<polygon points="47.4,11 25.7,32.8 22,29 50,1 78,29 74.3,32.8 52.6,11 52.6,99 47.4,99 "/>
@@ -630,7 +630,7 @@
 			</a>
 			<div class="feature-page-navigation__toggle-nav">
 				<a href="javascript:void(0)" class="feature-page-navigation__toggle-nav__link bc-navigation-toggle">
-					<?xml version="1.0" encoding="utf-8"?>
+					<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">

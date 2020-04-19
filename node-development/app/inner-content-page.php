@@ -5,10 +5,10 @@
 	<meta name="viewport" content="width=device-width">
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>  
 <body> 
-	<?xml version="1.0" encoding="utf-8"?>
+	<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 	<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 		 viewBox="0 0 0 0" class="bc-svg-defs" xml:space="preserve">
@@ -65,7 +65,7 @@
 			</nav>
 			<div class="bc-main-navigation-toggle">
 				<a href="javascript:void(0)" class="bc-navigation-toggle">
-					<?xml version="1.0" encoding="utf-8"?>
+					<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
 						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
