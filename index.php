@@ -109,13 +109,13 @@
 						<h4><a href="homepage.php" class="">Home page</a></h4>
 					</li>
 					<li>
-						<h4><a href="families-in-ireland.html" class="">For families in Ireland</a></h4>
+						<h4><a href="families-in-ireland.php" class="">For families in Ireland</a></h4>
 					</li>
 					<li>
-						<h4><a href="teaching-and-learning.html" class="">Teaching &amp; Learning</a></h4>
+						<h4><a href="teaching-and-learning.php" class="">Teaching &amp; Learning</a></h4>
 					</li>
 					<li>
-						<h4><a href="about-isd.html" class="">About ISD</a></h4>
+						<h4><a href="about-isd.php" class="">About ISD</a></h4>
 					</li>
 				</ul>
 				<hr>
@@ -125,7 +125,7 @@
 				</p>
 				<ul>
 					<li>
-						<h4><a href="feature-components.html" class="">All feature components</a></h4>
+						<h4><a href="feature-components.php" class="">All feature components</a></h4>
 						<p><b>Includes:</b></p>
 						<ul>
 							<li>All components which can be used on feature pages.</li>
@@ -133,18 +133,18 @@
 						</ul>
 					</li>
 					<li>
-						<h4><a href="landing-page-2.html" class="">Landing page#2</a></h4>
+						<h4><a href="landing-page-2.php" class="">Landing page#2</a></h4>
 						<p><b>Includes:</b></p>
 						<ul>
 							<li>Hero block</li>
 							<li>Text only feature - About Dublin</li>
-							<li>Text only feature - Join the community</li>
+							<li>Text only feature - Join the community</li> 
 							<li>Expandable blocks</li>
 							<li>Major call to action</li>
 						</ul>
 					</li>
 					<li>
-						<h4><a href="inner-content-page.html" class="">Inner content page</a></h4>
+						<h4><a href="inner-content-page.php" class="">Inner content page</a></h4>
 						<p><b>Includes:</b></p>
 						<ul>
 							<li>Inner page header</li>
@@ -154,7 +154,7 @@
 						</ul>
 					</li>
 					<li>
-						<h3><a href="feature-slider.html" class="">Feature slider</a></h3>
+						<h3><a href="feature-slider.php" class="">Feature slider</a></h3>
 						<p><b>Includes:</b></p>
 						<ul>
 							<li>Full width image and video slider</li>
