@@ -1,13 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width">
-	<title>Document</title>
-	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
-	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<link rel="stylesheet" href="style.css" />
-</head>  
+<?php
+	include 'php-includes/global-functions.php';
+	get_header('Welcome [Homepage]');
+?>
 <body class="bc-feature-page"> 
 			<?php
 				echo '<?xml version="1.0" encoding="utf-8"?>'
@@ -37,58 +31,7 @@
 					</linearGradient>
 				</defs>
 			</svg>
-	<header class="bc-site-header is-overlay">
-		<div class="bc-site-header__content">
-			<div class="bc-site-header__logo">
-				<img src="media/isd-logo.png" alt="International School of Dublin" class="">					
-			</div>
-			<nav class="bc-main-navigation"> 
-				<h1 class="bc-site-header__heading">Welcome to International School of Dublin</h1>
-				<div class="bc-main-navigation__navs">
-					<div class="bc-main-navigation__main-nav">
-						<ul class="bc-main-navigation__links">
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Teaching &amp; Learning</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Admissions</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">About the School</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Student experience</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Community</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">For Irish families</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Contact</a></li>
-						</ul>		
-					</div>
-
-					<div class="bc-main-navigation__sub-navigation"> 
-						<h3 class="bc-site-header__sub-sub-heading">Quick links</h3>
-						<ul class="bc-main-navigation__links">
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">School calendar</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">School bus</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Student experience</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Community</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">For Irish families</a></li>
-							<li class="bc-main-navigation__item"><a class="bc-main-navigation__item__link" href="javascript:void(0)">Contact</a></li>
-						</ul>	
-					</div>
-				</div>
-			</nav>
-			<div class="bc-main-navigation-toggle">
-				<a href="javascript:void(0)" class="bc-navigation-toggle">
-					<?php
-						echo '<?xml version="1.0" encoding="utf-8"?>'
-					?>
-					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
-							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
-							
-							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
-						
-					</svg>
-				</a>
-			</div><!-- // .bc-main-navigation-toggle -->
-		</div>
-		<div class="bc-main-navigation__underlay"></div>
-	</header>
+	<?php get_site_header(); ?>
 	<section class="bc-hero bc-hero--is-feature has-waves">
 		<div class="bc-hero__background-image">
 		</div>    

@@ -1000,7 +1000,7 @@ figcaption {
 /* Sizing */
 .is-full-vh {
   min-height: 100vh !important; }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .is-full-vh {
       min-height: 75vh !important; } }
 
@@ -1544,7 +1544,7 @@ figcaption {
     margin-top: 1.5rem; }
     .bc-hero .bc-button .bc-svg-icon, .bc-hero--inpage .bc-button .bc-svg-icon {
       fill: #fff; }
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
+  @media screen and (min-width: 768px) and (max-width: 1023px) and (orientation: portrait) {
     .bc-hero, .bc-hero--inpage {
       height: 75vh; } }
 
