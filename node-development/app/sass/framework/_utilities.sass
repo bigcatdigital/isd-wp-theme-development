@@ -143,6 +143,8 @@
 /* Sizing */
 .is-full-vh
 	min-height: 100vh !important
+	@media screen and (min-width: $med) and (max-width: ($large - 1px)) 
+		min-height: 75vh !important
 /* Fixed aspect ratio media containers */
 .is-square-media
 	@include mediaContainer 

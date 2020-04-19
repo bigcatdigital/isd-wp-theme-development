@@ -40,7 +40,7 @@
 	<header class="bc-site-header is-overlay">
 		<div class="bc-site-header__content">
 			<div class="bc-site-header__logo">
-				<img src="./media/isd-logo.png" alt="International School of Dublin" class="">					
+				<img src="media/isd-logo.png" alt="International School of Dublin" class="">					
 			</div>
 			<nav class="bc-main-navigation"> 
 				<h1 class="bc-site-header__heading">Welcome to International School of Dublin</h1>
@@ -89,7 +89,7 @@
 		</div>
 		<div class="bc-main-navigation__underlay"></div>
 	</header>
-	<section class="bc-hero bc-hero--is-feature has-waves is-full-vh">
+	<section class="bc-hero bc-hero--is-feature has-waves">
 		<div class="bc-hero__background-image">
 		</div>    
 		<div class="bc-hero__content">
@@ -98,7 +98,7 @@
 			</div><!-- // .hero-header -->
 			<div class="bc-hero__body bc-fade-in-up--is-not-visible">
 				<div class="bc-hero__body__text__IB">
-					<img src="./media/ib-world-school-logo-2-colour-rev.svg" alt="ISD is an International Baccalaureate World School">
+					<img src="media/ib-world-school-logo-2-colour.png" alt="ISD is an International Baccalaureate World School">
 					<p>ISD is an International Baccalaureate World School</p> 
 				</div>
 				<div class="bc-hero__body__text">
@@ -165,7 +165,7 @@
 		<article class="bc-feature-component__content"> 
 			<p class="bc-content-label">
 				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
+					<use xlink:href="media/svg/icons/bc-svgs.svg#about-isd"></use> 
 				</svg>
 				About ISD
 			</p>
@@ -177,24 +177,24 @@
 			<a class="bc-icon-link--featured" href="about-isd.html">
 				Find out what sets us apart
 				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 				</svg>
 			</a>
 			<!--<a href="javascript:void(0)" class="bc-feature-component__next">
 				<span class="bc-feature-component__next__text">Next content</span>
 				<span class="bc-feature-component__next__icon">
 					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
 					</svg>
 				</span>
 			</a>-->
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature -->
-	<section class="bc-one-col-feature bc-feature-component is-white" aria-label="An International Baccalaureate World School"> 
+	<section class="bc-one-col-feature bc-feature-component has-shade-01" aria-label="An International Baccalaureate World School"> 
 		<article class="bc-feature-component__content"> 
 			<p class="bc-content-label ib-world-school">
-				<img src="./media/ib-world-school-logo-2-colour.svg" alt="International School of Dublin is an IB World School">
+				<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
 				The International Baccalaureate
 			</p>
 			<h1 class="bc-feature-component__heading">An IB World School</h1>
@@ -205,24 +205,24 @@
 			<a class="bc-button" href="about.html">
 				Find out more about
 				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 				</svg>
 			</a>
 			<a href="javascript:void(0)" class="bc-feature-component__next">
 				<span class="bc-feature-component__next__text">Next content</span>
 				<span class="bc-feature-component__next__icon">
 					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
 					</svg>
 				</span>
 			</a>
 		</div><!-- // .bc-feature-component__cta -->
 		
 	</section><!-- // .bc-one-col-feature -->
-	<section class="bc-4-col-feature bc-feature-component is-full-vh first" aria-label="Learning for Life"> 
+	<section class="bc-4-col-feature bc-feature-component" aria-label="Learning for Life"> 
 		<header class="bc-feature-component__header "> 
 			<p class="bc-content-label ib-world-school">
-				<img src="./media/ib-world-school-logo-2-colour.svg" alt="International School of Dublin is an IB World School">
+				<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
 				The International Baccalaureate
 			</p>
 			<h1 class="bc-feature-component__heading">A Child Focussed Learning Environment</h1>
@@ -274,28 +274,28 @@
 			<a class="bc-button " href="javascript:void(0)">
 				Find out more about
 				<svg class="bc-svg-icon">	
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 				</svg>
 			</a>
 			<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
 				<span class="bc-feature-component__next__text">Next content</span>
 				<span class="bc-feature-component__next__icon">
 					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
 					</svg>
 				</span>
 			</a>
 		</div>
 	</section><!-- // .bc-4-col-feature -->
 	
-	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad is-full-vh"> 
+	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad"> 
 		<div class="bc-hero__background-image"></div>   
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
 					<p class="bc-content-label">
 						<svg class="bc-svg-icon"> 
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
+							<use xlink:href="media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
 						</svg>
 						For Families in Ireland
 					</p>
@@ -306,14 +306,14 @@
 						<a href="javascript:void(0)" class="bc-button">
 							Find out more
 							<svg class="bc-svg-icon">
-								<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+								<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 							</svg>
 						</a> 
 						<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
 							<span class="bc-feature-component__next__text">Next content</span>
 							<span class="bc-feature-component__next__icon">
 								<svg class="bc-svg-icon">
-									<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+									<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
 								</svg>
 							</span>
 						</a>
@@ -350,7 +350,7 @@
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Values-->
 
-	<section class="bc-cta-feature bc-feature-component bc-one-col-feature has-shade-gradient"> 
+	<section class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma"> 
 		<div class="bc-elipses"> 
 			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
 				<title>Elipses</title>
@@ -365,7 +365,7 @@
 		<article class="bc-feature-component__content">
 			<p class="bc-content-label">
 				<svg class="bc-svg-icon bc-svg-icon--admissions">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#admissions-icon"></use> 
+					<use xlink:href="media/svg/icons/bc-svgs.svg#admissions-icon"></use> 
 				</svg>
 				Admissions
 			</p> 
@@ -384,11 +384,11 @@
 			<a href="javascript:void(0)" class="bc-button">
 				Enrol now
 				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 				</svg>
 			</a>
 		</div>
 	</section>
-	<script src="./scripts/app-concat.min.js"></script> 
+	<script src="scripts/app-concat.min.js"></script>
 </body>
 </html> 

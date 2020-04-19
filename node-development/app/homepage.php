@@ -6,7 +6,7 @@
 	<title>Document</title>
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="style.css" />
 </head>  
 <body class="bc-feature-page"> 
 			<?php
@@ -89,7 +89,7 @@
 		</div>
 		<div class="bc-main-navigation__underlay"></div>
 	</header>
-	<section class="bc-hero bc-hero--is-feature has-waves is-full-vh">
+	<section class="bc-hero bc-hero--is-feature has-waves">
 		<div class="bc-hero__background-image">
 		</div>    
 		<div class="bc-hero__content">
@@ -191,7 +191,7 @@
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature -->
-	<section class="bc-one-col-feature bc-feature-component is-white" aria-label="An International Baccalaureate World School"> 
+	<section class="bc-one-col-feature bc-feature-component has-shade-01" aria-label="An International Baccalaureate World School"> 
 		<article class="bc-feature-component__content"> 
 			<p class="bc-content-label ib-world-school">
 				<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
@@ -219,7 +219,7 @@
 		</div><!-- // .bc-feature-component__cta -->
 		
 	</section><!-- // .bc-one-col-feature -->
-	<section class="bc-4-col-feature bc-feature-component is-full-vh first" aria-label="Learning for Life"> 
+	<section class="bc-4-col-feature bc-feature-component" aria-label="Learning for Life"> 
 		<header class="bc-feature-component__header "> 
 			<p class="bc-content-label ib-world-school">
 				<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
@@ -288,7 +288,7 @@
 		</div>
 	</section><!-- // .bc-4-col-feature -->
 	
-	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad is-full-vh"> 
+	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad"> 
 		<div class="bc-hero__background-image"></div>   
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
@@ -350,7 +350,7 @@
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Values-->
 
-	<section class="bc-cta-feature bc-feature-component bc-one-col-feature has-shade-gradient"> 
+	<section class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma"> 
 		<div class="bc-elipses"> 
 			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
 				<title>Elipses</title>
@@ -389,6 +389,6 @@
 			</a>
 		</div>
 	</section>
-	<script src="app-concat.min.js"></script>
+	<script src="scripts/app-concat.min.js"></script>
 </body>
 </html> 
