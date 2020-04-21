@@ -8,7 +8,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 	<style>
-		.bc-navigation-toggle .bc-menu-icon__icon__line {
+		.bc-navigation-toggle .bc-menu-icon__line {
 			stroke: #017CC0; 
 		}
 		.bc-site-index {
@@ -85,13 +85,21 @@
 				</div>
 			</nav>
 			<div class="bc-main-navigation-toggle">
-				<a href="javascript:void" class="bc-navigation-toggle">
-					<?php echo  '<?xml version="1.0" encoding="utf-8"?>'; ?>
+				<a class="menu-icon-wrap bc-navigation-toggle" href="javascript:void(0)">
+					<?php echo '<?xml version="1.0" encoding="utf-8"?>'; ?>
 					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
-						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
-						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
+					<svg version="1.1" class="bc-menu-icon" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						 viewBox="0 0 100 100" xml:space="preserve">
+
+					<g class="bc-menu-icon__lines">
+						<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top" x1="1" y1="25" x2="99" y2="25"/>
+						<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle" x1="1" y1="50" x2="99" y2="50"/>
+						<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom" x1="1" y1="75" x2="99" y2="75"/>						
+					</g>
+					<g class="bc-menu-icon__active-lines">
+						<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first" x1="-70" y1="-70" x2="0" y2="0"/>
+						<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second" x1="100" y1="0" x2="170" y2="-70"/>
+					</g>
 					</svg>
 				</a>
 			</div>
