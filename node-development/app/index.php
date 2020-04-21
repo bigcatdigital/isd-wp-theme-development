@@ -4,9 +4,13 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width">
 	<title>Document</title>
+	<link rel="shortcut icon" href="./media/isd-favicon.jpg" />
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,300,400,500,600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css" />
 	<style>
+		.bc-navigation-toggle .bc-menu-icon__icon__line {
+			stroke: #017CC0; 
+		}
 		.bc-site-index {
 			padding-top: 		3rem;			
 			padding-bottom: 3rem;			
@@ -81,12 +85,13 @@
 				</div>
 			</nav>
 			<div class="bc-main-navigation-toggle">
-				<a href="javascript:void(0)">
-					<svg class="bc-svg-icon bc-main-navigation-toggle__show"> 
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#menu-thin"></use> 	
-					</svg>
-					<svg class="bc-svg-icon bc-main-navigation-toggle__hide">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#close-x"></use> 	
+				<a href="javascript:void" class="bc-navigation-toggle">
+					<?php echo  '<?xml version="1.0" encoding="utf-8"?>'; ?>
+					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
+						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
+						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
 					</svg>
 				</a>
 			</div>

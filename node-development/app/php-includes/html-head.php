@@ -4,7 +4,7 @@
 	echo "<head>";
 	echo "	<meta charset=\"UTF-8\">";
 	echo "	<meta name=\"viewport\" content=\"width=device-width\">";
-	echo "<meta property=\"og:title\" content=\"International School of Dublin\">";
+	echo "  <meta property=\"og:title\" content=\"International School of Dublin\">";
 	echo "	<meta property=\"og:description\" content=\"International Education in Dublin\">";
 	echo "	<meta property=\"og:image\" content=\"./media/happy-kid.jpg\">";
 	echo "	<meta property=\"og:url\" content=\"http://internationalschoolofdublin.com\">";

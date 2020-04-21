@@ -749,7 +749,6 @@
 						evt.preventDefault();
 						const $thisBody = $accordionCloseLink.closest('.bc-accordion__block-body');
 						const $thisHeading = $thisBody.previousElementSibling;
-						
 						const $accordionTrigger = $thisHeading.querySelector('.bc-accordion__block-trigger');
 						const $accordionTriggerIcon = $accordionTrigger.querySelector('.bc-accordion__block-trigger__icon > .bc-svg-icon');
 						hideAccordionBody($thisBody);
@@ -757,7 +756,6 @@
 							$accordionTriggerIcon.classList.toggle('is-active');
 						});
 						$bc.gsapFns.scrollTo({scrollTo: {y: $thisHeading.offsetTop}, duration: 0.2, delay: 0.2}); 
-						
 					});
 				}
 			}

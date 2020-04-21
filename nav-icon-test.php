@@ -47,6 +47,20 @@
 			margin-top: 	 0.75rem;
 			margin-bottom: 0.75rem;
 		}
+		.menu-icon-wrap {
+			flex: 1 1 100%;
+		}
+		.bc-menu-icon {
+			width: 100%;
+			height: 100%;
+			max-width: 	1.5rem;
+			max-height: 1.5rem;
+			background-color: #dedede;
+		}
+		.bc-menu-icon__line {
+			stroke: #017CC0; 
+			stroke-width: 0.5rem;
+		}
 		
 	</style>
 </head>  
@@ -84,91 +98,37 @@
 					</div>
 				</div>
 			</nav>
-			<div class="bc-main-navigation-toggle">
+			<!--<div class="bc-main-navigation-toggle">
 				<a href="javascript:void" class="bc-navigation-toggle">
-					<?php echo  '<?xml version="1.0" encoding="utf-8"?>'; ?>
-					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
-						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
-						<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
-					</svg>
+					
 				</a>
-			</div>
+			</div>-->
 		</div>
 		<div class="bc-main-navigation__underlay"></div>
 	</header>
 	<section class="bc-feature-component bc-site-index">
 		<article class="bc-feature-component__content">
-				<h1 class="bc-feature-component__heading">International School of Dublin Site code</h1>
-				<p class="bc-feature-component__intro">Site code and content type examples for the website.</p>
-				<p>Each of the page titles (eg &quot;<em>Landing page</em>&quot;) is a link to an example page.</p>
-				<p>For the <b>main site navigaiton</b> click on the menu icon in the top right corner</p>
-				<hr>
-				<h2>Static site build</h2>
-				<p class="bc-feature-component__intro">
-					Example pages for the site to test the content in each.
-				</p>
-				<ul>
-					<li>
-						<h4><a href="homepage.php" class="">Home page</a></h4>
-					</li>
-					<li>
-						<h4><a href="families-in-ireland.php" class="">For families in Ireland</a></h4>
-					</li>
-					<li>
-						<h4><a href="teaching-and-learning.php" class="">Teaching &amp; Learning</a></h4>
-					</li>
-					<li>
-						<h4><a href="about-isd.php" class="">About ISD</a></h4>
-					</li>
-				</ul>
-				<hr>
-				<h2>Example pages</h2>
-				<p class="bc-feature-component__intro">
-					These pages show each of the content types we have to work with. Below each heading is a list of the content types included in each page. 
-				</p>
-				<ul>
-					<li>
-						<h4><a href="feature-components.php" class="">All feature components</a></h4>
-						<p><b>Includes:</b></p>
-						<ul>
-							<li>All components which can be used on feature pages.</li>
-							<li>It also shows the navigation menu for finding content within pages and a scroll to top link. Look at the page, scroll down and watch the left bottom corner</li>
-						</ul>
-					</li>
-					<li>
-						<h4><a href="landing-page-2.php" class="">Landing page#2</a></h4>
-						<p><b>Includes:</b></p>
-						<ul>
-							<li>Hero block</li>
-							<li>Text only feature - About Dublin</li>
-							<li>Text only feature - Join the community</li> 
-							<li>Expandable blocks</li>
-							<li>Major call to action</li>
-						</ul>
-					</li>
-					<li>
-						<h4><a href="inner-content-page.php" class="">Inner content page</a></h4>
-						<p><b>Includes:</b></p>
-						<ul>
-							<li>Inner page header</li>
-							<li>Feature quote</li>
-							<li>Video embed</li>
-							<li>Mission and Values content</li>
-						</ul>
-					</li>
-					<li>
-						<h3><a href="feature-slider.php" class="">Feature slider</a></h3>
-						<p><b>Includes:</b></p>
-						<ul>
-							<li>Full width image and video slider</li>
-						</ul>
-					</li>
-					
-				</ul>
+				<a class="menu-icon-wrap" href="javascript:void(0)">
+					<?php echo '<?xml version="1.0" encoding="utf-8"?>'; ?>
+					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+					<svg version="1.1" class="bc-menu-icon" id="" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+						 viewBox="0 0 100 100" xml:space="preserve">
+
+					<g class="bc-menu-icon__lines">
+						<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top" x1="1" y1="25" x2="99" y2="25"/>
+						<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle" x1="1" y1="50" x2="99" y2="50"/>
+						<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom" x1="1" y1="75" x2="99" y2="75"/>						
+					</g>
+					<g class="bc-menu-icon__active-lines">
+						<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first" x1="-70" y1="-70" x2="0" y2="0"/>
+						<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second" x1="100" y1="0" x2="170" y2="-70"/>
+					</g>
+					</svg>
+				</a>
+				
 		</article><!-- // .bc-4-col-feature__content -->
 	</section><!-- // .bc-4-col-feature -->
-	<script src="scripts/app-concat.min.js"></script> 
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+	<script src="scripts/app-concat--test.js"></script> 
 </body>
 </html> 
