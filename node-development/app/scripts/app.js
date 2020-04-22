@@ -396,13 +396,17 @@
 			//Default and active timelines
 			const defaultTl = $bc.gsap.timeline();
 			const activeTl = $bc.gsap.timeline();
+			
 			$navigationToggler.addEventListener('nav-icon-click', function navIconClickHandler (evt){
 				console.log('nav-icon-click');
-				let $this = evt.currentTarget;
-				$this.removeEventListener('nav-icon-click', navIconClickHandler);
+				const $this = evt.currentTarget;
+				
+				//$this.removeEventListener('nav-icon-click', navIconClickHandler);
 				evt.preventDefault();
-				
-				
+				if ($this.classList.contains('is-animating')) {
+					return;
+				}
+				$this.classList.add('is-animating');
 				console.log($this.classList);
 				if ($this.classList.contains('is-active')) {
 					console.log('active');
@@ -410,12 +414,12 @@
 					activeTl.seek(0);
 					activeTl.to($activeIconFirst, activeIconFirstStart);
 					activeTl.to($activeIconSecond, activeIconSecondStart, '<');
-					
 					activeTl.to($defaultIconTop, defaultIconTopStart, '>');
 					activeTl.to($defaultIconMiddle, defaultIconMiddleStart, '<');
 					activeTl.to($defaultIconBottom, defaultIconBottomStart, '<').eventCallback('onComplete', () => {
 						$this.classList.remove('is-active');	
-						$this.addEventListener('nav-icon-click', navIconClickHandler);
+						$this.classList.remove('is-animating');
+						//$this.addEventListener('nav-icon-click', navIconClickHandler);
 					});
 
 				} else {
@@ -425,13 +429,15 @@
 					defaultTl.to($defaultIconTop, defaultIconTopActive, 0);
 					defaultTl.to($defaultIconMiddle, defaultIconMiddleActive, 0);
 					defaultTl.to($defaultIconBottom, defaultIconBottomActive, 0);
-					
+
 					defaultTl.to($activeIconFirst, activeIconFirstActive, '>');
 					defaultTl.to($activeIconSecond, activeIconSecondActive, '<').eventCallback('onComplete', () => {
 						$this.classList.add('is-active');	
-						$this.addEventListener('nav-icon-click', navIconClickHandler);
+						$this.classList.remove('is-animating');
+						//$this.addEventListener('nav-icon-click', navIconClickHandler);
 					});
 				}	
+				
 			});
 			return $navigationToggler;
 		}//navTogglersFactory
@@ -441,11 +447,16 @@
 		//console.log($mainNavIcon.activeIconFirstStart);
 		$mainNavIcon.addEventListener('click', (event) => {
 			event.preventDefault();
-			event.currentTarget.dispatchEvent(iconClick);
+			
 			let $siteHeader = null;
-			$siteHeader = event.currentTarget.closest('.bc-site-header');
+			const $this = event.currentTarget;
+			$siteHeader = $this.closest('.bc-site-header');
+			
+			
 			requestAnimationFrame(() => {
+				
 				$siteHeader.classList.toggle('has-active-navigation');	
+				$this.dispatchEvent(iconClick);
 			});
 		}, true);
 		//console.log($mainNavIcon);
