@@ -1651,6 +1651,7 @@ figcaption {
   opacity: 0;
   z-index: -20;
   min-height: 100vh;
+  transition: opacity 280ms ease-out 120ms;
   display: none;
   flex-direction: column;
   justify-content: flex-start;
@@ -1725,7 +1726,6 @@ figcaption {
 
 .has-active-navigation .bc-main-navigation {
   display: flex;
-  transition: opacity 280ms ease-out 120ms;
   visibility: inherit;
   opacity: 1;
   z-index: 20; }
