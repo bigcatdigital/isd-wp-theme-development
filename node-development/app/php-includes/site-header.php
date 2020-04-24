@@ -1,4 +1,24 @@
 <?php
+echo "<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->";
+echo "<svg version=\"1.1\" id=\"Layer_1\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\" viewBox=\"0 0 0 0\" class=\"bc-svg-defs\" xml:space=\"preserve\">";
+echo "	<defs>";
+echo "		<linearGradient id=\"isd-rainbow-grad\" gradientUnits=\"userSpaceOnUse\" x1=\"0\" y1=\"25.5\" x2=\"1440\" y2=\"25.5\">";
+echo "			<stop  offset=\"0\" style=\"stop-color:#05D1D1\"/>";
+echo "			<stop  offset=\"0.25\" style=\"stop-color:#6881DB\"/>";
+echo "			<stop  offset=\"0.5\" style=\"stop-color:#D02CE5\"/>";
+echo "			<stop  offset=\"0.75\" style=\"stop-color:#F2EF11\"/>";
+echo "			<stop  offset=\"1\" style=\"stop-color:#3B857E\"/>";
+echo "		</linearGradient>";
+echo "		<linearGradient id=\"linear-gradient\" class=\"bc-svg-defs__linear-gradient\" viewBox=\"0 0 100 100\" gradientTransform=\"rotate(135)\">";
+echo "			<stop offset=\"0%\" stop-opacity=\"1\"  class=\"bc-svg-defs__linear-gradient__col-stop1\"/>"; 
+echo "			<stop offset=\"72%\" stop-opacity=\"1\" class=\"bc-svg-defs__linear-gradient__col-stop2\"/>";
+echo "		</linearGradient>";
+echo "		<linearGradient id=\"linear-gradient--orange\" class=\"bc-svg-defs__linear-gradient--orange\" viewBox=\"0 0 100 100\" gradientTransform=\"rotate(135)\">";
+echo "			<stop offset=\"0%\" stop-opacity=\"1\"  class=\"bc-svg-defs__linear-gradient__col-stop1\"/>"; 
+echo "			<stop offset=\"72%\" stop-opacity=\"1\" class=\"bc-svg-defs__linear-gradient__col-stop2\"/>";
+echo "		</linearGradient>";
+echo "	</defs>";
+echo "</svg>";
 echo "<header class=\"bc-site-header is-overlay\">";
 echo "	<div class=\"bc-site-header__content\">";
 echo "		<div class=\"bc-site-header__logo\">";

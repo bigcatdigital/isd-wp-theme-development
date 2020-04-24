@@ -3,28 +3,6 @@
 	get_header('Welcome [Landing page#2]');
 ?>  
 <body id="bc-page-top" class="bc-feature-page"> 
-	<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
-			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-				 viewBox="0 0 0 0" class="bc-svg-defs" xml:space="preserve">
-				<defs>
-					<linearGradient id="isd-rainbow-grad" class="bc-svg-defs__rainbow-grad" gradientUnits="userSpaceOnUse" x1="0" y1="25.5" x2="1440" y2="25.5">
-						<stop offset="0" 		class="isd-rainbow-grad__stop1"style="stop-color:#05D1D1"/>
-						<stop offset="0.25" class="isd-rainbow-grad__stop2"style="stop-color:#6881DB"/>
-						<stop offset="0.5" 	class="isd-rainbow-grad__stop3"style="stop-color:#D02CE5"/>
-						<stop offset="0.75" class="isd-rainbow-grad__stop3"style="stop-color:#F2EF11"/>
-						<stop offset="1" 		class="isd-rainbow-grad__stop5"style="stop-color:#3B857E"/>
-					</linearGradient>	
-					<linearGradient id="linear-gradient" class="bc-svg-defs__linear-gradient" viewBox="0 0 100 100" gradientTransform="rotate(135)">
-						<stop offset="0%" stop-opacity="1"  class="bc-svg-defs__linear-gradient__col-stop1"/> 
-						<stop offset="72%" stop-opacity="1" class="bc-svg-defs__linear-gradient__col-stop2"/>
-					</linearGradient>
-					<linearGradient id="linear-gradient--orange" class="bc-svg-defs__linear-gradient--orange" viewBox="0 0 100 100" gradientTransform="rotate(135)">
-						<stop offset="0%" stop-opacity="1"  class="bc-svg-defs__linear-gradient__col-stop1"/> 
-						<stop offset="72%" stop-opacity="1" class="bc-svg-defs__linear-gradient__col-stop2"/>
-					</linearGradient>
-				</defs>
-			</svg>
 	<?php get_site_header(); ?>
 	<section class="bc-hero bc-hero--top has-waves">
 		<div class="bc-hero__background-image">

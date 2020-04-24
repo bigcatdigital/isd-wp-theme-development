@@ -9,6 +9,48 @@
 	Text Domain: internationalschoolofdublin
 	This theme, like WordPress, is licensed under the GPL. */
 /* Shades */
+.is-primary-text {
+  color: #017CC0; }
+
+.is-secondary-text {
+  color: #F2EF11; }
+
+.is-brand-darker-text {
+  color: #02659B; }
+
+.is-red-text {
+  color: #EC1C24; }
+
+.is-dark-red-text {
+  color: #CA1622; }
+
+.is-orange-text {
+  color: #F6921E; }
+
+.is-yellow-text {
+  color: #ff0; }
+
+.is-light-green-text {
+  color: #37B34A; }
+
+.is-mid-green-text {
+  color: #3B857E; }
+
+.is-blue-text {
+  color: #00f; }
+
+.is-light-blue-text {
+  color: #57b6dd; }
+
+.is-purple-text {
+  color: #651A7B; }
+
+.is-indigo-text {
+  color: #2E3191; }
+
+.is-violet-text {
+  color: #C934F5; }
+
 /** * Project specific mixins * **/
 html {
   font-size: 15px;
@@ -1359,9 +1401,7 @@ figcaption {
       flex: 1 1 100%;
       width: 100%;
       margin-left: -0.75rem;
-      margin-right: -0.75rem;
-      display: grid;
-      grid-template: auto auto / 1fr 1fr; }
+      margin-right: -0.75rem; }
     .bc-section-navigation .bc-section-navigation__item {
       padding-left: 0.75rem;
       padding-right: 0.75rem; } }
@@ -1370,9 +1410,6 @@ figcaption {
       max-width: 44rem;
       margin-left: auto;
       margin-right: auto; } }
-  @media screen and (min-width: 1240px) {
-    .bc-section-navigation .bc-section-navigation__links {
-      grid-template: auto auto/repeat(3, 1fr); } }
 
 .bc-sidebar-widget .bc-section-navigation__links {
   padding-left: 0.75rem; }

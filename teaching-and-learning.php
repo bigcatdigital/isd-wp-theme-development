@@ -3,74 +3,7 @@
 	get_header('Welcome [Landing page#2]');
 ?>
 <body> 
-	<?php
-		echo '<?xml version="1.0" encoding="utf-8"?>';
-	?>
-	<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-	<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 0 0" class="bc-svg-defs" xml:space="preserve">
-		<defs>
-			<linearGradient id="isd-rainbow-grad" gradientUnits="userSpaceOnUse" x1="0" y1="25.5" x2="1440" y2="25.5">
-				<stop  offset="0" style="stop-color:#05D1D1"/>
-				<stop  offset="0.25" style="stop-color:#6881DB"/>
-				<stop  offset="0.5" style="stop-color:#D02CE5"/>
-				<stop  offset="0.75" style="stop-color:#F2EF11"/>
-				<stop  offset="1" style="stop-color:#3B857E"/>
-			</linearGradient>	
-			<linearGradient id="linear-gradient" class="bc-svg-defs__linear-gradient" viewBox="0 0 100 100" gradientTransform="rotate(135)">
-				<stop offset="0%" stop-opacity="1"  class="bc-svg-defs__linear-gradient__col-stop1"/> 
-				<stop offset="72%" stop-opacity="1" class="bc-svg-defs__linear-gradient__col-stop2"/>
-			</linearGradient>
-			<linearGradient id="linear-gradient--orange" class="bc-svg-defs__linear-gradient--orange" viewBox="0 0 100 100" gradientTransform="rotate(135)">
-				<stop offset="0%" stop-opacity="1"  class="bc-svg-defs__linear-gradient__col-stop1"/> 
-				<stop offset="72%" stop-opacity="1" class="bc-svg-defs__linear-gradient__col-stop2"/>
-			</linearGradient>
-		</defs>
-	</svg>
-	<?php get_site_header(); ?>
-	<section class="bc-inner-page-header bc-content-section">   
-		<div class="bc-inner-page-header__bg-svg">
-			<svg class="families-svg" viewbox="0 0 100 100">
-				<use xlink:href="media/svg/images/families.svg#familiy_3"></use> 
-			</svg>
-		</div>
-		<div class="bc-elipses"> 
-			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280">
-				<!-- fill:url(#linear-gradient) --> 
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" />
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-			</svg>
-		</div>
-		<div class="bc-inner-page-header__content">
-			<h1 class="bc-inner-page-header__heading">Teaching &amp; Learning</h1>
-			<h2 class="bc-inner-page-header__sub-heading">Be part of the progress</h2>
-		</div><!-- // .bc-innerpage-header__content -->
-	</section><!-- // .bc-innerpage-header -->
-	<nav class="bc-breadcrumbs">
-		<div class="bc-breadcrumbs__wrap">
-			<ul class="bc-breadcrumbs__links">
-				<li class="bc-breadcrumbs__links__link">
-					<a href="#homepage.html">Home</a>
-					<svg class="bc-svg-icon bc-breadcrumbs__link-separator">	
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#carat"></use> 	
-					</svg>
-				</li> 
-				<li class="bc-breadcrumbs__links__link">
-					<a href="#homepage.html">About</a>
-					<svg class="bc-svg-icon bc-breadcrumbs__link-separator">	
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#carat"></use> 	
-					</svg>
-				</li> 
-				<li class="bc-breadcrumbs__links__link">
-					<a href="#homepage.html">School history</a>
-				</li> 
-			</ul>
-		</div>
-	</nav><!-- // .bc-breadcrumbs -->
-	
+	<?php get_inner_site_header(); ?>
 	<section class="bc-inner-page-content bc-content-section">   
 		<div class="bc-inner-page-content__content">
 			<header class="bc-inner-page-content__header">

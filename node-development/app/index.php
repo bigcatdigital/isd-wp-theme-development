@@ -128,6 +128,9 @@
 						<h4><a href="teaching-and-learning.php" class="">Teaching &amp; Learning</a></h4>
 					</li>
 					<li>
+						<h4><a href="admissions.php" class="">Admissions</a></h4>
+					</li>
+					<li>
 						<h4><a href="about-isd.php" class="">About ISD</a></h4>
 					</li>
 				</ul>
