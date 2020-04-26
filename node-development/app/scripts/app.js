@@ -83,7 +83,7 @@
 				if (callback !== undefined && typeof callback == 'function') {
 					callback(matchingSiblings);
 				} else {
-					return matchingSiblings;
+					return matchingSiblings; 
 				}
 			} else {
 				throw new Error('Function selectSiblings requires: a HTML Node and a class name of type String');
@@ -295,7 +295,7 @@
 		iconClick.initEvent('nav-icon-click', true, true);
 		let mainNavRunning = false;
 		/** Make nav icons **/
-		function navTogglersFactory($navigationToggler, dur, cb) {
+		function navTogglersFactory($navigationToggler, dur, opts, cb) {
 			//The SVG icon
 			const $menuIcon = $navigationToggler.querySelector('.bc-menu-icon');
 			//Default state horizontal lines
@@ -309,7 +309,7 @@
 			
 			//Default & active coordinates
 			const duration = dur || 0.1 ;
-			const defaultIconTopStart = {
+			const defaultIconTopStart = { 
 				attr: {
 					x1: 1, 
 					y1: 25,
@@ -459,14 +459,11 @@
 		//console.log($mainNavIcon.activeIconFirstStart);
 		$mainNavIcon.addEventListener('click', (event) => {
 			event.preventDefault();
-			
 			if (mainNavRunning) {
 				console.log('click start: '+mainNavRunning);
 				return;
-				
 			}
 			mainNavRunning = true;
-			
 			const $this = event.currentTarget;
 			const $siteHeader = $this.closest('.bc-site-header');
 			const $mainNav = $siteHeader.querySelector('.bc-main-navigation');
@@ -475,9 +472,7 @@
 				mainNavRunning = false;
 				console.log('click end: '+mainNavRunning);
 				$mainNav.removeEventListener('transitionend', headerTransEnd);
-				
 			});
-			
 			requestAnimationFrame(() => {
 				$siteHeader.classList.toggle('has-active-navigation');	
 				$this.dispatchEvent(iconClick);

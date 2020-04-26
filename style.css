@@ -1294,6 +1294,8 @@ figcaption {
     padding-right: 0.75rem; }
     .feature-page-navigation.feature-page-navigation--floating .bc-svg-icon {
       stroke-width: 0.42857rem; }
+    .feature-page-navigation.feature-page-navigation--floating .bc-menu-icon.is-active {
+      stroke-color: #017CC0; }
     .feature-page-navigation.feature-page-navigation--floating .feature-page-navigation__navs {
       display: flex;
       flex-wrap: wrap;
