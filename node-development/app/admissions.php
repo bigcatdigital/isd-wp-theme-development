@@ -48,21 +48,27 @@
 			</div>
 		</article><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content -->
-	<section class="bc-content-component  has-high-chroma">	
-		<header class="bc-content-component__content">
-			<h1 class="">Transition Support</h1>	
-		</header>
+	<section class="bc-content-component bc-4x4-layout  has-high-chroma">	
 		<article class="bc-content-component__content ">
 			<div class="bc-2-columns">
-				<div class="bc-column">
-					<p class="bc-intro-paragraph">At ISD we pride ourselves on our strong sense of community. From your initial expression of interest in ISD, we provide you with support. We adapt our communication to suit your needs and where possible, try to provide support through mother tongues.</p>
-					<p>As a new family, you will receive a comprehensive Dublin Information Pack with resources on a wide range of information. A Welcome Back to School event begins the academic year and settling in parent-teacher conferences take place within one month of the school’s commencement.</p>	
-						<p>Communication is key at ISD. The School App keeps you updated of student work in real time. We maintain an open door policy and welcome the opportunity to meet with you at any stage should you require assistance.</p>		
+				<div class="bc-column bc-4x4-layout__intro-column">
+					<h1 class="bc-content-component__heading">Transition Support</h1>	
+					<p class="bc-intro-paragraph">At ISD we pride ourselves on our strong, vibrant community. From your initial expression of interest we provide you with support. We adapt our communication to suit your needs and try to provide support through mother tongues.</p>
 				</div>
 				<div class="bc-column">
 					<figure><img alt="A happy family" src="media/irish-family.jpg"></figure>
 				</div>
 			</div>
+			<!--<hr />-->
+			<div class="bc-2-columns bc-4x4-layout__row-2">
+				
+				<div class="bc-column bc-4x4-layout__row-2">
+					<p>As a new family, you will receive a comprehensive Dublin Information Pack with resources on a wide range of information. A Welcome Back to School event begins the academic year and settling in parent-teacher conferences take place within one month of the school’s commencement.</p>	
+				</div>
+				<div class="bc-column bc-4x4-layout__row-2">
+						<p>Communication is key at ISD. The School App keeps you updated of student work in real time. We maintain an open door policy and welcome the opportunity to meet with you at any stage should you require assistance.</p>		
+				</div>
+			</div>		
 		</article>
 	</section>
 	<?php  

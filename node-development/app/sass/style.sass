@@ -1050,6 +1050,26 @@ $waves-height: 50px
 		border-bottom: 1px solid $purple
 		&:after
 			background-color: $purple
+
+@media screen and (min-width: $med)
+	.bc-4x4-layout
+		.bc-column, hr
+			margin-bottom: $vertical-unit*2	
+		
+			
+		&__intro-column
+			display: flex
+			flex-direction: column
+			justify-content: center
+			p, .bc-intro-paragraph
+				margin-bottom: 0
+		.bc-intro-paragraph
+			font-weight: 400	
+		p 
+			font-weight: 300	
+		
+		
+			
 .bc-stepped-process
 	&__heading
 		font-size: $h2

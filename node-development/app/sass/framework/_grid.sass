@@ -24,21 +24,29 @@
 			margin-left: auto
 			margin-right: auto
 	&__heading
-		font-size: $text-10 
+		font-size: $text-11 
 		@include doFeatureHeading($heading-line-height, $h1)
 		margin-bottom: $vertical-unit
 @media screen and (min-width: $large)
 	.bc-content-component
 		&__content, &__header
 			max-width: $content-max-width 	
-
+.bc-row
+	flex-direction: column
+.bc-column
+	margin-bottom: $vertical-unit
 //Grid columns
-@media screen and (min-width: $small)
-	[class*="-columns"] 
+@media screen and (min-width: $med) 
+	.bc-row
+		display: flex
+		flex-direction: column
+	[class*="-columns"]
+		flex: 1 1 0
 		margin-left: 	-$gutter*0.5
 		margin-right: -$gutter*0.5
 		display: grid
-		grid-template: auto / 1fr 1fr 
+		&:not(.bc-1-columns) 
+			grid-template: auto / repeat(2, 1fr) 
 		.bc-column
 			flex: 1 1 0
 			padding-left:  $gutter*0.5
