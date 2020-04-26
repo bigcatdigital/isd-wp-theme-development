@@ -25,15 +25,18 @@
 		include 'php-includes/inner-site-header.php';	
 	}
 	function get_inner_section_nav($sect_nav_title = 'Inner section navigation', $sect_nav_links = array('Section link#1' => 'javascript:void(0)', 'Section link#2' => 'javascript:void(0)', 'Section link#3' => 'javascript:void(0)', 'Section link#4' => 'javascript:void(0)')) {
-		
 		global $inner_sect_nav_title;
-		
 		global $inner_sect_nav_links;
-		
 		$inner_sect_nav_title = $sect_nav_title;
 		$inner_sect_nav_links = $sect_nav_links;
-		
 		include 'php-includes/inner-section-nav.php';	
+	}
+	function get_floating_section_nav($nav_title = 'Inner section navigation', $nav_links = array('Content link#1' => '#', 'Content link#2' => '#', 'Content link#3' => '#', 'Content link#4' => '#')) {
+		global $floating_nav_title;
+		global $floating_nav_links;
+		$floating_nav_title = $sect_nav_title;
+		$floating_nav_links = $sect_nav_links;
+		include 'php-includes/floating-section-nav.php';	
 	}
 	function get_global_CTA() {
 		include 'php-includes/global-cta.php';

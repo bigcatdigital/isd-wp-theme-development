@@ -60,8 +60,9 @@
 	</section><!-- // .bc-inner-page-content -->
 	<?php  
 		get_inner_section_nav();
+		get_global_CTA();
+		get_footer();
 	?>
-	
 	<script src="scripts/app-concat.js"></script>  
 </body>
 </html> 

@@ -267,7 +267,9 @@
 
 	<?php
 		get_global_CTA();
+		get_footer();
 	?>
+	
 	<script src="scripts/app-concat.min.js"></script>
 </body>
 </html> 

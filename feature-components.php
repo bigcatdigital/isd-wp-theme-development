@@ -483,54 +483,12 @@
 			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Values-->
-	<?php
+	<?php  
 		get_global_CTA();
+		get_footer();
+		get_floating_section_nav();
 	?>
-	<nav class="feature-page-navigation feature-page-navigation--floating"> 
-		<div class="feature-page-navigation__navs">
-			<a href="javascript:void(0)" class="feature-page-navigation__to-top">
-				Scroll to top
-				<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
-				<svg version="1.1" class="bc-svg-icon bc-svg-icon--arrow-up"id="bc-arrow-up" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-					 viewBox="0 0 100 100" >
-					<polygon points="47.4,11 25.7,32.8 22,29 50,1 78,29 74.3,32.8 52.6,11 52.6,99 47.4,99 "/>
-				</svg>
-			</a>
-			<div class="feature-page-navigation__toggle-nav">
-				<a href="javascript:void(0)" class="feature-page-navigation__toggle-nav__link bc-navigation-toggle">
-					<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
-					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-					<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-						 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-						<g id="bc-menu-icon__icon">
-							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--top" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="25" x2="99" y2="25"/> 
-							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--middle" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="50" x2="99" y2="50"/>
-							<line class="bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom" fill="none" stroke="#000000" stroke-width="6" stroke-miterlimit="10" x1="1" y1="77.5" x2="99" y2="77.5"/>
-						</g>
-					</svg>
-				</a> 
-				<div class="feature-page-navigation__wrapper">
-					<h2 class="feature-page-navigation__heading">On This Page</h2>
-					<ul class="feature-page-navigation__list"> 
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-hero-main">Hero main</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-hero-in-page">Hero in page</a></li>
-						
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-one-col-feature">One column feature</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-one-col-feature-white">One column feature - white</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-one-col-feature-svg">One column feature - with background</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-hero-slider">Hero slider</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-two-col-media-feature">Two column media feature</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-two-col-media-feature-colour">Two column media feature - colour</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-4-col-feature">Four column feature</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-4-col-feature-colour">Four column feature - colour</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-plain-text-component-grey">Plain text component - grey</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-plain-text-component-blue">Plain text component - blue</a></li>
-						<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#bc-cta-feature">Call to action feature</a></li>
-					</ul>
-				</div>
-			</div><!-- // .feature-page-navigation__toggle-nav -->
-		</div>
-	</nav><!-- // .feature-page-navigation--floating -->
+	
 	<script src="scripts/app-concat.js"></script> 
 </body>
 </html> 

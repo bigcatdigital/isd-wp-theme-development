@@ -72,8 +72,9 @@
 			
 		</article>
 	</section><!-- // .bc-flickty-slider -->
-	<?php
+	<?php  
 		get_global_CTA();
+		get_footer();
 	?>
 	<script src="scripts/app-concat.js"></script> 
 </body>

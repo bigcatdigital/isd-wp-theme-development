@@ -2370,6 +2370,9 @@ img {
 figure {
   margin: 0; }
 
+iframe {
+  border: none; }
+
 /* Project custom utilities */
 .bc-svg-icon {
   fill: #02659B; }

@@ -217,9 +217,8 @@
 	</section><!-- // .bc-content-component Frequently asked questions-->
 	<?php  
 		get_inner_section_nav();
-	?>
-	<?php
 		get_global_CTA();
+		get_footer();
 	?>
 	<script src="scripts/app-concat.min.js"></script>  
 </body>

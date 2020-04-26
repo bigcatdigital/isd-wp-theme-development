@@ -110,8 +110,9 @@
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature -->
-	<?php
+	<?php  
 		get_global_CTA();
+		get_footer();
 	?>
 	<nav class="feature-page-navigation feature-page-navigation--floating"> 
 		<div class="feature-page-navigation__navs">

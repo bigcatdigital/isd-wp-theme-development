@@ -254,8 +254,9 @@
 		</article><!-- // .bc-feature-component__content -->
 	</section><!-- // .bc-expandible-block-component -->
 	
-	<?php
+	<?php  
 		get_global_CTA();
+		get_footer();
 	?>
 
 	<nav class="feature-page-navigation feature-page-navigation--floating"> 

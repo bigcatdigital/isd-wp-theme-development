@@ -11,23 +11,23 @@
 				<p class="bc-intro-paragraph">Admission to ISD is open year-round to students of all nationalities, faiths and backgrounds. We are committed to meeting each student’s individual needs to the best of our ability. Acceptance and placement is based on the potential of the applicant to benefit from the programme and educational services available.</p>
 				<h2>The ISD Admissons Process</h2>
 				<div class="bc-stepped-process">
-					<h3 class="bc-stepped-process__heading is-orange-text"><span class="bc-stepped-process__number">1.</span> Express an interest</h3>
+					<h3 class="bc-stepped-process__heading is-orange-text"><span class="bc-stepped-process__number">1</span> Express an interest</h3>
 					<p class=""><b>Prospective families first express interest in ISD by completing one pre-enrolment form per child for the year of application.</b></p> 
-					<h3 class="bc-stepped-process__heading is-red-text"><span class="bc-stepped-process__number">2.</span> Submit a pre-enrolment form</h3>
+					<h3 class="bc-stepped-process__heading is-red-text"><span class="bc-stepped-process__number">2</span> Submit a pre-enrolment form</h3>
 					<p class=""><b>Upon receipt of a pre-enrolment form, a member of the admissions team will contact the family and request the child’s school complete an application reference form.</b></p> 
 					<p>This helps the school to gain a more detailed picture of your child’s academic and social progress.</p>	
-					<h3 class="bc-stepped-process__heading is-primary-text"><span class="bc-stepped-process__number">3.</span> The School Tour</h3>
+					<h3 class="bc-stepped-process__heading is-primary-text"><span class="bc-stepped-process__number">3</span> The School Tour</h3>
 					<p><b>An informal student interview is conducted as part of the tour (the tour and interview might be conducted via Skype if necessary).</b></p>	
 					<p><b>Please note: A pilot school morning is required for any child enrolling in Pre-Kindergarten. A trial morning is also required for any child enrolling in formal schooling for the first time.</b></p>
 					<p>This is an exciting and useful experience to gain a sense of the child’s interest and comfort in our school setting.  During the trial, we use an informal assessment checklist, based on age appropriate developmental milestones, to provide information to the parents and gauge the child’s readiness to join the school.</p>
-					<h3 class="bc-stepped-process__heading is-mid-green-text"><span class="bc-stepped-process__number">4.</span> Offer of a place</h3>
+					<h3 class="bc-stepped-process__heading is-mid-green-text"><span class="bc-stepped-process__number">4</span> Offer of a place</h3>
 					<p class=""><b>The family are contacted by the admissions team to inform them if they will be offered a place in the school.  The applicant may or may not be offered a place at ISD.</b></p>
 					<p>An applicant will be offered a place at ISD if:</p>
 					<ul>
 						<li>There are spaces available in the corresponding class</li>
 						<li>If the child can successfully access the curriculum</li>
 					</ul>
-					<h3 class="bc-stepped-process__heading is-indigo-text"><span class="bc-stepped-process__number">5.</span> Acceptance</h3>
+					<h3 class="bc-stepped-process__heading is-indigo-text"><span class="bc-stepped-process__number">5</span> Acceptance</h3>
 					<p><b>Upon acceptance families are issued an acceptance letter and are required to:</b></p>
 					<ul>
 						<li>Pay the registration deposit</li>
@@ -73,10 +73,8 @@
 	</section>
 	<?php  
 		get_inner_section_nav('More about admissions', array('FAQs' => 'javascript:void(0)', 'Admission fees' => 'javascript:void(0)'));
-	?>
-	
-	<?php
 		get_global_CTA();
+		get_footer();
 	?>
 	<script src="scripts/app-concat.min.js"></script>  
 </body>
