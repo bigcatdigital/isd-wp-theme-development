@@ -385,15 +385,15 @@ figcaption {
 .has-orange-background {
   background-color: #F6921E; }
   .has-orange-background h1, .has-orange-background h2, .has-orange-background h3, .has-orange-background h4, .has-orange-background h5, .has-orange-background ul, .has-orange-background li, .has-orange-background p, .has-orange-background a, .has-orange-background bloquote, .has-orange-background .bc-inner-page-content__heading, .has-orange-background .bc-inner-page-content--large, .has-orange-background .bc-feature-component__heading {
-    color: #096de1; }
+    color: #fff; }
   .has-orange-background .bc-svg-icon {
-    fill: #096de1; }
+    fill: #fff; }
   .has-orange-background .bc-button {
-    border-color: #096de1;
+    border-color: #fff;
     background-color: transparent;
     color: #fff; }
     .has-orange-background .bc-button:hover, .has-orange-background .bc-button:active, .has-orange-background .bc-button:focus {
-      background-color: #096de1;
+      background-color: #fff;
       color: #F6921E; }
       .has-orange-background .bc-button:hover .bc-svg-icon, .has-orange-background .bc-button:active .bc-svg-icon, .has-orange-background .bc-button:focus .bc-svg-icon {
         fill: #F6921E; }
@@ -445,15 +445,15 @@ figcaption {
 .has-mid-green-background {
   background-color: #3B857E; }
   .has-mid-green-background h1, .has-mid-green-background h2, .has-mid-green-background h3, .has-mid-green-background h4, .has-mid-green-background h5, .has-mid-green-background ul, .has-mid-green-background li, .has-mid-green-background p, .has-mid-green-background a, .has-mid-green-background bloquote, .has-mid-green-background .bc-inner-page-content__heading, .has-mid-green-background .bc-inner-page-content--large, .has-mid-green-background .bc-feature-component__heading {
-    color: #3B857E; }
+    color: #fff; }
   .has-mid-green-background .bc-svg-icon {
-    fill: #3B857E; }
+    fill: #fff; }
   .has-mid-green-background .bc-button {
-    border-color: #3B857E;
+    border-color: #fff;
     background-color: transparent;
     color: #fff; }
     .has-mid-green-background .bc-button:hover, .has-mid-green-background .bc-button:active, .has-mid-green-background .bc-button:focus {
-      background-color: #3B857E;
+      background-color: #fff;
       color: #3B857E; }
       .has-mid-green-background .bc-button:hover .bc-svg-icon, .has-mid-green-background .bc-button:active .bc-svg-icon, .has-mid-green-background .bc-button:focus .bc-svg-icon {
         fill: #3B857E; }
@@ -529,15 +529,15 @@ figcaption {
 .has-indigo-background {
   background-color: #2E3191; }
   .has-indigo-background h1, .has-indigo-background h2, .has-indigo-background h3, .has-indigo-background h4, .has-indigo-background h5, .has-indigo-background ul, .has-indigo-background li, .has-indigo-background p, .has-indigo-background a, .has-indigo-background bloquote, .has-indigo-background .bc-inner-page-content__heading, .has-indigo-background .bc-inner-page-content--large, .has-indigo-background .bc-feature-component__heading {
-    color: #d1ce6e; }
+    color: #fff; }
   .has-indigo-background .bc-svg-icon {
-    fill: #d1ce6e; }
+    fill: #fff; }
   .has-indigo-background .bc-button {
-    border-color: #d1ce6e;
+    border-color: #fff;
     background-color: transparent;
     color: #fff; }
     .has-indigo-background .bc-button:hover, .has-indigo-background .bc-button:active, .has-indigo-background .bc-button:focus {
-      background-color: #d1ce6e;
+      background-color: #fff;
       color: #2E3191; }
       .has-indigo-background .bc-button:hover .bc-svg-icon, .has-indigo-background .bc-button:active .bc-svg-icon, .has-indigo-background .bc-button:focus .bc-svg-icon {
         fill: #2E3191; }
@@ -632,7 +632,7 @@ figcaption {
     position: absolute;
     bottom: 0px;
     right: 0;
-    background-color: #F6921E, #096de1; }
+    background-color: #F6921E, #fff; }
 
 .has-mark-right--yellow {
   position: relative; }
@@ -665,7 +665,7 @@ figcaption {
     position: absolute;
     bottom: 0px;
     right: 0;
-    background-color: #3B857E, #3B857E; }
+    background-color: #3B857E, #fff; }
 
 .has-mark-right--blue {
   position: relative; }
@@ -709,7 +709,7 @@ figcaption {
     position: absolute;
     bottom: 0px;
     right: 0;
-    background-color: #2E3191, #d1ce6e; }
+    background-color: #2E3191, #fff; }
 
 .has-mark-right--violet {
   position: relative; }
@@ -863,15 +863,15 @@ figcaption {
 .has-high-chroma--orange {
   background-image: linear-gradient(to bottom left, #F6921E 0%, #cf7308 61.8%); }
   .has-high-chroma--orange h1, .has-high-chroma--orange h2, .has-high-chroma--orange h3, .has-high-chroma--orange h4, .has-high-chroma--orange h5, .has-high-chroma--orange ul, .has-high-chroma--orange li, .has-high-chroma--orange p, .has-high-chroma--orange a, .has-high-chroma--orange bloquote, .has-high-chroma--orange .bc-inner-page-content__heading, .has-high-chroma--orange .bc-inner-page-content--large, .has-high-chroma--orange .bc-feature-component__heading {
-    color: #096de1; }
+    color: #fff; }
   .has-high-chroma--orange .bc-svg-icon {
-    fill: #096de1; }
+    fill: #fff; }
   .has-high-chroma--orange .bc-button {
-    border-color: #096de1;
+    border-color: #fff;
     background-color: transparent;
     color: #fff; }
     .has-high-chroma--orange .bc-button:hover, .has-high-chroma--orange .bc-button:active, .has-high-chroma--orange .bc-button:focus {
-      background-color: #096de1;
+      background-color: #fff;
       color: #F6921E; }
       .has-high-chroma--orange .bc-button:hover .bc-svg-icon, .has-high-chroma--orange .bc-button:active .bc-svg-icon, .has-high-chroma--orange .bc-button:focus .bc-svg-icon {
         fill: #F6921E; }
@@ -923,15 +923,15 @@ figcaption {
 .has-high-chroma--mid-green {
   background-image: linear-gradient(to bottom left, #3B857E 0%, #285b56 61.8%); }
   .has-high-chroma--mid-green h1, .has-high-chroma--mid-green h2, .has-high-chroma--mid-green h3, .has-high-chroma--mid-green h4, .has-high-chroma--mid-green h5, .has-high-chroma--mid-green ul, .has-high-chroma--mid-green li, .has-high-chroma--mid-green p, .has-high-chroma--mid-green a, .has-high-chroma--mid-green bloquote, .has-high-chroma--mid-green .bc-inner-page-content__heading, .has-high-chroma--mid-green .bc-inner-page-content--large, .has-high-chroma--mid-green .bc-feature-component__heading {
-    color: #3B857E; }
+    color: #fff; }
   .has-high-chroma--mid-green .bc-svg-icon {
-    fill: #3B857E; }
+    fill: #fff; }
   .has-high-chroma--mid-green .bc-button {
-    border-color: #3B857E;
+    border-color: #fff;
     background-color: transparent;
     color: #fff; }
     .has-high-chroma--mid-green .bc-button:hover, .has-high-chroma--mid-green .bc-button:active, .has-high-chroma--mid-green .bc-button:focus {
-      background-color: #3B857E;
+      background-color: #fff;
       color: #3B857E; }
       .has-high-chroma--mid-green .bc-button:hover .bc-svg-icon, .has-high-chroma--mid-green .bc-button:active .bc-svg-icon, .has-high-chroma--mid-green .bc-button:focus .bc-svg-icon {
         fill: #3B857E; }
@@ -1003,15 +1003,15 @@ figcaption {
 .has-high-chroma--indigo {
   background-image: linear-gradient(to bottom left, #2E3191 0%, #1f2163 61.8%); }
   .has-high-chroma--indigo h1, .has-high-chroma--indigo h2, .has-high-chroma--indigo h3, .has-high-chroma--indigo h4, .has-high-chroma--indigo h5, .has-high-chroma--indigo ul, .has-high-chroma--indigo li, .has-high-chroma--indigo p, .has-high-chroma--indigo a, .has-high-chroma--indigo bloquote, .has-high-chroma--indigo .bc-inner-page-content__heading, .has-high-chroma--indigo .bc-inner-page-content--large, .has-high-chroma--indigo .bc-feature-component__heading {
-    color: #d1ce6e; }
+    color: #fff; }
   .has-high-chroma--indigo .bc-svg-icon {
-    fill: #d1ce6e; }
+    fill: #fff; }
   .has-high-chroma--indigo .bc-button {
-    border-color: #d1ce6e;
+    border-color: #fff;
     background-color: transparent;
     color: #fff; }
     .has-high-chroma--indigo .bc-button:hover, .has-high-chroma--indigo .bc-button:active, .has-high-chroma--indigo .bc-button:focus {
-      background-color: #d1ce6e;
+      background-color: #fff;
       color: #2E3191; }
       .has-high-chroma--indigo .bc-button:hover .bc-svg-icon, .has-high-chroma--indigo .bc-button:active .bc-svg-icon, .has-high-chroma--indigo .bc-button:focus .bc-svg-icon {
         fill: #2E3191; }
@@ -3269,54 +3269,129 @@ figure {
   fill: #02659B; }
 
 /* Accordion project overrides */
-.bc-accordion {
-  /*@media screen and (min-width: $large)
-		&__block-trigger
-			&__icon
-				margin-left: 2.8rem*/ }
-  .bc-accordion__block-heading:nth-of-type(1n) .bc-accordion__block-trigger {
-    color: #3B857E; }
-    .bc-accordion__block-heading:nth-of-type(1n) .bc-accordion__block-trigger .bc-svg-icon {
-      fill: #3B857E; }
-  .bc-accordion__block-heading:nth-of-type(2n) .bc-accordion__block-trigger {
-    color: #EC1C24; }
-    .bc-accordion__block-heading:nth-of-type(2n) .bc-accordion__block-trigger .bc-svg-icon {
-      fill: #EC1C24; }
-  .bc-accordion__block-heading:nth-of-type(3n) .bc-accordion__block-trigger {
-    color: #F6921E; }
-    .bc-accordion__block-heading:nth-of-type(3n) .bc-accordion__block-trigger .bc-svg-icon {
-      fill: #F6921E; }
-  .bc-accordion__block-heading:nth-of-type(4n) .bc-accordion__block-trigger {
-    color: #651A7B; }
-    .bc-accordion__block-heading:nth-of-type(4n) .bc-accordion__block-trigger .bc-svg-icon {
-      fill: #651A7B; }
-  .bc-accordion__block-body {
-    position: relative;
-    padding-bottom: 0.1875rem;
-    border-bottom: 1px solid #017CC0; }
-    .bc-accordion__block-body:after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      width: 12.94%;
-      height: 0.16875rem;
-      background-color: #017CC0; }
-  .bc-accordion__block-body:nth-of-type(1n) {
-    border-bottom: 1px solid #3B857E; }
-    .bc-accordion__block-body:nth-of-type(1n):after {
-      background-color: #3B857E; }
-  .bc-accordion__block-body:nth-of-type(2n) {
-    border-bottom: 1px solid #EC1C24; }
-    .bc-accordion__block-body:nth-of-type(2n):after {
-      background-color: #EC1C24; }
-  .bc-accordion__block-body:nth-of-type(3n) {
-    border-bottom: 1px solid #F6921E; }
-    .bc-accordion__block-body:nth-of-type(3n):after {
-      background-color: #F6921E; }
-  .bc-accordion__block-body:nth-of-type(4n) {
-    border-bottom: 1px solid #651A7B; }
-    .bc-accordion__block-body:nth-of-type(4n):after {
-      background-color: #651A7B; }
+.bc-accordion__block-heading:nth-of-type(1n) .bc-accordion__block-trigger {
+  color: #3B857E; }
+  .bc-accordion__block-heading:nth-of-type(1n) .bc-accordion__block-trigger .bc-svg-icon {
+    fill: #3B857E; }
+
+.bc-accordion__block-heading:nth-of-type(2n) .bc-accordion__block-trigger {
+  color: #EC1C24; }
+  .bc-accordion__block-heading:nth-of-type(2n) .bc-accordion__block-trigger .bc-svg-icon {
+    fill: #EC1C24; }
+
+.bc-accordion__block-heading:nth-of-type(3n) .bc-accordion__block-trigger {
+  color: #F6921E; }
+  .bc-accordion__block-heading:nth-of-type(3n) .bc-accordion__block-trigger .bc-svg-icon {
+    fill: #F6921E; }
+
+.bc-accordion__block-heading:nth-of-type(4n) .bc-accordion__block-trigger {
+  color: #651A7B; }
+  .bc-accordion__block-heading:nth-of-type(4n) .bc-accordion__block-trigger .bc-svg-icon {
+    fill: #651A7B; }
+
+.bc-accordion__block-body {
+  position: relative;
+  padding-bottom: 0.1875rem;
+  border-bottom: 1px solid #017CC0; }
+  .bc-accordion__block-body:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 12.94%;
+    height: 0.16875rem;
+    background-color: #017CC0; }
+
+.bc-accordion__block-body:nth-of-type(1n) {
+  border-bottom: 1px solid #3B857E; }
+  .bc-accordion__block-body:nth-of-type(1n):after {
+    background-color: #3B857E; }
+
+.bc-accordion__block-body:nth-of-type(2n) {
+  border-bottom: 1px solid #EC1C24; }
+  .bc-accordion__block-body:nth-of-type(2n):after {
+    background-color: #EC1C24; }
+
+.bc-accordion__block-body:nth-of-type(3n) {
+  border-bottom: 1px solid #F6921E; }
+  .bc-accordion__block-body:nth-of-type(3n):after {
+    background-color: #F6921E; }
+
+.bc-accordion__block-body:nth-of-type(4n) {
+  border-bottom: 1px solid #651A7B; }
+  .bc-accordion__block-body:nth-of-type(4n):after {
+    background-color: #651A7B; }
+
+.bc-stepped-process__heading {
+  font-size: 1.5157rem;
+  font-weight: 300;
+  margin-top: 2.25rem; }
+
+.bc-stepped-process__number {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.639rem;
+  height: 2.639rem;
+  margin-right: 0.375rem;
+  border-radius: 50%;
+  background-color: #303030;
+  color: #fff; }
+
+.bc-stepped-process__heading.is-primary-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #017CC0; }
+
+.bc-stepped-process__heading.is-secondary-text .bc-stepped-process__number {
+  color: #017CC0;
+  background-color: #F2EF11; }
+
+.bc-stepped-process__heading.is-brand-darker-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #02659B; }
+
+.bc-stepped-process__heading.is-red-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #EC1C24; }
+
+.bc-stepped-process__heading.is-dark-red-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #CA1622; }
+
+.bc-stepped-process__heading.is-orange-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #F6921E; }
+
+.bc-stepped-process__heading.is-yellow-text .bc-stepped-process__number {
+  color: blue;
+  background-color: #ff0; }
+
+.bc-stepped-process__heading.is-light-green-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #37B34A; }
+
+.bc-stepped-process__heading.is-mid-green-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #3B857E; }
+
+.bc-stepped-process__heading.is-blue-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #00f; }
+
+.bc-stepped-process__heading.is-light-blue-text .bc-stepped-process__number {
+  color: #09222c;
+  background-color: #57b6dd; }
+
+.bc-stepped-process__heading.is-purple-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #651A7B; }
+
+.bc-stepped-process__heading.is-indigo-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #2E3191; }
+
+.bc-stepped-process__heading.is-violet-text .bc-stepped-process__number {
+  color: #fff;
+  background-color: #C934F5; }
 
 /*# sourceMappingURL=style.css.map */

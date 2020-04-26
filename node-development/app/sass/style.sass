@@ -1050,8 +1050,25 @@ $waves-height: 50px
 		border-bottom: 1px solid $purple
 		&:after
 			background-color: $purple
-	
-	/*@media screen and (min-width: $large)
-		&__block-trigger
-			&__icon
-				margin-left: 2.8rem*/
+.bc-stepped-process
+	&__heading
+		font-size: $h2
+		font-weight: 300
+		margin-top: $vertical-unit*1.5
+	&__number
+		display: inline-flex
+		justify-content: center
+		align-items: center
+		width: $text-12
+		height: $text-12
+		margin-right: $gutter*0.25
+		border-radius: 50%
+		background-color: $text-black
+		color: $white
+@each $name, $colorList in $colors 
+	.bc-stepped-process__heading
+		&.is-#{$name}-text
+			.bc-stepped-process__number
+				color: nth($colorList, 2)
+				background-color: nth($colorList, 1)
+			
