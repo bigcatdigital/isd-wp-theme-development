@@ -12,19 +12,19 @@
 	align-items: center
 	text-decoration: none
 	.bc-svg-icon
+		max-width: 2.75rem
 		max-height: 1.4rem
 		fill: $link-color
 	@include linkHover
 		background-color: transparent 
 		text-decoration: underline
 		.bc-svg-icon
-				fill: $link-color
+			fill: $link-color
 	&--featured
 		@extend .bc-icon-link
-		font-size: $text-02
-		
+		font-size: $text-01
 		.bc-svg-icon
-			max-height: $text-02*$line-height
+			max-height: $text-01*$line-height
 		&:hover, &:active, &:focus
 			background-color: transparent 
 			text-decoration: underline

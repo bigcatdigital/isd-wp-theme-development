@@ -111,91 +111,79 @@
 	</section><!-- // .feature-page-navigation-->
 	<section id="bc-one-col-feature" class="bc-one-col-feature has-shade-01-gradient bc-feature-component" aria-label="Welcome to ISD"> 
 		<article class="bc-feature-component__content"> 
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
-				</svg>
-				One col feature
-			</p>
-			<h1 class="bc-feature-component__heading">One col feature</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
+					</svg>
+					One col feature
+				</p>
+				<h1 class="bc-feature-component__heading">One col feature</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-button" href="about.html">
-				Find out more about
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button" href="about.html">
+					Find out more about
 					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>
+				</a>
+			</div>
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature -->
 	<section id="bc-one-col-feature-white" class="bc-one-col-feature bc-feature-component is-white" aria-label="An International Baccalaureate World School"> 
 		<article class="bc-feature-component__content"> 
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
-				</svg>
-				Content label
-			</p>
-			<h1 class="bc-feature-component__heading">One col feature - white background</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
+					</svg>
+					Content label
+				</p>
+				<h1 class="bc-feature-component__heading">One col feature - white background</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-button" href="about.html">
-				Find out more about
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button" href="about.html">
+					Find out more about
 					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>
+				</a>
+			</div>
 		</div><!-- // .bc-feature-component__cta -->
 	</section><!-- // .bc-one-col-feature -->
 	<section id="bc-one-col-feature-svg" class="bc-one-col-feature bc-feature-component has-background-svg--centered isd-kids-feature is-full-vh" aria-label="Student Experience"> 
 		<article class="bc-feature-component__content"> 
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
-				</svg>
-				Content label
-			</p>
-			<h1 class="bc-feature-component__heading">One-col showing background image</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
+					</svg>
+					Content label
+				</p>
+				<h1 class="bc-feature-component__heading">One-col showing background image</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-button" href="javascript:void(0)">
-				Find out more about
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button" href="javascript:void(0)">
+					Find out more about
 					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>
+				</a>
+			</div>
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature -->
@@ -360,14 +348,16 @@
 	
 	<section id="bc-4-col-feature" class="bc-4-col-feature bc-feature-component has-shade-01-gradient is-full-vh" aria-label="Learning for Life"> 
 		<header class="bc-feature-component__header "> 
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
-				</svg>
-				Content label
-			</p>
-			<h1 class="bc-feature-component__heading">4-col Feature</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
+					</svg>
+					Content label
+				</p>
+				<h1 class="bc-feature-component__heading">4-col Feature</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			</div>
 		</header>
 		<article class="bc-feature-component__content">
 			<div class="bc-card has-image bc-fade-in-up--is-not-visible">	
@@ -412,20 +402,14 @@
 			</div>
 		</article><!-- // .bc-4-col-feature__content -->
 		<div class="bc-feature-component__cta ">
-			<a class="bc-button " href="javascript:void(0)">
-				Find out more about
-				<svg class="bc-svg-icon">	
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
-					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button " href="javascript:void(0)">
+					Find out more about
+					<svg class="bc-svg-icon">	
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>
+				</a>
+			</div>
 		</div>
 	</section><!-- // .bc-4-col-feature -->
 	<section id="bc-4-col-feature-colour" class="bc-4-col-feature bc-feature-component has-high-chroma is-full-vh">
@@ -441,14 +425,16 @@
 			</svg>
 		</div>
 		<header class="bc-feature-component__header "> 
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
-				</svg>
-				Content label
-			</p>
-			<h1 class="bc-feature-component__heading">4-col Feature - colour</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
+					</svg>
+					Content label
+				</p>
+				<h1 class="bc-feature-component__heading">4-col Feature - colour</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			</div>
 		</header>
 		<article class="bc-feature-component__content">
 			<div class="bc-card bc-fade-in-up--is-not-visible">
@@ -469,76 +455,37 @@
 			</div>
 		</article><!-- // .bc-4-col-feature__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-button bc-fade-in-up--is-not-visible" href="javascript:void(0)">
-				Find out more about
-				<svg class="bc-svg-icon">	
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
-					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button bc-fade-in-up--is-not-visible" href="javascript:void(0)">
+					Find out more about
+					<svg class="bc-svg-icon">	
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>
+				</a>
+			</div>
 		</div>
 	</section><!-- // .bc-4-col-feature.has-high-chroma -->
-	<section id="bc-plain-text-component-grey" class="bc-inner-page-content  has-shade-02 bc-content-section">     
-		<div class="bc-inner-page-content__content">
-			<h1 class="bc-inner-page-content__heading">Plain text component - light grey</h1>
-			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
-			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+	<section id="bc-plain-text-component-grey" class="bc-content-component  has-shade-02 bc-content-section">     
+		<div class="bc-content-component">
+			<div class="bc-content-component__content__text-content">
+				<h1 class="bc-inner-page-content__heading">Plain text component - light grey</h1>
+				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Mission Statement -->
-	<section id="bc-plain-text-component-blue" class="bc-inner-page-content bc-inner-page-content--minor-section has-brand-darker-background bc-content-section">     
-		<div class="bc-inner-page-content__content">
-			<h1>Plain text component - dark blue</h1>
-			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
-			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+	<section id="bc-plain-text-component-blue" class="bc-content-component has-brand-darker-background bc-content-section">     
+		<div class="bc-content-component__content">
+			<div class="bc-content-component__content__text-content">
+				<h1>Plain text component - dark blue</h1>
+				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Values-->
-
-	<section id="bc-cta-feature" class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma"> 
-		<div class="bc-elipses"> 
-			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
-				<title>Elipses</title>
-				<!-- fill:url(#linear-gradient) -->
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" />
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-			</svg>
-		</div> 
-		<article class="bc-feature-component__content">
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon bc-svg-icon--admissions">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#admissions-icon"></use> 
-				</svg>
-				Content label
-			</p> 
-			<h1 class="bc-feature-component__heading">Major Call to Action
-				<svg class="bc-svg-icon isd-cta-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.2 99">
-					<title>Get started with ISD</title> 
-					<circle class="isd-cta-arrow__circle" cx="290.7" cy="49.5" r="48"/>
-					<line class="isd-cta-arrow__line" y1="49.39" x2="265.98" y2="49.39"/>
-					<path class="isd-cta-arrow__carat" d="M302,49.91,279.7,27.6l2.87-2.82L307.7,49.91,282.57,75l-2.82-2.82Z" transform="translate(0 -1.5)"/>
-				</svg>
-			</h1>
-			<p class="bc-feature-component__intro">Make your expression of interest and we will book a School tour.</p>
-			<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-		</article>
-		<div class="bc-feature-component__cta"> 
-			<a href="javascript:void(0)" class="bc-button">
-				Enrol now
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-		</div>
-	</section><!-- // .bc-cta-component -->
+	<?php
+		get_global_CTA();
+	?>
 	<nav class="feature-page-navigation feature-page-navigation--floating"> 
 		<div class="feature-page-navigation__navs">
 			<a href="javascript:void(0)" class="feature-page-navigation__to-top">

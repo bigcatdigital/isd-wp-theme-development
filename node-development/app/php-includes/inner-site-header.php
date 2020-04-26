@@ -54,21 +54,30 @@
  echo "				</div>";
  echo "			</nav>";
  echo "			<div class=\"bc-main-navigation-toggle\">";
- echo "				<a href=\"javascript:void(0)\" class=\"bc-navigation-toggle\">";
+ echo "				<a class=\"menu-icon-wrap bc-navigation-toggle\" href=\"javascript:void(0)\">";
  echo "					<?xml version=\"1.0\" encoding=\"utf-8\"?>";
- echo "					<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->";
- echo "					<svg version=\"1.1\" class=\"bc-menu-icon\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"";
- echo "						 viewBox=\"0 0 100 100\" enable-background=\"new 0 0 100 100\" xml:space=\"preserve\">";
- echo "							<line class=\"bc-menu-icon__icon__line bc-menu-icon__icon__line--top\" fill=\"none\" stroke=\"#000000\" stroke-width=\"6\" stroke-miterlimit=\"10\" x1=\"1\" y1=\"25\" x2=\"99\" y2=\"25\"/> ";
- echo "							<line class=\"bc-menu-icon__icon__line bc-menu-icon__icon__line--middle\" fill=\"none\" stroke=\"#000000\" stroke-width=\"6\" stroke-miterlimit=\"10\" x1=\"1\" y1=\"50\" x2=\"99\" y2=\"50\"/>";
- echo "							<line class=\"bc-menu-icon__icon__line bc-menu-icon__icon__line--bottom\" fill=\"none\" stroke=\"#000000\" stroke-width=\"6\" stroke-miterlimit=\"10\" x1=\"1\" y1=\"77.5\" x2=\"99\" y2=\"77.5\"/>";
- echo "					</svg>";
- echo "				</a>";
+ echo "						<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->";
+ echo "						<svg version=\"1.1\" class=\"bc-menu-icon \" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"  viewBox=\"0 0 100 100\" xml:space=\"preserve\">";
+ echo "							<g class=\"bc-menu-icon__lines\">";
+ echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top\" x1=\"1\" y1=\"25\" x2=\"99\" y2=\"25\"/>";
+ echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle\" x1=\"1\" y1=\"50\" x2=\"99\" y2=\"50\"/>";
+ echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom\" x1=\"1\" y1=\"75\" x2=\"99\" y2=\"75\"/>";						
+ echo "							</g>";
+ echo "							<g class=\"bc-menu-icon__active-lines\">";
+ echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first\" x1=\"-70\" y1=\"-70\" x2=\"0\" y2=\"0\"/>";
+ echo "								<line class=\"bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second\" x1=\"100\" y1=\"0\" x2=\"170\" y2=\"-70\"/>";
+ echo "							</g>";
+ echo "						</svg>";
+ echo "					</a>";
  echo "			</div><!-- // .bc-main-navigation-toggle -->";
  echo "		</div>";
  echo "		<div class=\"bc-main-navigation__underlay\"></div>";
  echo "	</header>";
- echo "	<section class=\"bc-inner-page-header bc-content-section has-inner-sub-nav\">";   
+if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
+	echo "	<section class=\"bc-inner-page-header bc-content-section has-inner-sub-nav\">";   
+} else {
+	echo "	<section class=\"bc-inner-page-header bc-content-section\">";   
+}
  echo "		<div class=\"bc-inner-page-header__bg-svg\">";
  echo "			<svg class=\"families-svg\" viewbox=\"0 0 100 100\">";
  echo "				<use xlink:href=\"media/svg/images/families.svg#familiy_3\"></use>"; 
@@ -89,9 +98,10 @@
 if ($innersubtitle !== '') {
  echo "			<h2 class=\"bc-inner-page-header__sub-heading\">$innersubtitle</h2>";
 }
+if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
  echo "			<nav class=\"bc-inner-page-header__sub-nav\">";
  echo "				<div class=\"bc-inner-page-header__sub-nav__toggle\"> ";
- echo "					<h3 class=\"bc-inner-page-header__sub-nav__toggle__label\">More about Teaching &amp; Learning:</h3> ";
+ echo "					<h3 class=\"bc-inner-page-header__sub-nav__toggle__label\">$inner_nav_title:</h3> ";
  echo "					<a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__toggle__icon\"> ";
  echo "						<svg class=\"bc-svg-icon\" viewbox=\"0 0 100 100\">";
  echo "							<use xlink:href=\"./media/svg/icons/bc-svgs.svg#carat\"></use> ";	
@@ -99,33 +109,33 @@ if ($innersubtitle !== '') {
  echo "					</a>	";
  echo "				</div>";
  echo "				<ul class=\"bc-inner-page-header__sub-nav__links is-floating-nav\"> ";
- echo "					<li class=\"bc-inner-page-header__sub-nav__item\"><a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__link\">Sub-section #1</a></li>";
- echo "					<li class=\"bc-inner-page-header__sub-nav__item\"><a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__link\">Sub-section #2</a></li>";
- echo "					<li class=\"bc-inner-page-header__sub-nav__item\"><a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__link\">Sub-section #3</a></li>";
- echo "					<li class=\"bc-inner-page-header__sub-nav__item\"><a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__link\">Sub-section #4</a></li>";
- echo "					<li class=\"bc-inner-page-header__sub-nav__item\"><a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__link\">Sub-section #5</a></li>";
+	foreach ($inner_nav_links as $link_text => $link) {
+ 		echo "					<li class=\"bc-inner-page-header__sub-nav__item\"><a href=\"$link\" class=\"bc-inner-page-header__sub-nav__link\">$link_text</a></li>";
+	}
  echo "				</ul>";
  echo "			</nav>";
+}
  echo "		</div><!-- // .bc-innerpage-header__content -->";
  echo "	</section><!-- // .bc-innerpage-header -->";
  echo "	<nav class=\"bc-breadcrumbs\">";
  echo "		<div class=\"bc-breadcrumbs__wrap\">";
  echo "			<ul class=\"bc-breadcrumbs__links\">";
+$bcidx = 0;
+foreach ($breadcrumbs as $link_text => $link) {
+ 
+	if ($bcidx < count($breadcrumbs)-1) {
  echo "				<li class=\"bc-breadcrumbs__links__link\">";
- echo "					<a href=\"#homepage.html\">Home</a>";
+ echo "					<a href=\"$link\">$link_text</a>";
  echo "					<svg class=\"bc-svg-icon bc-breadcrumbs__link-separator\">	";
  echo "						<use xlink:href=\"./media/svg/icons/bc-svgs.svg#carat\"></use> 	";
  echo "					</svg>";
+	} else {
+	echo "				<li class=\"bc-breadcrumbs__links__link\">";
+ echo 						"$link_text</a>";
+	}
  echo "				</li> ";
- echo "				<li class=\"bc-breadcrumbs__links__link\">";
- echo "					<a href=\"#homepage.html\">About</a>";
- echo "					<svg class=\"bc-svg-icon bc-breadcrumbs__link-separator\">	";
- echo "						<use xlink:href=\"./media/svg/icons/bc-svgs.svg#carat\"></use> 	";
- echo "					</svg>";
- echo "				</li> ";
- echo "				<li class=\"bc-breadcrumbs__links__link\">";
- echo "					<a href=\"#homepage.html\">School history</a>";
- echo "				</li> ";
+	$bcidx++;
+}
  echo "			</ul>";
  echo "		</div>";
  echo "	</nav><!-- // .bc-breadcrumbs -->";

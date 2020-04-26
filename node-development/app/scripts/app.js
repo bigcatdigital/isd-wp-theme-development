@@ -38,6 +38,15 @@
 			}
 		}//_getAllDOMNodes()
 		/* API functions */
+		/** 
+			Get the offsets for an element relative to the viewport
+			*/
+		function getOffset($el = document) {
+			const elRect = $el.getBoundingClientRect();
+			const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+			const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+			return { top: elRect.top + scrollTop, left: elRect.left + scrollLeft };
+		}
 		/**
 			Add and remove classes
 			el:  					DOM element: class toggle target 
@@ -252,6 +261,7 @@
 			toggleClass: toggleClass,
 			selectSiblings: selectSiblings,
 			responsiveiFrames: makeResponsiveiFrames,
+			getElOffset: getOffset,
 			showHide: showHide,
 			isScrollVisible: isScrollVisible,
 			gsap: $gsap,
@@ -400,7 +410,7 @@
 				console.log('add handler');
 			}
 			$navigationToggler.addEventListener('nav-icon-click', function navIconClickHandler (evt){
-				console.log('nav-icon-click');
+				
 				const $this = evt.currentTarget;
 				
 				//$this.removeEventListener('nav-icon-click', navIconClickHandler);
@@ -411,7 +421,7 @@
 				$this.classList.add('is-animating');
 				
 				if ($this.classList.contains('is-active')) {
-					console.log('active');
+				
 					defaultTl.kill(0);
 					activeTl.seek(0);
 					activeTl.to($activeIconFirst, activeIconFirstStart);
@@ -425,7 +435,7 @@
 					});
 
 				} else {
-					console.log('default');
+					
 					defaultTl.kill(0);
 					defaultTl.seek(0);
 					defaultTl.to($defaultIconTop, defaultIconTopActive, 0);
@@ -810,27 +820,22 @@
 			const $expandButtons = document.querySelectorAll('.bc-expandible-block__expander__button');
 			for (let $btn of $expandButtons) {
 				const $expandableBlock = $btn.closest('.bc-expandible-block');
+				const blockOffsets = $bc.getElOffset($expandableBlock);
 				const $expandableBody = $expandableBlock.querySelector('.bc-expandible-block__body'); 
 				$btn.addEventListener('click', () => {
-					/*const duration = 0.618;
-					const ease = 'power1.in';*/
 					if ($btn.classList.contains('is-active')) {
 						hideAccordionBody($expandableBody, () => {
 							$btn.classList.toggle('is-active');	
 							
 						});
-						/*$bc.gsap.to($expandableBody, {height: 0, duration: duration, ease: ease}).eventCallback('onComplete', () => {
-							$btn.classList.toggle('is-active');	
-						});	*/
+						
 					} else {
 						showAccordionBody($expandableBody, () => {
 							$btn.classList.toggle('is-active');	
 							
 						});
-						$bc.gsapFns.scrollTo({scrollTo: {y: $expandableBlock.offsetTop}, duration: 0.2});
-						/*$bc.gsap.to($expandableBody, {height: $expandableBody.scrollHeight, duration: duration, ease: ease}).eventCallback('onComplete', () => {
-							$btn.classList.toggle('is-active');	 
-						});*/
+						$bc.gsapFns.scrollTo({scrollTo: {y: blockOffsets.top}, duration: 0.2});
+						
 					}
 				});
 			}
@@ -869,37 +874,34 @@
 						evt.preventDefault();
 						const $accordionTriggerIcon = $accordionTrigger.querySelector('.bc-accordion__block-trigger__icon > .bc-svg-icon');
 						const $accordionBody = $accordionTrigger.closest('.bc-accordion__block-heading').nextElementSibling;
+						const $accordionCloseLink = $accordionBody.querySelector('.bc-accordion__close > a');
 						const $accordionHeading = $accordionBody.previousElementSibling;
+						const headingOffsets = $bc.getElOffset($accordionHeading);
 						if ($accordionTrigger.classList.contains('is-active') === false) {
 							showAccordionBody($accordionBody);
 							$bc.gsap.to($accordionTriggerIcon, {rotate: '90deg', duration: 0.1}).eventCallback('onComplete', () => {
 								$accordionTrigger.classList.toggle('is-active');
 							});
-							$bc.gsapFns.scrollTo({scrollTo: {y: $accordionHeading.offsetTop}, duration: 0.2});
+							
+							$bc.gsapFns.scrollTo({scrollTo: {y: headingOffsets.top}, duration: 0.2});
 						} else {
 							hideAccordionBody($accordionBody);
 							$bc.gsap.to($accordionTriggerIcon, {rotate: '45deg', duration: 0.1}).eventCallback('onComplete', () => {
 								$accordionTrigger.classList.toggle('is-active');
 							});
-							$bc.gsapFns.scrollTo({scrollTo: {y: $accordionHeading.offsetTop}, duration: 0.2}); 
-						}						
+							$bc.gsapFns.scrollTo({scrollTo: {y: headingOffsets.top}, duration: 0.2}); 
+						}
+						
+						$accordionCloseLink.addEventListener('click', function closeLinkClickHander(evt) { 
+							evt.preventDefault();
+							hideAccordionBody($accordionBody);
+							$bc.gsap.to($accordionTriggerIcon, {rotate: '45deg', duration: 0.1}).eventCallback('onComplete', () => {
+								$accordionTrigger.classList.toggle('is-active');
+							});
+						});
 					});	
 				}
-				const accordionCloseLinks = $accordion.querySelectorAll('.bc-accordion__block-body .bc-accordion__close > a');
-				for (let $accordionCloseLink of accordionCloseLinks) {
-					$accordionCloseLink.addEventListener('click', (evt) => {
-						evt.preventDefault();
-						const $thisBody = $accordionCloseLink.closest('.bc-accordion__block-body');
-						const $thisHeading = $thisBody.previousElementSibling;
-						const $accordionTrigger = $thisHeading.querySelector('.bc-accordion__block-trigger');
-						const $accordionTriggerIcon = $accordionTrigger.querySelector('.bc-accordion__block-trigger__icon > .bc-svg-icon');
-						hideAccordionBody($thisBody);
-						$bc.gsap.to($accordionTriggerIcon, {rotate: '45deg', duration: 0.1}).eventCallback('onComplete', () => {
-							$accordionTriggerIcon.classList.toggle('is-active');
-						});
-						$bc.gsapFns.scrollTo({scrollTo: {y: $thisHeading.offsetTop}, duration: 0.2, delay: 0.2}); 
-					});
-				}
+				
 			}
 		}// Accordion components
 	};/*** // window.onload Project scripts ***/

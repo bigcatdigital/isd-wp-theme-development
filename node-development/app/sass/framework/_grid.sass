@@ -2,11 +2,49 @@
 	padding: 1rem
 	max-width: $content-max-width
 	margin: auto auto
-.layout4x2
-	@include makeGrid
-.flexbox
-	display: flex 
-	justify-content: flex-start  
-.feature-section
-	background-color: green
-	color: #f0f0f0
+.bc-content-component
+	position: relative
+	@include makeSection
+	padding-top: 		$vertical-unit * 2 
+	padding-bottom: $vertical-unit * 2 
+	overflow: hidden
+	display: flex
+	flex-direction: column
+	&__header, &__content 
+		width: 100%
+		position: relative
+		z-index: 10
+		margin-left: auto
+		margin-right: auto
+		padding-left: 	$gutter/2
+		padding-right: 	$gutter/2
+		&__text-content
+			width: 100%
+			max-width: $text-max-width	
+			margin-left: auto
+			margin-right: auto
+	&__heading
+		font-size: $text-10 
+		@include doFeatureHeading($heading-line-height, $h1)
+		margin-bottom: $vertical-unit
+@media screen and (min-width: $large)
+	.bc-content-component
+		&__content, &__header
+			max-width: $content-max-width 	
+
+//Grid columns
+@media screen and (min-width: $small)
+	[class*="-columns"] 
+		margin-left: 	-$gutter*0.5
+		margin-right: -$gutter*0.5
+		display: grid
+		grid-template: auto / 1fr 1fr 
+		.bc-column
+			flex: 1 1 0
+			padding-left:  $gutter*0.5
+			padding-right: $gutter*0.5
+@media screen and (min-width: $large)
+	.bc-4-columns
+		grid-template: auto / repeat(4, 1fr) 
+		
+			

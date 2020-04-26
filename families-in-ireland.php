@@ -61,149 +61,58 @@
 	</section><!-- // .bc-hero--inpage -->
 	<section id="bc-one-col-feature" class="bc-one-col-feature has-shade-01-gradient bc-feature-component" aria-label="Welcome to ISD"> 
 		<article class="bc-feature-component__content"> 
-			<h1 class="bc-feature-component__heading">Need a heading</h1>
-			<p class="bc-feature-component__intro">At ISD we offer a different option for education. ISD is <b class="has-light-blue-text">multi-denominational</b>, <b class="has-orange-text">co-educational</b> and <b class="has-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
-			<h2 class="has-red-text">Language development</h2>
-			<p>We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</p>
-			<p class="bc-icon-link">
-				<a href="teaching-and-learning.html">Find out more about language development</a>
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
-				</svg>
-			</p>
-			<h2 class="has-primary-text">The International Baccalaureate</h2>
-			<p><b>ISD offers the <a href="teaching-and-learning.html">International Baccalaureate (IB)</a>, which is an inquiry based curriculum falling outside national and political agendas. It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</b></p>  
-			<p>It is regarded as the gold-standard measurement of academic and intellectual development both by universities and leading graduate employers.</p>	
-			<p class="bc-icon-link">
-				<a href="teaching-and-learning.html">Find out more about the benefits of the International Baccalaureate</a>
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
-				</svg>
-			</p>
-			<h2 class="has-mid-green-text">International-mindedness</h2>
-			<p>International-mindedness is at the heart of an IB and ISD education.  This includes the understanding of one’s local, regional, national as well as international context and begins with understanding of the uniqueness of oneself, one’s home and one’s nationality and culture.</p>
-			<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
-			<h3>Global citizenship</h3>
-			<p>Any Irish citizen will develop in an ever increasingly interconnected world where their home location will be influenced by global forces; and there are proven benefits for children attending international schools, whether they are local citizens or expatriates.</p>  
-			<p>Allowing students to interact and have experience with global awareness and understanding in a first person context from the very start of their education sets them apart from others; this plants the seed for future worldwide networking.</p>  
-			<p>It provides valuable skills for later life such as building relationships with people from a variety of cultures and backgrounds, it also equips students with the confidence to travel and work in other countries opening opportunities and experiences throughout adulthood.</p>
-			<p class="bc-icon-link">
-				<a href="teaching-and-learning.html">International School of Dublin and global-citizenship</a>
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
-				</svg>
-			</p>
-
-		</article><!-- // .bc-feature-component__content -->
-		<div class="bc-feature-component__cta">
-			<a class="bc-button" href="about.html">
-				Find out more about
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
+			<div class="bc-content-component__content__text-content">
+				<h1 class="bc-feature-component__heading">Need a heading</h1>
+			</div>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-feature-component__intro">At ISD we offer a different option for education. ISD is <b class="has-light-blue-text">multi-denominational</b>, <b class="has-orange-text">co-educational</b> and <b class="has-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
+				<h2 class="has-red-text">Language development</h2>
+				<p>We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</p>
+				<p class="bc-icon-link">
+					<a href="teaching-and-learning.html">Find out more about language development</a>
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
 					</svg>
-				</span>
-			</a>
+				</p>
+				<h2 class="has-primary-text">The International Baccalaureate</h2>
+				<p><b>ISD offers the <a href="teaching-and-learning.html">International Baccalaureate (IB)</a>, which is an inquiry based curriculum falling outside national and political agendas. It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</b></p>  
+				<p>It is regarded as the gold-standard measurement of academic and intellectual development both by universities and leading graduate employers.</p>	
+				<p class="bc-icon-link">
+					<a href="teaching-and-learning.html">Find out more about the benefits of the International Baccalaureate</a>
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+					</svg>
+				</p>
+				<h2 class="has-mid-green-text">International-mindedness</h2>
+				<p>International-mindedness is at the heart of an IB and ISD education.  This includes the understanding of one’s local, regional, national as well as international context and begins with understanding of the uniqueness of oneself, one’s home and one’s nationality and culture.</p>
+				<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
+				<h3>Global citizenship</h3>
+				<p>Any Irish citizen will develop in an ever increasingly interconnected world where their home location will be influenced by global forces; and there are proven benefits for children attending international schools, whether they are local citizens or expatriates.</p>  
+				<p>Allowing students to interact and have experience with global awareness and understanding in a first person context from the very start of their education sets them apart from others; this plants the seed for future worldwide networking.</p>  
+				<p>It provides valuable skills for later life such as building relationships with people from a variety of cultures and backgrounds, it also equips students with the confidence to travel and work in other countries opening opportunities and experiences throughout adulthood.</p>
+				<p class="bc-icon-link">
+					<a href="teaching-and-learning.html">International School of Dublin and global-citizenship</a>
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+					</svg>
+				</p>
+			</div>
+		</article><!-- // .bc-feature-component__content -->
+		<div class="bc-feature-component__cta">
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button" href="about.html">
+					Find out more about
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+					</svg>
+				</a>
+			</div>
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature -->
-	<section id="bc-4-col-feature" class="bc-2-col-cards-feature bc-feature-component has-shade-01-gradient is-full-vh" aria-label="Learning for Life"> 
-		<header class="bc-feature-component__header "> 
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
-				</svg>
-				Families in Ireland
-			</p>
-			<h1 class="bc-feature-component__heading">Need a heading</h1>
-			<p class="bc-feature-component__intro">At ISD we offer a different option for education. ISD is <b class="is-light-blue-text">multi-denominational</b>, <b class="is-orange-text">co-educational</b> and <b class="is-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
-		</header>
-		<article class="bc-feature-component__content">
-			<div class="bc-two-col-card bc-fade-in-up--is-not-visible">
-				<picture class=" bc-card__media">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
-				</picture><!-- // .bc-two-col-card__media -->
-				<h2 class="bc-card__heading">Language development</h2>
-				<div class="bc-two-col-card__text">
-					<p>We provide Spanish as a foreign language and we promote mother-tongue development.</p>
-					<div class="bc-card__cta">
-						<a href="javascript:void(0)" class="bc-card__link">More about language development</a>	
-					</div><!-- // .bc-card__cta -->	
-				</div><!-- // .bc-two-col-card__text -->
-			</div><!-- // .bc-two-col-card -->
-			<div class="bc-two-col-card bc-fade-in-up--is-not-visible">
-				<picture class="bc-two-col-card__media bc-card__media">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
-				</picture><!-- // .bc-two-col-card__media -->
-				<h2 class="bc-card__heading">The International Baccalaureate</h2>
-				<div class="bc-two-col-card__text">
-					<p><b>ISD offers the International Baccalaureate (IB), which is an inquiry based curriculum falling outside national and political agendas.</b></p> 
-					<p>It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</p>
-					<div class="bc-card__cta">
-						<a href="teaching-and-learning.html" class="bc-card__link">Find out more about Teaching and Learning at ISD</a>	
-					</div><!-- // .bc-card__cta -->
-				</div><!-- // .bc-two-col-card__text -->
-			</div><!-- // .bc-two-col-card -->
-			<div class="bc-two-col-card bc-fade-in-up--is-not-visible">
-				<picture class="bc-two-col-card__media bc-card__media">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
-				</picture><!-- // .bc-two-col-card__media -->
-				<h2 class="bc-card__heading">International and Global focus</h2>
-				<div class="bc-two-col-card__text">
-					
-					<p>As our world becomes more connected global-citizenship becomes more important.</p>
-					<div class="bc-card__cta">
-						<a href="javascript:void(0)" class="bc-card__link">More about global citizenship</a>	
-					</div><!-- // .bc-card__cta -->	
-				</div><!-- // .bc-two-col-card__text -->
-			</div><!-- // .bc-two-col-card -->
-		</article><!-- // .bc-two-col-card -->
-	</section><!-- // .bc-2-col-feature -->
-	<section id="bc-cta-feature" class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma"> 
-		<div class="bc-elipses"> 
-			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
-				<title>Elipses</title>
-				<!-- fill:url(#linear-gradient) -->
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" />
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-			</svg>
-		</div> 
-		<article class="bc-feature-component__content">
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon bc-svg-icon--admissions">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#admissions-icon"></use> 
-				</svg>
-				Content label
-			</p> 
-			<h1 class="bc-feature-component__heading">Major Call to Action
-				<svg class="bc-svg-icon isd-cta-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.2 99">
-					<title>Get started with ISD</title> 
-					<circle class="isd-cta-arrow__circle" cx="290.7" cy="49.5" r="48"/>
-					<line class="isd-cta-arrow__line" y1="49.39" x2="265.98" y2="49.39"/>
-					<path class="isd-cta-arrow__carat" d="M302,49.91,279.7,27.6l2.87-2.82L307.7,49.91,282.57,75l-2.82-2.82Z" transform="translate(0 -1.5)"/>
-				</svg>
-			</h1>
-			<p class="bc-feature-component__intro">Make your expression of interest and we will book a School tour.</p>
-			<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-		</article>
-		<div class="bc-feature-component__cta"> 
-			<a href="javascript:void(0)" class="bc-button">
-				Enrol now
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-		</div>
-	</section><!-- // .bc-cta-component -->
+	<?php
+		get_global_CTA();
+	?>
 	<nav class="feature-page-navigation feature-page-navigation--floating"> 
 		<div class="feature-page-navigation__navs">
 			<a href="javascript:void(0)" class="feature-page-navigation__to-top">

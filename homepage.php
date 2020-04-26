@@ -78,6 +78,7 @@
 	</section><!-- // .feature-page-navigation-->
 	<section class="bc-one-col-feature bc-feature-component" aria-label="Welcome to ISD"> 
 		<article class="bc-feature-component__content"> 
+			<div class="bc-content-component__content__text-content">
 			<p class="bc-content-label">
 				<svg class="bc-svg-icon">
 					<use xlink:href="media/svg/icons/bc-svgs.svg#about-isd"></use> 
@@ -87,61 +88,62 @@
 			<h1 class="bc-feature-component__heading">Innovative, inclusive, progressive</h1>
 			<p class="bc-feature-component__intro">The International School of Dublin (ISD) was established in 2007 and is the first accredited <a href="https://www.ibo.org/">International Baccalaureate</a> World Primary School in Ireland. It is a culturally diverse, private, not for profit school that is co-educational and non-denominational.</p>
 			<p>At ISD, we feel a fundamental goal of education is to encourage a love of learning. Upon a visit, you will find a welcoming and lively environment which is characterised by collaborative and purposeful activity. Students benefit from an innovative form of engagement and a broad education that promotes learning how to think instead of what to think.</p>
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-icon-link--featured" href="about-isd.html">
-				Find out what sets us apart
-				<svg class="bc-svg-icon">
-					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<!--<a href="javascript:void(0)" class="bc-feature-component__next">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-icon-link--featured" href="about-isd.html">
+					Find out what sets us apart
 					<svg class="bc-svg-icon">
-						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>-->
-		</div><!-- // .bc-feature-component__cta -->
+				</a>
+				<!--<a href="javascript:void(0)" class="bc-feature-component__next">
+					<span class="bc-feature-component__next__text">Next content</span>
+					<span class="bc-feature-component__next__icon">
+						<svg class="bc-svg-icon">
+							<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
+						</svg>
+					</span>
+				</a>-->
+			</div><!-- // .bc-feature-component__cta -->
+		</div>
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature -->
 	<section class="bc-one-col-feature bc-feature-component has-shade-01" aria-label="An International Baccalaureate World School"> 
 		<article class="bc-feature-component__content"> 
-			<p class="bc-content-label ib-world-school">
-				<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
-				The International Baccalaureate
-			</p>
-			<h1 class="bc-feature-component__heading">An IB World School</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label ib-world-school">
+					<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
+					The International Baccalaureate
+				</p>
+				<h1 class="bc-feature-component__heading">An IB World School</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora.</p>
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-button" href="about.html">
-				Find out more about
-				<svg class="bc-svg-icon">
-					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button" href="about.html">
+					Find out more about
 					<svg class="bc-svg-icon">
-						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
+						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>
+				</a>
+			</div>
 		</div><!-- // .bc-feature-component__cta -->
 		
 	</section><!-- // .bc-one-col-feature -->
 	<section class="bc-4-col-feature bc-feature-component" aria-label="Learning for Life"> 
 		<header class="bc-feature-component__header "> 
-			<p class="bc-content-label ib-world-school">
-				<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
-				The International Baccalaureate
-			</p>
-			<h1 class="bc-feature-component__heading">A Child Focussed Learning Environment</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label ib-world-school">
+					<img src="media/ib-world-school-logo-1-colour.svg" alt="International School of Dublin is an IB World School">
+					The International Baccalaureate
+				</p>
+				<h1 class="bc-feature-component__heading">A Child Focussed Learning Environment</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+			</div>
 		</header>
 		<article class="bc-feature-component__content">
 			<div class="bc-card has-image bc-fade-in-up--is-not-visible">	
@@ -186,20 +188,14 @@
 			</div>
 		</article><!-- // .bc-4-col-feature__content -->
 		<div class="bc-feature-component__cta ">
-			<a class="bc-button " href="javascript:void(0)">
-				Find out more about
-				<svg class="bc-svg-icon">	
-					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-			<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
-				<span class="bc-feature-component__next__text">Next content</span>
-				<span class="bc-feature-component__next__icon">
-					<svg class="bc-svg-icon">
-						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use>
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button " href="javascript:void(0)">
+					Find out more about
+					<svg class="bc-svg-icon">	
+						<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
 					</svg>
-				</span>
-			</a>
+				</a>
+			</div>
 		</div>
 	</section><!-- // .bc-4-col-feature -->
 	
@@ -252,58 +248,26 @@
 	
 	<section class="bc-feature-component bc-one-col-feature  has-shade-02">     
 		<div class="bc-feature-component__content">
-			<h1 class="bc-feature-component__heading">Mission statement</h1>
-			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
-			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+			<div class="bc-content-component__content__text-content">
+				<h1 class="bc-feature-component__heading">Mission statement</h1>
+				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Mission Statement -->
 	<section class="bc-feature-component bc-one-col-feature has-brand-darker-background">     
 		<div class="bc-feature-component__content">
-			<h1>Values</h1>
-			<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
-			<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+			<div class="bc-content-component__content__text-content">
+				<h1>Values</h1>
+				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
+				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
+			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Values-->
 
-	<section class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma"> 
-		<div class="bc-elipses"> 
-			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
-				<title>Elipses</title>
-				<!-- fill:url(#linear-gradient) -->
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" />
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-			</svg>
-		</div> 
-		<article class="bc-feature-component__content">
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon bc-svg-icon--admissions">
-					<use xlink:href="media/svg/icons/bc-svgs.svg#admissions-icon"></use> 
-				</svg>
-				Admissions
-			</p> 
-			<h1 class="bc-feature-component__heading">Get started at ISD
-				<svg class="bc-svg-icon isd-cta-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.2 99">
-					<title>Get started with ISD</title> 
-					<circle class="isd-cta-arrow__circle" cx="290.7" cy="49.5" r="48"/>
-					<line class="isd-cta-arrow__line" y1="49.39" x2="265.98" y2="49.39"/>
-					<path class="isd-cta-arrow__carat" d="M302,49.91,279.7,27.6l2.87-2.82L307.7,49.91,282.57,75l-2.82-2.82Z" transform="translate(0 -1.5)"/>
-				</svg>
-			</h1>
-			<p class="bc-feature-component__intro">Make your expression of interest and we will book a School tour.</p>
-			<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-		</article>
-		<div class="bc-feature-component__cta"> 
-			<a href="javascript:void(0)" class="bc-button">
-				Enrol now
-				<svg class="bc-svg-icon">
-					<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-		</div>
-	</section>
+	<?php
+		get_global_CTA();
+	?>
 	<script src="scripts/app-concat.min.js"></script>
 </body>
 </html> 

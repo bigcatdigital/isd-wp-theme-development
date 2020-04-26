@@ -4,20 +4,18 @@
 ?>
 <body> 
 	<?php get_inner_site_header(); ?>
-	<section class="bc-inner-page-content bc-content-section">   
-		<div class="bc-inner-page-content__content">
-			<header class="bc-inner-page-content__header">
-				<h1 class="">The International Baccalaureate</h1>
-			</header><!-- // .bc-inner-page-content__header -->
-			<article class="bc-inner-page-content__main">
-				<p class="bc-inner-page-content__intro">One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.</p>
-				<p>He lay on his armour-like back, and if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p>
-				<ol>
-					<li>Inquiry</li>
-					<li>Student Centred</li>
-					<li>Skills for the Future</li>
-					<li>Global Contexts</li>
-				</ol>
+	<section class="bc-content-component">   
+		<header class="bc-content-component__header">
+			<div class="bc-content-component__content__text-content">
+				<h1>Overview</h1>
+			</div>
+		</header><!-- // .bc-content-component__header -->
+		<article class="bc-content-component__content">
+			<div class="bc-content-component__content__text-content"> 
+				<p class="bc-content-component__intro">One of the fundamental goals of an education at ISD is to encourage a love of learning. Welcoming and lively learning environments are characterised by collaborative and purposeful activity.</p> 
+				<p>Small class sizes are guided by international experienced teachers who work to facilitate holistic and innovative forms of engagement which promote learning that is process, rather than topic driven.</p>  
+				<p>Ultimately, ISD students are equipped with the knowledge and skills needed to become autonomous lifelong learners.</p>
+				<p>All teaching and learning is guided by the International Baccalaureate Primary Years Programme (IB PYP). An IB education is based on a continuum which focuses on the total and unique growth of the developing learner encompassing social, physical, emotional and cultural needs in addition to academic development.  Therefore education at ISD is inquiry driven and student centred.  It is focused on promoting global contexts and life skills.</p>
 				<div class="bc-expandible-block"> 
 					<div class="bc-expandible-block__intro"> 
 						<h2 class="bc-expandible-block__intro__heading is-red-text">1. Inquiry</h2>
@@ -26,7 +24,7 @@
 							<p> Inquiry is all about meaning making and demands many skills of a learner, specifically higher-order thinking which includes wondering, planning, analysing, creating and reflecting.</p>
 						</div>
 						<div class="bc-expandible-block__intro__media">
-							<picture >
+							<picture>
 								<img src="media/multicultural-kids.jpg" alt="Happy kids">
 							</picture>			
 						</div>
@@ -57,21 +55,12 @@
 						</a>
 					</div><!-- // .bc-expandible-block__expander -->
 				</div><!-- // .bc-expandible-bock -->
-			</article><!-- // .bc-inner-page-content__main -->
-			<aside class="bc-inner-page-content__sidebar">
-				<h2 class="bc-inner-page-content__sidebar__heading is-primary-text">More on Teaching &amp; Learning</h2>
-				<nav class="bc-sidebar-widget">
-					<ul class="bc-section-navigation__links"> 
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">After school care</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">School Calendar</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">School Bus</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">Catered Lunch Program</a></li>
-						<li class="bc-section-navigation__item"><a href="javascript:void(0)" class="bc-section-navigation__link">Additional Services</a></li>
-					</ul>
-				</nav>
-			</aside><!-- bc-inner-page-content__sidebar -->
-		</div><!-- // .bc-inner-page-content__content -->
+				</div><!-- // .bc-content-component__content__text-content -->
+			</article><!-- // .bc-content-component__content -->
 	</section><!-- // .bc-inner-page-content -->
+	<?php  
+		get_inner_section_nav();
+	?>
 	
 	<script src="scripts/app-concat.js"></script>  
 </body>

@@ -67,61 +67,73 @@
 	</section><!-- // .feature-page-navigation-->
 	<section class="bc-one-col-feature bc-feature-component has-background-svg isd-about-dublin"  id="about-dublin"> 
 		<article class="bc-feature-component__content"> 
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon"> 
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#community-icon-reverse"></use> 
-				</svg>
-				Community
-			</p>
-			<h1 class="bc-feature-component__heading">About Dublin</h1>
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label">
+					<svg class="bc-svg-icon"> 
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#community-icon-reverse"></use> 
+					</svg>
+					Community
+				</p>
+				<h1 class="bc-feature-component__heading">About Dublin</h1>
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-button" href="javascript:void(0)">
-				Find out more about
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button" href="javascript:void(0)">
+					Find out more about
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+					</svg>
+				</a>
+			</div>
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
+		
 	</section><!-- // .bc-one-col-feature - About Dublin -->
 	<section class="bc-one-col-feature bc-feature-component has-background-svg isd-community"  id="community">  
 		<article class="bc-feature-component__content">
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#community-icon-reverse"></use> 
-				</svg>
-				Community
-			</p>
-			<h1 class="bc-feature-component__heading">Join the Community</h1> 
-			<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
-			<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
-			<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label">
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#community-icon-reverse"></use> 
+					</svg>
+					Community
+				</p>
+				<h1 class="bc-feature-component__heading">Join the Community</h1> 
+				<p class="bc-feature-component__intro">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+				<p>Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.</p>
+				<p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?</p>
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<a class="bc-button" href="javascript:void(0)">
-				Find out more about
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
+			<div class="bc-content-component__content__text-content">
+				<a class="bc-button" href="javascript:void(0)">
+					Find out more about
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
+					</svg>
+				</a>
+			</div>
 		</div><!-- // .bc-feature-component__cta -->
 		<div class="bc-feature-component__grad-overlay"></div><!-- // .bc-feature-component__grad-overlay -->
 	</section><!-- // .bc-one-col-feature - ISD Community -->
 	<section class="bc-feature-component bc-expandible-blocks-component"  id="teaching-learning">
 		<div class="bc-feature-component__header">
-			<p class="bc-content-label ib-world-school"> 
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#learning-icon-reverse"></use> 	
-				</svg>	
-				Teaching and learning
-			</p>
-			<h1 class="bc-feature-component__heading">Teaching and Learning at ISD</h1>
+			<div class="bc-content-component__content__text-content">
+				<p class="bc-content-label ib-world-school"> 
+					<svg class="bc-svg-icon">
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#learning-icon-reverse"></use> 	
+					</svg>	
+					Teaching and learning
+				</p>
+				<h1 class="bc-feature-component__heading">Teaching and Learning at ISD</h1>
+			</div>
 		</div><!-- // .bc-feature-component__header -->
 		<article class="bc-feature-component__content bc-expandible-block"> 
+			<div class="bc-content-component__content__text-content">
 			<div class="bc-expandible-block__intro"> 
 				<h2 class="bc-expandible-block__intro__heading">About the International Baccalaureate</h2>
 				<div class="bc-expandible-block__intro__text">
@@ -178,106 +190,73 @@
 					</span>
 				</a>
 			</div><!-- // .bc-expandible-block__expander -->
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<article class="bc-feature-component__content bc-expandible-block"> 
-			<div class="bc-expandible-block__intro"> 
-				<h2 class="bc-expandible-block__intro__heading">About the International Baccalaureate</h2>
-				<div class="bc-expandible-block__intro__text">
-					<p class="bc-expandible-block__intro__intro">And if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p> 
-					<p>The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-					<p>The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
-				</div>
-				<div class="bc-expandible-block__intro__media">
-					<picture >
-						<img src="media/multicultural-kids.jpg" alt="Happy kids">
-					</picture>			
-				</div>
-			</div><!-- // .bc-expandible-block__intro -->
+			<div class="bc-content-component__content__text-content">
+				<div class="bc-expandible-block__intro"> 
+					<h2 class="bc-expandible-block__intro__heading">About the International Baccalaureate</h2>
+					<div class="bc-expandible-block__intro__text">
+						<p class="bc-expandible-block__intro__intro">And if he lifted his head a little he could see his brown belly, slightly domed and divided by arches into stiff sections.</p> 
+						<p>The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+						<p>The bedding was hardly able to cover it and seemed ready to slide off any moment.</p>
+					</div>
+					<div class="bc-expandible-block__intro__media">
+						<picture >
+							<img src="media/multicultural-kids.jpg" alt="Happy kids">
+						</picture>			
+					</div>
+				</div><!-- // .bc-expandible-block__intro -->
 
-			<div class="bc-expandible-block__body">
-				<div class="bc-expandible-block__body__text">
-					<h3>Sub-heading</h3>
-					<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream.</p>
-					<p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
-					<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
-					<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>
-					<h4>Sub-heading</h4>
-					<p>Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
-					<ul>
-						<li>List item 1</li>
-						<li>List item 2</li>
-						<li>List item 3</li>
-						<li>List item 4</li>
-					</ul>
-					<p>"How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was.</p>
-				</div>
-				<div class="bc-expandible-block__body__media">
-					<picture>
-						<img src="media/multicultural-kids.jpg" alt="Happy kids">
-					</picture>
-					<picture>
-						<img src="media/multicultural-kids.jpg" alt="Happy kids">
-					</picture>	
-					<picture>
-						<img src="media/multicultural-kids.jpg" alt="Happy kids">
-					</picture>	
-				</div>
-			</div><!-- // .bc-expandible-block__body -->
-			<div class="bc-expandible-block__expander">
-				<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
-					<span class="bc-expandible-block__expander__button__text">
-						<span class="inactive-text">Show more</span> 
-						<span class="active-text">Show less</span>
-					</span>
-					<span class="bc-expandible-block__expander__button__icon">
-						<svg class="bc-svg-icon">
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#close-x"></use> 	
-						</svg>	
-					</span>
-				</a>
-			</div><!-- // .bc-expandible-block__expander -->
+				<div class="bc-expandible-block__body">
+					<div class="bc-expandible-block__body__text">
+						<h3>Sub-heading</h3>
+						<p>His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream.</p>
+						<p>His room, a proper human room although a little too small, lay peacefully between its four familiar walls.</p>
+						<p>A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame.</p>
+						<p>It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather.</p>
+						<h4>Sub-heading</h4>
+						<p>Drops of rain could be heard hitting the pane, which made him feel quite sad.</p>
+						<ul>
+							<li>List item 1</li>
+							<li>List item 2</li>
+							<li>List item 3</li>
+							<li>List item 4</li>
+						</ul>
+						<p>"How about if I sleep a little bit longer and forget all this nonsense", he thought, but that was something he was unable to do because he was used to sleeping on his right, and in his present state couldn't get into that position. However hard he threw himself onto his right, he always rolled back to where he was.</p>
+					</div>
+					<div class="bc-expandible-block__body__media">
+						<picture>
+							<img src="media/multicultural-kids.jpg" alt="Happy kids">
+						</picture>
+						<picture>
+							<img src="media/multicultural-kids.jpg" alt="Happy kids">
+						</picture>	
+						<picture>
+							<img src="media/multicultural-kids.jpg" alt="Happy kids">
+						</picture>	
+					</div>
+				</div><!-- // .bc-expandible-block__body -->
+				<div class="bc-expandible-block__expander">
+					<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
+						<span class="bc-expandible-block__expander__button__text">
+							<span class="inactive-text">Show more</span> 
+							<span class="active-text">Show less</span>
+						</span>
+						<span class="bc-expandible-block__expander__button__icon">
+							<svg class="bc-svg-icon">
+								<use xlink:href="./media/svg/icons/bc-svgs.svg#close-x"></use> 	
+							</svg>	
+						</span>
+					</a>
+				</div><!-- // .bc-expandible-block__expander -->
+			</div>
 		</article><!-- // .bc-feature-component__content -->
 	</section><!-- // .bc-expandible-block-component -->
 	
-	<section class="bc-cta-feature bc-feature-component bc-one-col-feature has-high-chroma"> 
-		<div class="bc-elipses"> 
-			<svg class="bc-elipses__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 280"> 
-				<title>Elipses</title>
-				<!-- fill:url(#linear-gradient) -->
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" />
-				<circle class="bc-elipses__elipse" /> 
-				<circle class="bc-elipses__elipse" /> 
-			</svg>
-		</div> 
-		<article class="bc-feature-component__content">
-			<p class="bc-content-label">
-				<svg class="bc-svg-icon bc-svg-icon--admissions">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#admissions-icon"></use> 
-				</svg>
-				Admissions
-			</p> 
-			<h1 class="bc-feature-component__heading">Get started at ISD
-				<svg class="bc-svg-icon isd-cta-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340.2 99">
-					<title>Get started with ISD</title> 
-					<circle class="isd-cta-arrow__circle" cx="290.7" cy="49.5" r="48"/>
-					<line class="isd-cta-arrow__line" y1="49.39" x2="265.98" y2="49.39"/>
-					<path class="isd-cta-arrow__carat" d="M302,49.91,279.7,27.6l2.87-2.82L307.7,49.91,282.57,75l-2.82-2.82Z" transform="translate(0 -1.5)"/>
-				</svg>
-			</h1>
-			<p class="bc-feature-component__intro">Make your expression of interest and we will book a School tour.</p>
-			<p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
-		</article>
-		<div class="bc-feature-component__cta"> 
-			<a href="javascript:void(0)" class="bc-button">
-				Enrol now
-				<svg class="bc-svg-icon">
-					<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-				</svg>
-			</a>
-		</div>
-	</section><!-- // .bc-cta-feature -->
+	<?php
+		get_global_CTA();
+	?>
 
 	<nav class="feature-page-navigation feature-page-navigation--floating"> 
 		<div class="feature-page-navigation__navs">
