@@ -293,9 +293,9 @@
 		//custom click event
 		const iconClick =  document.createEvent('Event');
 		iconClick.initEvent('nav-icon-click', true, true);
-		let mainNavRunning = false;
+		//let mainNavRunning = false;
 		/** Make nav icons **/
-		function navTogglersFactory($navigationToggler, dur, opts, cb) {
+		function navTogglersFactory($navigationToggler, opts, cb) {
 			//The SVG icon
 			const $menuIcon = $navigationToggler.querySelector('.bc-menu-icon');
 			//Default state horizontal lines
@@ -307,8 +307,17 @@
 			const $activeIconFirst = $menuIcon.querySelector('.bc-menu-icon__lines__active-line--first');
 			const $activeIconSecond = $menuIcon.querySelector('.bc-menu-icon__lines__active-line--second');
 			
+			//Animation options
+			const options = {
+				duration: 0.28,
+				easing: 'power1.out',
+				defaultStroke: '#fff',
+				activeStroke: '#303030'
+			};
+			Object.assign(options, opts);
+			
 			//Default & active coordinates
-			const duration = dur || 0.1 ;
+			
 			const defaultIconTopStart = { 
 				attr: {
 					x1: 1, 
@@ -316,7 +325,8 @@
 					x2: 99, 
 					y2: 25
 				},
-				duration: duration
+				duration: options.duration,
+				ease: options.easing
 			};
 			const defaultIconTopActive = {
 				attr: {
@@ -325,7 +335,8 @@
 					x2: -1, 
 					y2: 25
 				},
-				duration: duration
+				duration: options.duration,
+				ease: options.easing
 			};
 			const defaultIconMiddleStart = {
 				attr: {
@@ -334,7 +345,8 @@
 					x2: 99, 
 					y2: 50
 				},
-				duration: duration
+				duration: options.duration,
+				ease: options.easing
 			};
 			const defaultIconMiddleActive = {
 				attr: {
@@ -343,7 +355,8 @@
 					x2: 199, 
 					y2: 50
 				},
-				duration: duration
+				duration: options.duration,
+				ease: options.easing
 			};
 			const defaultIconBottomStart = {
 				attr: {
@@ -352,7 +365,8 @@
 					x2: 99, 
 					y2: 75
 				},
-				duration: duration
+				duration: options.duration,
+				ease: options.easing
 			};
 			const defaultIconBottomActive = {
 				attr: {
@@ -361,7 +375,8 @@
 					x2: -1, 
 					y2: 75
 				},
-				duration: duration
+				duration: options.duration,
+				ease: options.easing
 			};
 
 			const activeIconFirstStart = {
@@ -371,7 +386,9 @@
 					x2: 0,
 					y2: 0
 				},
-				duration: duration
+				stroke: options.defaultStroke,
+				duration: options.duration,
+				ease: options.easing 
 			};
 
 			const activeIconFirstActive = {
@@ -381,7 +398,10 @@
 					x2: 85,
 					y2: 85
 				},
-				duration: duration
+				stroke: options.activeStroke,
+				duration: options.duration,
+				ease: options.easing 
+				
 			};
 			const activeIconSecondStart = {
 				attr: {
@@ -390,39 +410,35 @@
 					x2: 170,
 					y2: -70
 				},
-				duration: duration
+				stroke: options.defaultStroke,
+				duration: options.duration,
+				ease: options.easing
 			};
 			const activeIconSecondActive = {
 				attr: {
 					x1: 15,
 					y1: 85,
 					x2: 85,
-					y2: 15	
+					y2: 15
 				},
-				duration: duration
+				stroke: options.activeStroke,
+				duration: options.duration,
+				ease: options.easing
 			};
-			
 			
 			//Default and active timelines
 			const defaultTl = $bc.gsap.timeline();
 			const activeTl = $bc.gsap.timeline();
-			if (typeof cb !== 'function') {
-				console.log('add handler');
-			}
-			$navigationToggler.addEventListener('nav-icon-click', function navIconClickHandler (evt){
-				
+			
+			$navigationToggler.addEventListener('click', function navIconClickHandler (evt){
+				console.log('click');
 				const $this = evt.currentTarget;
-				
-				//$this.removeEventListener('nav-icon-click', navIconClickHandler);
 				evt.preventDefault();
 				if ($this.classList.contains('is-animating')) {
 					return;
 				}
 				$this.classList.add('is-animating');
-				
 				if ($this.classList.contains('is-active')) {
-				
-					defaultTl.kill(0);
 					activeTl.seek(0);
 					activeTl.to($activeIconFirst, activeIconFirstStart);
 					activeTl.to($activeIconSecond, activeIconSecondStart, '<');
@@ -431,64 +447,42 @@
 					activeTl.to($defaultIconBottom, defaultIconBottomStart, '<').eventCallback('onComplete', () => {
 						$this.classList.remove('is-active');	
 						$this.classList.remove('is-animating');
-						//$this.addEventListener('nav-icon-click', navIconClickHandler);
 					});
-
 				} else {
-					
-					defaultTl.kill(0);
 					defaultTl.seek(0);
 					defaultTl.to($defaultIconTop, defaultIconTopActive, 0);
 					defaultTl.to($defaultIconMiddle, defaultIconMiddleActive, 0);
 					defaultTl.to($defaultIconBottom, defaultIconBottomActive, 0);
-
 					defaultTl.to($activeIconFirst, activeIconFirstActive, '>');
 					defaultTl.to($activeIconSecond, activeIconSecondActive, '<').eventCallback('onComplete', () => {
 						$this.classList.add('is-active');	
 						$this.classList.remove('is-animating');
-						//$this.addEventListener('nav-icon-click', navIconClickHandler);
 					});
 				}	
-				
+				if (typeof cb === 'function') {
+					cb($this);
+				}
 			});
 			return $navigationToggler;
 		}//navTogglersFactory
-		/** Main navigation **/
-		const $mainNavIcon = navTogglersFactory(document.querySelector('.bc-main-navigation-toggle .menu-icon-wrap'));
 		
-		//console.log($mainNavIcon.activeIconFirstStart);
-		$mainNavIcon.addEventListener('click', (event) => {
-			event.preventDefault();
-			if (mainNavRunning) {
-				console.log('click start: '+mainNavRunning);
-				return;
-			}
-			mainNavRunning = true;
-			const $this = event.currentTarget;
-			const $siteHeader = $this.closest('.bc-site-header');
-			const $mainNav = $siteHeader.querySelector('.bc-main-navigation');
-			$mainNav.addEventListener('transitionend', function headerTransEnd() {
-				console.log('transition-end');
-				mainNavRunning = false;
-				console.log('click end: '+mainNavRunning);
-				$mainNav.removeEventListener('transitionend', headerTransEnd);
-			});
+		/** Main navigation **/
+		const $mainNavIcon = document.querySelector('.bc-main-navigation-toggle .menu-icon-wrap');
+		navTogglersFactory($mainNavIcon, {activeStroke: '#017CC0', duration: 0.24}, ($mainNavIcon) => {
+			console.log('main nav icon callback'); 
+			const $siteHeader = $mainNavIcon.closest('.bc-site-header');
 			requestAnimationFrame(() => {
 				$siteHeader.classList.toggle('has-active-navigation');	
-				$this.dispatchEvent(iconClick);
+			//	$this.dispatchEvent(iconClick);
 			});
-		}, true);
-		//console.log($mainNavIcon);
-		/** end Main navigation **/
+		});
 		
-
 		/** Landing page navigation **/ 
 		let $landingPageToggle = (document.querySelector('.feature-page-navigation__toggle')) ? document.querySelector('.feature-page-navigation__toggle') : null;
 		const $landingPageNavList = (document.querySelector('.feature-page-navigation__list')) ? document.querySelector('.feature-page-navigation__list') : null;
 		
 		if ($landingPageNavList && $landingPageToggle) {
 			let $landingPageNav = $landingPageNavList.closest('.feature-page-navigation');
-			//const targetHeight = $landingPageNavList.scrollHeight + 3;
 			
 			$landingPageToggle = navTogglersFactory($landingPageToggle, {baseColor: '#017CC0', activeColor: '#F2EF11', baseStrokeColor: '#fff', activeStrokeColor: '#017CC0'});
 			
@@ -540,13 +534,25 @@
 			}
 		}
 		const $floatingNav = (document.querySelector('.feature-page-navigation--floating')) ? document.querySelector('.feature-page-navigation--floating') : null;
-		if ($floatingNav) {
+		
+		if ($floatingNav) {	
 			const scrollThreshold = $floatingNav.scrollHeight;
-			const $floatingNav_toggleNav = navTogglersFactory($floatingNav.querySelector('.feature-page-navigation__toggle-nav__link'), {baseColor: '#017CC0', activeColor: '#fff', baseStrokeColor: '#fff', activeStrokeColor: '#303030'});
+			const $floatingNav_toggleNav = $floatingNav.querySelector('.feature-page-navigation__toggle-nav__link'); 
 			const $floatingNav_toTop = $floatingNav.querySelector('.feature-page-navigation__to-top');
-			const $floatingNav_nav = $floatingNav.querySelector('.feature-page-navigation__wrapper');
-			$bc.gsap.set($floatingNav_nav, {opacity: 0, display: 'none'});  
 			
+			navTogglersFactory($floatingNav_toggleNav, {duration: 0.2, defaultStroke: '#fff', activeStroke: '#fff'}, ($floatingNav_toggleNav) => {
+				const $floatingNav_nav = $floatingNav_toggleNav.nextElementSibling;
+			
+				if ($floatingNav_nav.classList.contains('is-active')) {
+					$bc.gsap.to($floatingNav_nav, {opacity: 0, duration: 0.328, display: 'none'}).eventCallback('onComplete', () => {
+						$floatingNav_nav.classList.toggle('is-active');
+					});	
+				} else {
+					$bc.gsap.to($floatingNav_nav, {opacity: 1,  duration: 0.328, display: 'block'}).eventCallback('onComplete', () => {
+						$floatingNav_nav.classList.toggle('is-active');
+					});	
+				}
+			}); 
 			if (window.scrollY >= scrollThreshold && $floatingNav.classList.contains('is-visible') === false) {
 				toggleFloatingNav();
 			}
@@ -557,20 +563,6 @@
 					toggleFloatingNav();
 				}
 			};
-			$floatingNav_toggleNav.addEventListener('click', (evt) => {
-				evt.stopPropagation();
-				const $this = evt.currentTarget;
-				if ($this.classList.contains('is-active')) {
-					$bc.gsap.to($floatingNav_nav, {opacity: 1, duration: 0.328, display: 'block', delay: 0.12}).eventCallback('onComplete', () => {
-						$floatingNav_nav.classList.toggle('is-active');
-					});	
-					
-				} else {
-					$bc.gsap.to($floatingNav_nav, {opacity: 0,  duration: 0.328, display: 'none', delay: 0.12}).eventCallback('onComplete', () => {
-						$floatingNav_nav.classList.toggle('is-active');
-					});	
-				}
-			});
 			$floatingNav_toTop.addEventListener('click', (evt) => {
 				evt.stopPropagation();
 				$bc.gsapFns.scrollTo({scrollTo: {y: 0}, duration: 0.360});
