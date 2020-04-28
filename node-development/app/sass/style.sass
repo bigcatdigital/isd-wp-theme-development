@@ -327,7 +327,7 @@ iframe
 /* Project custom feature components */
 .bc-feature-component
 	/* 4-col feature */
-	&.bc-4-col-feature
+	&.bc-4-col-feature, &.bc-3-col-feature
 		position: relative
 		.bc-feature-component__content, .bc-feature-component__header
 			position: relative
@@ -356,12 +356,17 @@ iframe
 			.bc-card__heading
 				color: $purple
 				border-bottom-color: $purple 
+		@media screen and (min-width: $x-large)
+			.bc-feature-component__content
+				grid-template: auto / repeat(3, 1fr)
+	&.bc-4-col-feature
 		@media screen and (min-width: $large)
 			.bc-feature-component__content
 				grid-template: auto / repeat(2, 1fr)
 		@media screen and (min-width: $x-large)
 			.bc-feature-component__content
 				grid-template: auto / repeat(4, 1fr)
+	
 	&.bc-2-col-media-feature
 		.bc-content-label
 			margin-bottom: $vertical-unit
@@ -570,8 +575,8 @@ iframe
 	display: flex
 	flex-direction: column
 	&__intro, &__body
-		display: grid
-		grid-template: auto auto / 1fr
+		display: flex
+		flex-direction: column
 		&__intro
 			font-weight: 500
 		&__text
@@ -711,12 +716,17 @@ iframe
 					padding-top: 33.333%
 	@media screen and (min-width: $med)
 		&__intro, &__body
+			flex-direction: row
+			flex-wrap: wrap
 			grid-template: auto / 7fr 3fr
 			grid-column-gap: $gutter
+			&__heading
+				width: 100%
 			&__media
-				grid-column: 2 / 3
+				flex: 0 1 30%
 			&__text
 				order: 0
+				flex: 1 0 70%
 			&__heading
 				//@include doFeatureHeading($font-size: $h2)
 				margin-top: 0

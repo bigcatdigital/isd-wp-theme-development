@@ -1,0 +1,56 @@
+.bc-feature-component
+	&.bc-4-col-feature, &.bc-3-col-feature
+		.bc-card
+			&__heading
+				@include doFeatureHeading
+		.bc-feature-component__intro
+			margin-bottom: 0
+	&.bc-3-col-feature
+		.bc-feature-component__content
+			display: grid
+			grid-column-gap: $gutter
+			grid-template: auto / repeat(1, 1fr)
+			max-width: none
+	&.bc-4-col-feature
+		.bc-feature-component__content
+			@include makeContentGrid(4) 
+			max-width: none
+@media screen and (min-width: $small)	and (max-width: 1023px)	
+	.bc-feature-component
+		&.bc-3-col-feature
+			.bc-card
+				flex-direction: row
+				margin-left: 	-$gutter*0.5
+				margin-right: -$gutter*0.5
+				&__heading 
+					border-bottom: none !important
+					flex: 0 1 0
+				&__heading, p, &__cta
+					flex: 0 1 0
+				&__media
+					order: 1
+					padding-left: $gutter*0.5
+					padding-right: $gutter*0.5
+				&__text
+					display: flex
+					flex-direction: column
+					justify-content: center
+					order: 0
+					padding-left: $gutter*0.5
+					padding-right: $gutter*0.5
+					
+@media screen and (min-width: $large)
+	.bc-feature-component
+		&.bc-3-col-feature
+			.bc-feature-component__content
+				grid-template: auto / repeat(3, 1fr) 
+				align-items: stretch
+				margin-left: 		4.444rem
+				margin-right: 	4.444rem
+				width: calc(100% - 8.888rem)
+		&.bc-4-col-feature, &.bc-3-col-feature
+			.bc-feature-component__heading
+				grid-column: 1 / span 4
+			&__intro
+				max-width: 800px
+				grid-column: 1 / span 3
