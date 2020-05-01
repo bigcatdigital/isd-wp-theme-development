@@ -1,20 +1,21 @@
 .bc-feature-component
-	&.bc-4-col-feature, &.bc-3-col-feature
+	&.bc-4x4-grid-feature, &.bc-4-col-feature, &.bc-3-col-feature
 		.bc-card
 			&__heading
 				@include doFeatureHeading
 		.bc-feature-component__intro
-			margin-bottom: 0
-	&.bc-3-col-feature
+			
+	&.bc-4x4-grid-feature, &.bc-3-col-feature
 		.bc-feature-component__content
 			display: grid
 			grid-column-gap: $gutter
 			grid-template: auto / repeat(1, 1fr)
 			max-width: none
-	&.bc-4-col-feature
+	&.bc-4-col-feature 
 		.bc-feature-component__content
 			@include makeContentGrid(4) 
 			max-width: none
+
 @media screen and (min-width: $small)	and (max-width: 1023px)	
 	.bc-feature-component
 		&.bc-3-col-feature
@@ -38,16 +39,26 @@
 					order: 0
 					padding-left: $gutter*0.5
 					padding-right: $gutter*0.5
-					
+		
+@media screen and (min-width: $small) 
+	.bc-feature-component
+		&.bc-4x4-grid-feature
+			.bc-feature-component__content
+				grid-template: auto / repeat(2, 1fr) 
+				align-items: stretch
+	
 @media screen and (min-width: $large)
 	.bc-feature-component
+		&.bc-4x4-grid-feature, &.bc-3-col-feature
+			.bc-feature-component__content
+				margin-left: 		4.444rem
+				margin-right: 	4.444rem
+				width: calc(100% - 8.888rem)
 		&.bc-3-col-feature
 			.bc-feature-component__content
 				grid-template: auto / repeat(3, 1fr) 
 				align-items: stretch
-				margin-left: 		4.444rem
-				margin-right: 	4.444rem
-				width: calc(100% - 8.888rem)
+				
 		&.bc-4-col-feature, &.bc-3-col-feature
 			.bc-feature-component__heading
 				grid-column: 1 / span 4

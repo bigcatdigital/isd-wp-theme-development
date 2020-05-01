@@ -20,9 +20,13 @@
 							</svg>	
 						</div>
 						<div class="bc-featured-quote__body">
-							<p class="bc-inner-page-content__intro">For instance, whenever I go back to the guest house during the morning to copy out the contract.</p>
-							<p>These gentlemen are always still sitting there eating their breakfasts. I ought to just try that with my boss; I’d get kicked out on the spot. But who knows, maybe that would be the best thing for me.</p>
-							<p>If I didn’t have my parents to think about I’d have given in my notice a long time ago, I’d have gone up to the boss and told him just what I think, tell him everything I would, let him know just what I feel. He’d fall right off his desk!</p>		
+							<p class="bc-inner-page-content__intro">Greetings, Hola, Bonjour,</p>
+							<p>On behalf of the entire International School of Dublin (ISD) it gives me great pleasure to welcome you to our website.  Thank you for your visit. </p>
+							<p>At ISD we appreciate the care and consideration families take to choose the best school for their child.  At the heart of our purpose is the overall wellbeing of each and every student.  We endeavor to ensure that all ISD students begin their educational journey with a solid foundation feeling safe, engaged and ultimately empowered and excited by the premise of discovering, creating and sharing knowledge.  
+</p>
+							<p>In an ever changing world, we are continually looking at the broader picture for the future.  Our aim is to set each student on an individual course for success.  We provide our students the space to forge their own path whilst equipping them with the essential skills to become autonomous lifelong learners.</p>		
+							<p>Since our opening in 2007, we feel privileged and proud to have pioneered international education at the primary level in Ireland as the first International Baccalaureate Primary Years Programme (IB PYP) school. We are passionate in providing a progressive educational option and our methods for success are adaptive.  With community spirit and partnership at the core, we are driven by the combination of a cutting edge, research based curriculum and an outstanding and dedicated team of international educators.</p>
+							<p>We feel the most authentic way to get to know us is to walk through the doors of our campus and interact with our dynamic learning community.  Our students are our best asset and we are all keen to make new connections. We are open to supporting you in varying capacities and hope to meet you soon.</p>
 						</div>	
 					</div><!-- // .bc-featured-quote -->
 					<div class="bc-card bc-card--person--featured">
@@ -57,7 +61,7 @@
 					</div>
 					<div class="bc-media-embed__caption">The ISD Story</div>
 				</div>
-				<p class="bc-inner-page-content__intro">The International School of Dublin (ISD) was established in 2007 to meet a need for educational diversity in Ireland.  At present our students are aged 3-12 and represent over 20 different nationalities.</p>
+				<p class="bc-inner-page-content__intro">The International School of Dublin (ISD) is the first accredited IB World Primary School in Ireland. Founded in 2007, ISD is very proud of forging the path to demonstrate the demand for, and success in, a progressive education at the primary level.</p>
 				<p>ISD is the only accredited IB World Primary School in Ireland. It is a small, private, non-profit school that is co-educational, non-denominational and culturally diverse.</p>
 				<p>We believe that our school’s success is due to our internationally regarded curriculum (<a href="https://www.ibo.org/programmes/primary-years-programme/">IBPYP</a>) and the manner in which it is lived out by our students, staff and parents.</p>
 				<p>At ISD you will find a welcoming and lively environment, which is characterised by collaborative and purposeful activity. ISD students benefit from an innovative form of schooling, a broad education that promotes inquiring, open-minded and principled learners who are reflective risk-takers.</p>

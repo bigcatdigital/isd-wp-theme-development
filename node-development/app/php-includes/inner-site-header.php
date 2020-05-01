@@ -104,7 +104,7 @@ if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
  echo "					<h3 class=\"bc-inner-page-header__sub-nav__toggle__label\">$inner_nav_title:</h3> ";
  echo "					<a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__toggle__icon\"> ";
  echo "						<svg class=\"bc-svg-icon\" viewbox=\"0 0 100 100\">";
- echo "							<use xlink:href=\"./media/svg/icons/bc-svgs.svg#carat\"></use> ";	
+ echo "							<use xlink:href=\"./media/svg/icons/bc-svgs.svg#close-x\"></use> ";	
  echo "						</svg>";
  echo "					</a>	";
  echo "				</div>";

@@ -56,6 +56,7 @@
 	color: $brand-primary
 	background-color: $white
 	border: 1px solid $black
+	text-decoration: none
 	transition: background-color 360ms ease-out
 	.bc-svg-icon
 		fill: $black
@@ -82,7 +83,18 @@
 	&:after
 		bottom: -#{(10/14)}rem 
 		box-shadow: -#{(16/14)}rem 0px #{(16/14)}rem rgba($black, 0.16)
-
+.bc-en-dash-list 
+	margin: 0
+	margin-left: $gutter 
+	padding-left: 15px
+	li
+		list-style: none
+		position: relative
+		&::before
+			content: '\2014'
+			position: absolute
+			left: -#{$gutter}
+	
 /* Shading */
 @each $name, $shade in $shades	
 	.has-#{$name}
@@ -91,6 +103,7 @@
 @each $name, $shade in $shades	
 	.has-#{$name}-gradient
 		@include gradOverlay($start-colour: $shade, $mid-colour: darken($shade, 6%), $end-colour: darken($shade, 12.5%), $stop: 100%)
+
 	
 .has-mark-right
 	position: relative
@@ -123,7 +136,9 @@
 	@if $name != 'secondary' and $name != 'yellow'
 		.has-#{$name}-text
 			color: $color
-	
+.has-white-background 
+	background-color: $white
+
 @each $name, $color in $colors
 	.has-mark-right--#{$name}
 		@include makeMarkRight($color)

@@ -159,6 +159,11 @@ iframe
 				flex: 1 1 100%
 				display: inline-flex
 				align-items: flex-end
+				transition: background-color 280ms ease-out
+				&:active, &:hover, &:focus
+					text-decoration: underline
+					background-color: $shade-02
+					color: $white
 			&:last-child
 				> a
 					border-bottom: 1px solid
@@ -166,18 +171,27 @@ iframe
 				> a
 					color: $mid-green
 					border-bottom-color: $mid-green
+					@include linkHover
+						background-color: $mid-green 
+						color: $white
 			&:nth-of-type(2n)
 				> a
 					color: $red
 					border-bottom-color: $red
+					@include linkHover
+						background-color: $red 
 			&:nth-of-type(3n)
 				> a
 					color: $orange
 					border-bottom-color: $orange
+					@include linkHover
+						background-color: $orange 
 			&:nth-of-type(4n) 
 				> a
 					color: $purple
 					border-bottom-color: $purple
+					@include linkHover
+						background-color: $purple 
 		@media screen and (min-width: $large)
 			.feature-page-navigation__item
 				flex: 1 1 33.333%
@@ -327,7 +341,7 @@ iframe
 /* Project custom feature components */
 .bc-feature-component
 	/* 4-col feature */
-	&.bc-4-col-feature, &.bc-3-col-feature
+	&.bc-4-col-feature, &.bc-3-col-feature, &.bc-4x4-grid-feature
 		position: relative
 		.bc-feature-component__content, .bc-feature-component__header
 			position: relative
@@ -341,21 +355,38 @@ iframe
 				padding-bottom: $vertical-unit*0.5
 				border-bottom: 2px solid $black		
 		.bc-card:nth-child(1)
-			.bc-card__heading 
+			.bc-card__heading, .bc-card__cta > a
 				color: $mid-green 
+			.bc-card__cta > a
+				font-weight: 500
+			.bc-card__heading
 				border-bottom-color: $mid-green 
 		.bc-card:nth-child(2)
+			.bc-card__heading, .bc-card__cta > a
+				color: $red 
+			.bc-card__cta > a
+				font-weight: 500
 			.bc-card__heading
-				color: $red
-				border-bottom-color: $red
+				border-bottom-color: $red 
 		.bc-card:nth-child(3)
+			.bc-card__heading, .bc-card__cta > a
+				color: $orange 
+			.bc-card__cta > a
+				font-weight: 500
 			.bc-card__heading
-				color: $orange
 				border-bottom-color: $orange 
 		.bc-card:nth-child(4)
+			.bc-card__heading, .bc-card__cta > a
+				color: $purple 
+			.bc-card__cta > a
+				font-weight: 500
 			.bc-card__heading
-				color: $purple
-				border-bottom-color: $purple 
+				border-bottom-color: $purple  
+	&.bc-4-col-feature, &.bc-3-col-feature
+		position: relative
+		.bc-feature-component__content, .bc-feature-component__header
+			position: relative
+			z-index: 20
 		@media screen and (min-width: $x-large)
 			.bc-feature-component__content
 				grid-template: auto / repeat(3, 1fr)
@@ -384,17 +415,22 @@ iframe
 	&.has-high-chroma
 		@include makeWhiteText
 		.bc-card:nth-child(1)
-			.bc-card__heading 
+			.bc-card__heading, .bc-card__cta > a 
 				color: $white
 		.bc-card:nth-child(2)
-			.bc-card__heading
+			.bc-card__heading, .bc-card__cta > a
 				color: $white
 		.bc-card:nth-child(3)
-			.bc-card__heading
+			.bc-card__heading, .bc-card__cta > a
 				color: $white
 		.bc-card:nth-child(4)
-			.bc-card__heading
+			.bc-card__heading, .bc-card__cta > a
 				color: $white
+		&.bc-4x4-grid-feature
+			.bc-card__heading
+				padding-bottom: $vertical-unit/2
+				border-bottom-style: solid
+				border-bottom-width: 2px
 
 	&.bc-2-col-media-feature
 		.bc-2-col-media-feature__media
@@ -444,13 +480,35 @@ iframe
 				padding-bottom: $vertical-unit * 8
 			.bc-feature-component__grad-overlay
 				background-width: auto
-
+.bc-4x4-layout
+	.bc-intro-paragraph
+		margin-bottom: $vertical-unit * 2
+	.bc-4x4-layout__row-1
+		margin-bottom: $vertical-unit * 2
+@media screen and (min-width: $med)
+	.bc-4x4-layout
+		& &__row-1
+			margin-bottom: $vertical-unit
+		& &__intro-column
+			display: flex
+			flex-direction: column
+			justify-content: flex-end
+		.bc-intro-paragraph
+			margin-bottom: 0
+			padding-bottom: $vertical-unit*1.5
+			border-bottom: 3px solid $white
+		hr
+			margin-bottom: $vertical-unit	
+		& &__row-1
+			p 
+				line-height: 1.6
+		&.has-high-chroma
+			.bc-intro-paragraph
+				border-bottom-color: $brand-secondary 
 /* 
  *	2-column cards - they are pulled left and right consecutively into the page margin in larger screens 
  */ 
 /* Card wrapper - pulls into the left and right page margins */
-
-	
 .bc-two-col-card-wrap
 	background-color: $white
 	&:nth-child(1n)
@@ -511,8 +569,6 @@ iframe
 /* Heroes and content features next links */
 .bc-feature-component, .bc-hero
 	& &__cta
-		justify-content: space-between
-		align-items: center
 		margin-top: $vertical-unit
 		.bc-button
 			margin-top: 0
@@ -571,7 +627,8 @@ iframe
 		
 /* Expandible blocks - custom for ISD */
 .bc-expandible-block
-	margin-bottom: $vertical-unit * 2
+	padding-top: 		$vertical-unit
+	padding-bottom: $vertical-unit
 	display: flex
 	flex-direction: column
 	&__intro, &__body
@@ -750,7 +807,12 @@ iframe
 		@media screen and (min-width: $large)
 			.bc-feature-component__header, .bc-feature-component__content
 				width: calc(100% - 8.888rem)
-		
+
+@media screen and (min-width: $large)
+	.bc-content-component__content 
+		&.bc-expandible-block
+			max-width: none
+
 .bc-inner-page-content
 	.bc-expandible-block
 		margin-top: $vertical-unit*1.5
@@ -1061,22 +1123,6 @@ $waves-height: 50px
 		&:after
 			background-color: $purple
 
-@media screen and (min-width: $med)
-	.bc-4x4-layout
-		.bc-column, hr
-			margin-bottom: $vertical-unit*2	
-		
-			
-		&__intro-column
-			display: flex
-			flex-direction: column
-			justify-content: center
-			p, .bc-intro-paragraph
-				margin-bottom: 0
-		.bc-intro-paragraph
-			font-weight: 400	
-		p 
-			font-weight: 300	
 
 .bc-stepped-process
 	&__heading

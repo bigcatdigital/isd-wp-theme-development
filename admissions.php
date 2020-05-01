@@ -50,7 +50,7 @@
 	</section><!-- // .bc-inner-page-content -->
 	<section class="bc-content-component bc-4x4-layout  has-high-chroma">	
 		<article class="bc-content-component__content ">
-			<div class="bc-2-columns">
+			<div class="bc-2-columns bc-4x4-layout__row-1">
 				<div class="bc-column bc-4x4-layout__intro-column">
 					<h1 class="bc-content-component__heading">Transition Support</h1>	
 					<p class="bc-intro-paragraph">At ISD we pride ourselves on our strong, vibrant community. From your initial expression of interest we provide you with support. We adapt our communication to suit your needs and try to provide support through mother tongues.</p>

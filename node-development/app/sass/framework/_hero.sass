@@ -64,6 +64,14 @@
 			z-index: 10
 	&__cta
 		display: flex
+		justify-content: stretch
+		width: 100%
+		a
+			flex: 1 1 100%
+			min-width: 100%
+			&:active, &:hover, &:focus
+				.bc-svg-icon
+					fill: $white
 	.bc-button
 		border-color: $white
 		margin-top: $vertical-unit
