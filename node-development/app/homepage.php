@@ -38,47 +38,53 @@
 			</svg>
 		</div><!-- // .bc-wave-wrap -->
 	</section><!-- // .bc-hero -->
-	<section class="bc-feature-component feature-page-navigation feature-page-navigation--site-quicklinks">
-		<nav class="feature-page-navigation__content">
-			<h2 class="feature-page-navigation__heading">
-				<a class="feature-page-navigation__heading__link" href="javacript:void(0)">What would you like to know?</a>
-				<a href="javascript:void(0)" class="feature-page-navigation__toggle bc-navigation-toggle">
-						<?php
+	<section class="bc-feature-component">
+		<div class="bc-feature-component__content">
+			<div class="bc-content-component__content__text-content">
+					<nav class="site-quicklinks">
+					<h2 class="site-quicklinks__heading">
+						<span class="site-quicklinks__heading__label">
+							What would you like to know?	
+						</span>
+						
+						<a href="javascript:void(0)" class="site-quicklinks__toggle bc-navigation-toggle">
+								<?php
 							echo '<?xml version="1.0" encoding="utf-8"?>'
 						?>
-						<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-						<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-							 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-							<g class="bc-menu-icon__lines">
-								<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top" x1="1" y1="25" x2="99" y2="25"/>
-								<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle" x1="1" y1="50" x2="99" y2="50"/>
-								<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom" x1="1" y1="75" x2="99" y2="75"/>						
-							</g>
-							<g class="bc-menu-icon__active-lines">
-								<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first" x1="-70" y1="-70" x2="0" y2="0"/>
-								<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second" x1="100" y1="0" x2="170" y2="-70"/>
-							</g>
-						</svg>
-				</a>
-			</h2>
-			<div class="feature-page-navigation__wrapper">
-				<ul class="feature-page-navigation__list" style="padding-bottom: 0.75rem"> 
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="landing-page-2.html">Admissions</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#community">About the School</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#teaching-learning">Teaching and Learning at ISD</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">The International Baccalaureate</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Support for your transition</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Language support for your children</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Parents&apos; Community</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">After School Care</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">International Mix</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Our Mission &amp; Values</a></li>
-					<li class="feature-page-navigation__item "><a class="is-site-quicklink" href="#get-started">Meet the people at ISD</a></li>
-				</ul>		
-			</div>
-			
-		</nav>
-	</section><!-- // .feature-page-navigation-->
+								<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+								<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+									 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+									<g class="bc-menu-icon__lines">
+										<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top" x1="1" y1="25" x2="99" y2="25"/>
+										<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle" x1="1" y1="50" x2="99" y2="50"/>
+										<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom" x1="1" y1="75" x2="99" y2="75"/>						
+									</g>
+									<g class="bc-menu-icon__active-lines">
+										<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first" x1="-70" y1="-70" x2="0" y2="0"/>
+										<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second" x1="100" y1="0" x2="170" y2="-70"/>
+									</g>
+								</svg>
+						</a>
+					</h2>
+					<div class="site-quicklinks__wrapper">
+						<ul class="site-quicklinks__list" style="padding-bottom: 0.75rem"> 
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="landing-page-2.html">Admissions</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#community">About the School</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#teaching-learning">Teaching and Learning at ISD</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">The International Baccalaureate</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Support for your transition</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Language support for your children</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Parents&apos; Community</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">After School Care</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">International Mix</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Our Mission &amp; Values</a></li>
+							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Meet the people at ISD</a></li>
+						</ul>		
+					</div>
+				</nav><!-- // .site-quicklinks -->
+			</div><!-- // .bc-feature-component__content -->
+		</div><!-- // .bc-feature-component__content -->
+	</section><!-- // .bc-feature-component -->
 	<section class="bc-one-col-feature bc-feature-component" aria-label="Welcome to ISD"> 
 		<article class="bc-feature-component__content"> 
 			<div class="bc-content-component__content__text-content">

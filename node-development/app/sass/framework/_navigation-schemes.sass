@@ -66,51 +66,40 @@
 /* On-page navigation */
 .is-floating-nav
 	box-shadow: 4px 4px 8px rgba($black, 0.16), -4px -4px 8px rgba($black, 0.16);
-.feature-page-navigation
+.site-quicklinks
 	&.bc-feature-component
 		padding-top: 		$vertical-unit * 2
 		padding-bottom: $vertical-unit * 2
 		@media screen and (min-width: $large)
 			padding-top: 		$vertical-unit *2
-		.feature-page-navigation__content
+		.site-quicklinks__content
 			min-width: 100%
 			max-width: none
 	padding-left: 	$gutter/2;
 	padding-right: 	$gutter/2;
 	position: relative
-	&__list, &__item
-		padding: 0
-		margin: 0
-		list-style: none
-	&__heading, &__list
-		position: relative
-		flex: 1 1 100%
-		width: 100%
-	&__heading
+	& &__heading
+		position: relative	
 		z-index: 10
 		display: flex
 		justify-content: space-between
 		align-items: center
+		flex: 1 1 100%
+		width: 100%
 		overflow: visible
-		font-weight: 500
-		font-size: $text-01
-		border-radius: ($text-01*$line-height)+$vertical-unit/3
-		border: 1px solid $brand-primary
-		background-color: $white
 		margin-top:  	 0
 		margin-bottom: 0
 		padding-top:  	$vertical-unit/2
 		padding-bottom: $vertical-unit/2
-		padding-left: $gutter
-		a
-			text-decoration: none
-	&__toggle 
+		font-weight: 500
+		font-size: $h1
+		font-weight: 300
+		background-color: $white
+	& &__toggle 
 		position: absolute
 		right: -1%
 		border-radius: 50%
 		background-color: $brand-primary
-		/*transition: background-color 482ms ease-in-out*/ 
-		
 		.bc-menu-icon
 			max-width: 	$text-04 
 			max-height: $text-04 
@@ -121,61 +110,56 @@
 		&.is-active, &:hover, &:active, &:focus
 			border: 1px solid $brand-primary
 			background-color: $brand-darker
-	&__wrapper
+	& &__wrapper
 		z-index: 0
-		width: 98%
 		height: 0
 		overflow: hidden
-		margin-top: 	-($text-01*$line-height)*1.75
-		margin-right: auto
 		margin-bottom: $vertical-unit
-		margin-left: auto	
-		background-color: $white
 		transition: border-width 320ms
-	&__list
+	& &__list
+		margin: 0
+		padding: 0
+		display: grid
+		flex-direction: row
+		flex-wrap: wrap
+		grid-template: auto / repeat(2, 1fr)
+		margin-left: 	-$gutter/2
+		margin-right: -$gutter/2
+	& &__item 
+		padding-left: $gutter/2
+		padding-right: $gutter/2
 		display: flex
-		flex-direction: column
-		overflow: hidden
-		padding-top: 	($text-01*$line-height)*1.75
-		padding-right: calc(#{$gutter} - 1%) 
-		padding-bottom: $vertical-unit*0.5
-		padding-left: calc(#{$gutter} - 1%) 
-		border: 1px solid $brand-primary
-		border-radius: $text-01*$line-height
-	&__item
+		align-items: flex-end 
+		margin-top: $vertical-unit/4 
+		margin-bottom: $vertical-unit/4 
 		> a
-			display: block
-			padding-top: 		$vertical-unit/2 
-			padding-bottom: $vertical-unit/2 
+			flex: 1 1 100%
+			display: inline-flex
+			align-items: flex-end
+			height: 100%
+			padding-top: $vertical-unit/2
+			padding-bottom: $vertical-unit/2
+			padding-left: $gutter/2
 			border-bottom: 1px solid $brand-primary
-			text-decoration: none
+			font-weight: 300
 			transition: background-color 280ms ease-out
 			&:active, &:hover, &:focus
 				text-decoration: underline
-				background-color: darken($shade-02, 10%)
-		&:last-child
-			> a
-				border-bottom: none
-	&__hide
-		display: none
+				background-color: $shade-02
+				color: $white
 	&.is-active
-		.feature-page-navigation__heading__icon
-			border: 1px solid $brand-primary
-			background-color: $white
-			.bc-svg-icon
-				fill: $brand-primary
-		.feature-page-navigation__hide
-			display: block
-		.feature-page-navigation__show
-			display: none
-	
-	@media screen and (min-width: $med)
-		&.bc-feature-component
-			.feature-page-navigation__content
-				min-width: 61.8%
-				max-width: 61.8%
-				margin-left: auto
-				margin-right: auto
+		.site-quicklinks
+			& __heading__icon
+				border: 1px solid $brand-primary
+				background-color: $white
+				.bc-svg-icon
+					fill: $brand-primary
+		.site-quicklinks
+			&__hide
+				display: block
+		.site-quicklinks
+			&__show
+				display: none
 	&.navigation-overlay
 		position: absolute
 		bottom: 10%
@@ -184,41 +168,36 @@
 		&__menu-icon
 		&__menu
 			display: none
-	//Floating nav at the bottom of pages
+//Floating nav at the bottom of pages
+.bc-floating-widget
+	position: fixed
+	bottom: -100%
+	right: 0
+	z-index: 100
+	display: flex
+.feature-page-navigation
 	&.feature-page-navigation--floating 
 		display: flex 
 		flex-direction: row
 		flex-wrap: wrap
 		align-items: center
-		position: fixed
-		bottom: -100%
-		right: 0
-		z-index: 100
 		font-size: $text--1
 		padding-right: $gutter * 0.5
-		.bc-svg-icon
-			stroke-width: #{(6/14)}rem
-			
-		.bc-menu-icon		
-			&.is-active
-				stroke-color: $brand-primary
 		.feature-page-navigation__navs
 			display: flex 
 			flex-wrap: wrap
 			justify-content: flex-end
 			align-items: center
 			margin-bottom: $vertical-unit / 4
-		.feature-page-navigation__toggle-nav, .feature-page-navigation__to-top
+		.feature-page-navigation__toggle
 			flex: 0 1 auto
 			display: flex
 			justify-content: center
 			align-items: center
-		.feature-page-navigation__to-top
-			margin-right: $gutter * 0.125
-		.feature-page-navigation__toggle-nav
+		.feature-page-navigation__toggle
 			padding-left: 	0
 			padding-right: 	0
-		.feature-page-navigation__toggle-nav__link
+		.feature-page-navigation__toggle__link
 			flex: none
 			width: 	2.75rem
 			height: 2.75rem
@@ -227,57 +206,64 @@
 				width: 	1.5rem
 				height: 1.5rem
 			background-color: $brand-primary
-		.feature-page-navigation__to-top
-			height: 2.75rem
-			padding: $vertical-unit * 0.25 $gutter * 0.5
-			background-color: $brand-secondary
-			border-radius: 2.75rem
-			.bc-svg-icon
-				margin-left: $gutter * 0.25
-				width: 	1.25rem
-				height: 1.25rem
-				stroke: $brand-primary
-				stroke-width: #{(2/14)}rem
+			@include activeLink
+				background-color: darken($brand-primary, 8%)
 		.feature-page-navigation__wrapper
 			position: absolute
-			display: none
 			right: $gutter/2
 			bottom: 130%
-			width: 160%
+			display: none 
+			width: 170%
 			height: auto
 			margin: auto
-			border-radius: $text-01*$line-height
-			box-shadow: 4px 4px 8px rgba($black, 0.16), -4px -4px 8px rgba($black, 0.16);
+			background-color: $white
+			ul, li
+				margin:  0
+				padding: 0
+				list-style: none
 		.feature-page-navigation__heading
-			padding: 1rem $gutter
-			color: $brand-primary
-			border-radius: 0
-			border: 0
+			padding: 1rem $gutter/2
+			margin-bottom: 0
 			border-bottom: 1px solid $brand-primary
+			color: $brand-primary
 		.feature-page-navigation__list	
 			border: none
-			border-radius: 0
-			padding: 0 0 0 0
-		.feature-page-navigation__item
-			> a
-				font-size: 1rem
-				padding: 0.8rem $gutter
+		.feature-page-navigation__link
+			font-size: 1rem
+			padding: 0.8rem $gutter/2
+			@include activeLink
+				background-color: darken($white, 8%)
 		@media screen and (min-width: $med)
 			.feature-page-navigation__wrapper
 				width: 180%
-
-//Section nav in inner page headers
-.bc-section-navigation
-	@include makeSection
-	padding-top: 		$vertical-unit * 2 
-	padding-bottom: $vertical-unit * 2  
-	overflow: hidden
+//To top of page
+.bc-to-page-top
+	flex: 0 1 auto
+	display: flex
+	justify-content: center
+	align-items: center
+	height: 2.75rem
+	padding: $vertical-unit * 0.25 $gutter * 0.5
+	margin-right: $gutter/2
+	background-color: $brand-secondary
+	border-radius: 2.75rem
+	transition: background-color 320ms ease-out
+	.bc-svg-icon
+		margin-left: $gutter * 0.25
+		width: 	1.25rem
+		height: 1.25rem
+		stroke: $brand-primary
+		stroke-width: #{(2/14)}rem
+	@include activeLink
+		background-color: darken($brand-secondary, 8%)
+//Section nav in inner pages
+.bc-section-navigation 
 	display: flex
 	flex-direction: column
 	ul, li
 		list-style: none
-	&__content
-		@include makeContentFlexbox(column)
+		margin:  0
+		padding: 0
 	&__heading
 		font-size: $h1
 		margin-top: 0
@@ -294,9 +280,13 @@
 		flex: 1 1 auto
 		padding-top: 		$vertical-unit / 4
 		padding-bottom: $vertical-unit / 4
-		
+		font-size: $text-01
+		font-weight: 300
 		@include linkHover
-			background-color: rgba($brand-primary, 0.24)
+			background-color: rgba($brand-primary, 0.8)
+			color: $white
+			.bc-svg-icon
+				fill: $white
 	@media screen and (min-width: $med)
 		.bc-section-navigation__links
 			flex: 1 1 100%
@@ -312,19 +302,24 @@
 			margin-left: auto
 			margin-right: auto 
 .bc-sidebar-widget
-	.bc-section-navigation__links 
-		padding-left: $gutter/2
-	.bc-section-navigation__link
-		color: $text-black
-		padding-top: 		$vertical-unit / 10
-		padding-bottom: $vertical-unit / 10	
-.bc-inner-page-header__sub-nav
+	.bc-section-navigation 
+		&__links 
+			padding-left: $gutter/2
+		&__link
+			color: $text-black
+			padding-top: 		$vertical-unit / 10
+			padding-bottom: $vertical-unit / 10	
+//Section nav in inner page header
+.bc-header-sub-nav
 	position: relative
-	margin-top: 	 $vertical-unit*1
-	margin-bottom: $vertical-unit*2.75
+	margin-top: 	 $vertical-unit*2 
+	&.is-active
+		z-index: 20
 	ul, li
 		list-style: none
-	&__toggle
+		margin: 0
+		padding: 0
+	& &__toggle
 		display: flex
 		align-items: center
 		&__label
@@ -334,7 +329,7 @@
 			margin-top: 		0
 			margin-bottom: 	0
 			margin-right: $gutter/2
-			padding: $gutter/3
+			padding: $gutter/3 $gutter/3 $gutter/3 0 
 			border-radius: 	$text-01+$gutter/3 
 		&__icon
 			background-color: rgba($brand-darker, 0.68)
@@ -351,36 +346,34 @@
 				width: 	$text-00
 				height: $text-00
 				fill: $white
-				transition: transform 280ms ease-out
-			&:hover, &:active, &:focus
+			@include activeLink
 				background-color: darken($brand-primary, 4%)
-	&__links
+	& &__list
 		position: absolute
-		display: none
-		opacity: 0
-		top: #{(41/14)}rem
 		width: 100%
+		height: 0
+		top: 3rem
 		margin: $vertical-unit/2 auto 
-		padding: 0
-		border-radius: 		$text-01
-		background-color: $white
-		&.is-active
-			z-index: 20
-	&__item
+		overflow: hidden
+	& &__item
 		padding: 0	
 		display: flex
-		align-items: center
 		&:last-of-type
-			> .bc-inner-page-header__sub-nav__link
-				border-bottom: none
-	&__link
+			> .bc-header-sub-nav__link
+				//border-bottom: none
+	& &__link
 		flex: 1 1 auto
 		padding: $gutter/2 $gutter
 		border-bottom: 1px solid
+		justify-content: space-between
+		align-items: center
+		font-weight: 300
+		color: $brand-primary
+		background-color: $white
+		transition: background-color 280ms ease-out
+		@include activeLink
+			background-color: darken($white, 6%)
+			text-decoration: underline
 
-.bc-feature-page
-	.bc-breadcrumbs
-		padding-top: 		$vertical-unit * 1.25
-		padding-bottom: $vertical-unit
 		
 			

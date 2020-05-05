@@ -99,21 +99,28 @@ if ($innersubtitle !== '') {
  echo "			<h2 class=\"bc-inner-page-header__sub-heading\">$innersubtitle</h2>";
 }
 if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
- echo "			<nav class=\"bc-inner-page-header__sub-nav\">";
- echo "				<div class=\"bc-inner-page-header__sub-nav__toggle\"> ";
- echo "					<h3 class=\"bc-inner-page-header__sub-nav__toggle__label\">$inner_nav_title:</h3> ";
- echo "					<a href=\"javascript:void(0)\" class=\"bc-inner-page-header__sub-nav__toggle__icon\"> ";
+ echo "			<nav class=\"bc-header-sub-nav\">";
+ echo "				<div class=\"bc-header-sub-nav__toggle\"> ";
+ echo "					<h3 class=\"bc-header-sub-nav__toggle__label\">$inner_nav_title:</h3> ";
+ echo "					<a href=\"javascript:void(0)\" class=\"bc-header-sub-nav__toggle__icon\"> ";
  echo "						<svg class=\"bc-svg-icon\" viewbox=\"0 0 100 100\">";
  echo "							<use xlink:href=\"./media/svg/icons/bc-svgs.svg#close-x\"></use> ";	
  echo "						</svg>";
  echo "					</a>	";
  echo "				</div>";
- echo "				<ul class=\"bc-inner-page-header__sub-nav__links is-floating-nav\"> ";
+ echo "				<ul class=\"bc-header-sub-nav__list\"> ";
 	foreach ($inner_nav_links as $link_text => $link) {
- 		echo "					<li class=\"bc-inner-page-header__sub-nav__item\"><a href=\"$link\" class=\"bc-inner-page-header__sub-nav__link\">$link_text</a></li>";
+ 		echo "					<li class=\"bc-header-sub-nav__item\">";
+		echo "						<a href=\"$link\" class=\"bc-header-sub-nav__link bc-icon-link\">";
+		echo "								$link_text";
+		echo "								<svg class=\"bc-svg-icon\">";							
+		echo " 									<use xlink:href=\"./media/svg/icons/bc-svgs.svg#arrow\"></use>";						
+		echo " 								</svg>";
+		echo " 						</a>";
+		echo " 					</li>";
 	}
  echo "				</ul>";
- echo "			</nav>";
+ echo "			</nav><!-- // .bc-header-sub-nav -->";
 }
  echo "		</div><!-- // .bc-innerpage-header__content -->";
  echo "	</section><!-- // .bc-innerpage-header -->";

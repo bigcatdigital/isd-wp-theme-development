@@ -132,71 +132,49 @@ iframe
 			max-width: 	1.75rem
 			max-height: 1.75rem
 /* Navigation schemes overrides */
-.feature-page-navigation
-	&.feature-page-navigation--site-quicklinks
-		.feature-page-navigation__list
-			flex-direction: row
-			flex-wrap: wrap
-			padding-left: 	calc(#{$gutter/2} - 1%)
-			padding-top: 		(($text-01*$line-height)*1.75)+$vertical-unit/2
-			padding-right: 	calc(#{$gutter/2} - 1%)
-			
-		.feature-page-navigation__item 
-			flex: 1 1 50%
-			max-width: 50%
-			padding-left: $gutter/2
-			padding-right: $gutter/2
-			height: #{(80/14)}rem
-			display: flex
-			align-items: flex-end 
-			margin-top: $vertical-unit/4 
-			margin-bottom: $vertical-unit/4 
-			> a 
-				padding-left: 	$gutter/4
-				padding-right: 	$gutter/4
-				background-color: $shade-01
-				height: 100%
-				flex: 1 1 100%
-				display: inline-flex
-				align-items: flex-end
-				transition: background-color 280ms ease-out
-				&:active, &:hover, &:focus
-					text-decoration: underline
-					background-color: $shade-02
+.site-quicklinks
+	& &__heading
+		color: $brand-primary
+	& &__item 
+		&:last-child
+			> a
+				border-bottom: 1px solid
+		&:nth-of-type(1n)
+			> a
+				color: $mid-green
+				border-bottom-color: $mid-green
+				@include linkHover
+					background-color: $mid-green 
 					color: $white
-			&:last-child
-				> a
-					border-bottom: 1px solid
-			&:nth-of-type(1n)
-				> a
-					color: $mid-green
-					border-bottom-color: $mid-green
-					@include linkHover
-						background-color: $mid-green 
-						color: $white
-			&:nth-of-type(2n)
-				> a
-					color: $red
-					border-bottom-color: $red
-					@include linkHover
-						background-color: $red 
-			&:nth-of-type(3n)
-				> a
-					color: $orange
-					border-bottom-color: $orange
-					@include linkHover
-						background-color: $orange 
-			&:nth-of-type(4n) 
-				> a
-					color: $purple
-					border-bottom-color: $purple
-					@include linkHover
-						background-color: $purple 
-		@media screen and (min-width: $large)
-			.feature-page-navigation__item
-				flex: 1 1 33.333%
-				max-width: 33.333%
+		&:nth-of-type(2n)
+			> a
+				color: $red
+				border-bottom-color: $red
+				@include linkHover
+					background-color: $red 
+		&:nth-of-type(3n)
+			> a
+				color: $orange
+				border-bottom-color: $orange
+				@include linkHover
+					background-color: $orange 
+		&:nth-of-type(4n) 
+			> a
+				color: $purple
+				border-bottom-color: $purple
+				@include linkHover
+					background-color: $purple 
+	@media screen and (min-width: $large)
 		
+		.site-quicklinks__list
+			grid-template: auto / repeat(3, 1fr)
+	
+		
+.bc-header-sub-nav
+	& &__link
+		background-color: $brand-secondary
+		@include activeLink
+			background-color: darken($brand-secondary, 6%)
 /* Project custom Heroes */
 .bc-hero
 	.media-overlay 
@@ -917,7 +895,7 @@ iframe
 .bc-inner-page-header
 	position: relative
 	padding-top: 		$vertical-unit * 5
-	padding-bottom: $vertical-unit * 5.5
+	padding-bottom: $vertical-unit * 4
 	&__bg-svg
 		position: absolute 
 		top: 50%
@@ -935,7 +913,7 @@ iframe
 			left: 0
 			fill: $brand-primary
 	&.has-inner-sub-nav
-		padding-bottom: 0
+		padding-bottom: 2rem
 @media screen and (min-width: $med)
 	.bc-inner-page-header
 		&__bg-svg

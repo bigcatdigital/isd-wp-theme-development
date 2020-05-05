@@ -53,6 +53,11 @@
 @mixin linkHover
 	&:hover, &:active, &:focus
 		@content
+@mixin activeLink
+	&:hover, &:active, &:focus
+		@content
+@mixin linkTransition
+	transition: background-color 320ms ease-out
 
 @mixin mediaContainer($x: 1, $y: 1)
 	padding-top: #{$y/$x*100%}
