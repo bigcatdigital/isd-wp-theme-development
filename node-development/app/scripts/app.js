@@ -426,8 +426,7 @@
 			const defaultTl = $bc.gsap.timeline();
 			const activeTl = $bc.gsap.timeline();
 			
-			$navigationToggler.addEventListener('click', function navIconClickHandler (evt){
-				console.log('click');
+			$navigationToggler.addEventListener('click', function navIconClickHandler (evt) {
 				const $this = evt.currentTarget;
 				evt.preventDefault();
 				if ($this.classList.contains('is-animating')) {
@@ -580,20 +579,20 @@
 		
 		/* Feature page navigation links */
 		function featurePageNavClick($link) {
+			
 			const $linkTarget = document.getElementById($link.getAttribute('href').slice(1));
 			
 			$bc.gsapFns.scrollTo({scrollTo: {y: $bc.getElOffset($linkTarget).top}, duration: 0.360});
 		}
 		const $featurePageNav = (document.querySelector('.feature-page-navigation')) ? document.querySelector('.feature-page-navigation') : null; 
 		if ($featurePageNav) {
-			if ($featurePageNav) {
-				const featurePageNavLinks = Array.from($featurePageNav.querySelectorAll('.feature-page-navigation__link'));
-				console.log(featurePageNavLinks.length);
-				for (let $navLink of featurePageNavLinks) {
-					console.log($navLink);
-					featurePageNavClick($navLink);
-				}
-			}	
+			const featurePageNavLinks = Array.from($featurePageNav.querySelectorAll('.feature-page-navigation__link'));
+			for (let $navLink of featurePageNavLinks) {
+				$navLink.addEventListener('click', (evt) => {
+					evt.preventDefault();
+					featurePageNavClick($navLink);													
+				});
+			}
 		}
 		
 		/* Section subnavigation component */

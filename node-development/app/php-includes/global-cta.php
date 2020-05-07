@@ -1,5 +1,5 @@
 <?php
- echo  	"<section id=\"bc-cta-feature\" class=\"bc-content-component bc-feature-component bc-cta-feature has-high-chroma\">"; 
+ echo  	"<section id=\"global-cta\" class=\"bc-content-component bc-feature-component bc-cta-feature has-high-chroma\">"; 
  echo  	"	<div class=\"bc-elipses\">"; 
  echo  	"		<svg class=\"bc-elipses__svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 500 280\">"; 
  echo  	"			<title>Elipses</title>";

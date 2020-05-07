@@ -31,26 +31,38 @@
 				</defs>
 			</svg>
 	<?php get_site_header(); ?>
-	<section id="bc-hero-in-page" class="bc-hero bc-hero--inpage has-waves has-mid-green-grad is-full-vh"> 
-		<div class="bc-hero__background-image"></div>   
+	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad"> 
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
+				<div class="bc-hero__body__text__IB bc-content-label bc-fade-in-up--is-not-visible">
+					<svg class="bc-svg-icon"> 
+						<use xlink:href="media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
+					</svg>
+					For Families in Ireland
+				</div><!-- // .bc-content-label -->
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
-					<p class="bc-content-label">
-						<svg class="bc-svg-icon"> 
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
-						</svg>
-						Families in Ireland
-					</p>
-					<h1 class="bc-hero__heading">Families in Ireland</h1>
-					<p class="bc-hero__tagline">International Education in the heart of Dublin</p>
-					<p class="">The International School of Dublin (ISD) is comprised of both local and international families. We believe that an international education is not solely for international families.</p>
-				</div> 
-			</div>
-		</div><!-- // .bc-hero__content --> 
-		<div class="media-overlay"></div> 
+					<h1 class="bc-hero__heading">A progressive learning alternative</h1>
+					<p class="bc-hero__tagline">International education for families in Ireland</p>
+					<!--<p class="">Find out why the International Baccalaureate is the multi-denominational, co-educational and inclusive gold standard for universities and graduate employers</p>
+					<p>Find out why the International School of Dublin offers international  families <em>and</em> families in Ireland an alternative option for primary education.</p>-->
+					<p>The International School of Dublin offers international families and families in Ireland multi-denominational, co-educational and inclusive option for primary education.</p>
+					<div class="bc-hero__cta">
+						<a href="javascript:void(0)" class="bc-icon-link--featured">
+							Learn about the IB gold-standard education alternative
+							<svg class="bc-svg-icon">
+								<use xlink:href="media/svg/icons/bc-svgs.svg#arrow"></use> 	
+							</svg>
+						</a> 
+					</div>
+				</div><!-- // .bc-hero__body__text --> 
+			</div><!-- // .bc-hero__body -->
+			<div class="media-overlay"></div> 
+			<div class="bc-hero__background-image"></div>   
+		</div><!-- // .bc-hero__content -->
 		<div class="wave-wrap">
-			<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
+			<?php
+				echo '<?xml version="1.0" encoding="utf-8"?>'
+			?>
 			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 			<svg version="1.1" id="Layer_1" class="wave-wrap__svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 				 viewBox="0 0 1440 50" xml:space="preserve">
@@ -60,7 +72,7 @@
 		</div><!-- // .bc-wave-wrap -->
 	</section><!-- // .bc-hero--inpage -->
 	
-	<section class="bc-feature-component bc-expandible-blocks-component"  id="teaching-learning">
+	<section class="bc-feature-component bc-expandible-blocks-component"  id="learning-for-life">
 		<div class="bc-content-component__header">
 			<div class="bc-content-component__content__text-content">
 				<p class="bc-content-label ib-world-school"> 
@@ -151,7 +163,7 @@
 			</div><!-- // .bc-expandible-block__expander -->
 		</article><!-- // .bc-expandible-block --> 
 	</section><!-- // .bc-expandible-blocks-component -->
-	<section id="bc-4-col-feature" class="bc-3-col-feature bc-feature-component has-shade-01-gradient is-full-vh" aria-label="Learning for Life"> 
+	<section id="learning-for-life-2-col" class="bc-3-col-feature bc-feature-component has-shade-01-gradient is-full-vh" aria-label="Learning for Life"> 
 		<header class="bc-feature-component__header "> 
 			<div class="bc-content-component__content__text-content">
 				<p class="bc-content-label ib-world-school"> 
@@ -213,7 +225,11 @@
 	<?php  
 		get_global_CTA();
 		get_footer();
-		get_floating_section_nav();
+		get_floating_section_nav('On this page', array(
+			'Learning for life' => '#learning-for-life', 
+			'Learning for life 2 col' => '#learning-for-life-2-col',
+			'Apply now' => '#global-cta') 
+    ); 
 	?>
 	<script src="scripts/app-concat.min.js"></script>  
 </body>

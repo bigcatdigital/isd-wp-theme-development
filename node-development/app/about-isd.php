@@ -61,13 +61,10 @@
 					</div>
 					<div class="bc-media-embed__caption">The ISD Story</div>
 				</div>
-				<p class="bc-inner-page-content__intro">The International School of Dublin (ISD) is the first accredited IB World Primary School in Ireland. Founded in 2007, ISD is very proud of forging the path to demonstrate the demand for, and success in, a progressive education at the primary level.</p>
-				<p>ISD is the only accredited IB World Primary School in Ireland. It is a small, private, non-profit school that is co-educational, non-denominational and culturally diverse.</p>
-				<p>We believe that our school’s success is due to our internationally regarded curriculum (<a href="https://www.ibo.org/programmes/primary-years-programme/">IBPYP</a>) and the manner in which it is lived out by our students, staff and parents.</p>
-				<p>At ISD you will find a welcoming and lively environment, which is characterised by collaborative and purposeful activity. ISD students benefit from an innovative form of schooling, a broad education that promotes inquiring, open-minded and principled learners who are reflective risk-takers.</p>
-				<p>Small class sizes are guided by internationally experienced staff.  Students inquire into the world in which they live and ultimately development themselves as global, internationally-minded citizens. Our students are encouraged, guided and challenged to engage with real-life learning experiences. We aim for the success and achievement for each individual child.</p>	
+				<p class="bc-inner-page-content__intro">The International School of Dublin (ISD) is the first accredited IB World Primary School in Ireland. Founded in 2007, ISD is very proud of forging the path to demonstrate the demand for, and success in, a progressive education at the primary level.  </p>  
+				<p>Established to expand diversity within the educational offering across Ireland, ISD provides an array of educational choice in a culturally diverse environment.  We are co-educational and non-denominational.  The curriculum is learner driven, facilitated through inquiry and focused on intercultural understanding, lifelong learning and respect.</p>  
+				<p>Community is maintained as the heart of the school’s mission.  The welcoming, responsive and warm atmosphere of the school provides a home for both local and international families.  ISD prides itself on its strong connections with alumni all over the globe.</p>
 			</div>
-			
 		</article>
 	</section><!-- // .bc-inner-page-content Our Story-->
 	
