@@ -5,27 +5,22 @@
 <body class="bc-feature-page"> 
 	<?php get_site_header(); ?>
 	<section id="bc-hero-main" class="bc-hero bc-hero--is-feature has-waves is-full-vh">
-		<div class="bc-hero__background-image">
-		</div>    
+		
 		<div class="bc-hero__content">
-			<div class="bc-hero__header">
-				<!-- empty -->
-			</div><!-- // .hero-header -->
-			<div class="bc-hero__body bc-fade-in-up--is-not-visible">
-				<div class="bc-hero__body__text__IB">
+			<div class="bc-hero__body">
+				<div class="bc-hero__body__text__IB bc-fade-in-up--is-not-visible">
 					<img src="media/ib-world-school-logo-2-colour.png" alt="ISD is an International Baccalaureate World School">
 					<p>ISD is an International Baccalaureate World School</p> 
 				</div>
-				<div class="bc-hero__body__text">
+				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
 					<h1 class="bc-hero__heading">ISD Hero feature</h1>
 					<p class="bc-hero__tagline">Tagline</p> 
 				</div><!-- // .bc-hero__body__text -->
-			</div><!-- // .bc-hero__body -->
-			<div class="bc-hero__footer feature-page-navigation">
 				
-			</div><!-- // .feature-page-navigation-->
+			</div><!-- // .bc-hero__body -->
+			<div class="bc-hero__background-image"></div>    
+			<div class="media-overlay"></div> 
 		</div><!-- // .bc-hero__content -->
-		<div class="media-overlay"></div> 
 		<div class="wave-wrap">
 			<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
@@ -37,27 +32,27 @@
 		</div><!-- // .bc-wave-wrap -->
 	</section><!-- // .bc-hero -->
 	<section id="bc-hero-in-page" class="bc-hero bc-hero--inpage has-waves has-mid-green-grad is-full-vh"> 
-		<div class="bc-hero__background-image"></div>   
+		  
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
+				<div class="bc-hero__body__text__IB bc-content-label bc-fade-in-up--is-not-visible">
+					<svg class="bc-svg-icon"> 
+						<use xlink:href="./media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
+					</svg>
+					Content label
+				</div>
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
-					<p class="bc-content-label">
-						<svg class="bc-svg-icon"> 
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
-						</svg>
-						Content label
-					</p>
-					<h1 class="bc-hero__heading">In-page Hero</h1>
+					<h1 class="bc-hero__heading ">In-page Hero</h1>
 					<p class="bc-hero__tagline">Tagline</p>
 					<p class="">No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue.</p>
 					<div class="bc-hero__cta">
-						<a href="javascript:void(0)" class="bc-button">
+						<a href="javascript:void(0)" class="bc-icon-link--featured">
 							Find out more
 							<svg class="bc-svg-icon">
 								<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
 							</svg>
 						</a> 
-						<a href="javascript:void(0)" class="bc-feature-component__next bc-fade-in-up--is-not-visible">
+						<a href="javascript:void(0)" class="bc-feature-component__next">
 							<span class="bc-feature-component__next__text">Next content</span>
 							<span class="bc-feature-component__next__icon">
 								<svg class="bc-svg-icon">
@@ -67,9 +62,10 @@
 						</a>
 					</div>
 				</div> 
-			</div>
+			</div><!-- // .bc-hero__body -->
+			<div class="bc-hero__background-image"></div> 
+			<div class="media-overlay"></div>
 		</div><!-- // .bc-hero__content --> 
-		<div class="media-overlay"></div> 
 		<div class="wave-wrap">
 			<?php echo '<?xml version="1.0" encoding="utf-8"?>' ?>
 			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->

@@ -74,55 +74,66 @@
  echo "		<div class=\"bc-main-navigation__underlay\"></div>";
  echo "	</header>";
 if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
-	echo "	<section class=\"bc-inner-page-header bc-content-section has-inner-sub-nav\">";   
+	echo "	<section class=\"bc-inner-page-header bc-content-section has-inner-sub-nav has-waves\">";   
 } else {
 	echo "	<section class=\"bc-inner-page-header bc-content-section\">";   
 }
- echo "		<div class=\"bc-inner-page-header__bg-svg\">";
- echo "			<svg class=\"families-svg\" viewbox=\"0 0 100 100\">";
- echo "				<use xlink:href=\"media/svg/images/families.svg#familiy_3\"></use>"; 
- echo "			</svg>";
- echo "		</div>";
- echo "		<div class=\"bc-elipses\">"; 
- echo "			<svg class=\"bc-elipses__svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 500 280\">";
- echo "				<!-- fill:url(#linear-gradient) --> ";
- echo "				<circle class=\"bc-elipses__elipse\" />"; 
- echo "				<circle class=\"bc-elipses__elipse\" />";
- echo "				<circle class=\"bc-elipses__elipse\" />"; 
- echo "				<circle class=\"bc-elipses__elipse\" />"; 
- echo "				<circle class=\"bc-elipses__elipse\" />"; 
- echo "			</svg>";
- echo "		</div>";
- echo "		<div class=\"bc-inner-page-header__content\">";
- echo "			<h1 class=\"bc-inner-page-header__heading\">$innertitle</h1>";
+ echo "			<div class=\"bc-inner-page-header__wrap\">";
+ echo "				<div class=\"bc-inner-page-header__bg-svg\">";
+ echo "					<svg class=\"families-svg\" viewbox=\"0 0 100 100\">";
+ echo "						<use xlink:href=\"media/svg/images/families.svg#familiy_3\"></use>"; 
+ echo "					</svg>";
+ echo "				</div>";
+ echo "				<div class=\"bc-elipses\">"; 
+ echo "					<svg class=\"bc-elipses__svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 500 280\">";
+ echo "						<!-- fill:url(#linear-gradient) --> ";
+ echo "						<circle class=\"bc-elipses__elipse\" />"; 
+ echo "						<circle class=\"bc-elipses__elipse\" />";
+ echo "						<circle class=\"bc-elipses__elipse\" />"; 
+ echo "						<circle class=\"bc-elipses__elipse\" />"; 
+ echo "						<circle class=\"bc-elipses__elipse\" />"; 
+ echo "					</svg>";
+ echo "				</div>";
+ echo "				<div class=\"bc-inner-page-header__content\">";
+ echo "				<h1 class=\"bc-inner-page-header__heading\">$innertitle</h1>";
 if ($innersubtitle !== '') {
- echo "			<h2 class=\"bc-inner-page-header__sub-heading\">$innersubtitle</h2>";
+ echo "				<h2 class=\"bc-inner-page-header__sub-heading\">$innersubtitle</h2>";
 }
 if ($inner_nav_title !== '' && is_array($inner_nav_links)) {
- echo "			<nav class=\"bc-header-sub-nav\">";
- echo "				<div class=\"bc-header-sub-nav__toggle\"> ";
- echo "					<h3 class=\"bc-header-sub-nav__toggle__label\">$inner_nav_title:</h3> ";
- echo "					<a href=\"javascript:void(0)\" class=\"bc-header-sub-nav__toggle__icon\"> ";
- echo "						<svg class=\"bc-svg-icon\" viewbox=\"0 0 100 100\">";
- echo "							<use xlink:href=\"./media/svg/icons/bc-svgs.svg#close-x\"></use> ";	
- echo "						</svg>";
- echo "					</a>	";
- echo "				</div>";
- echo "				<ul class=\"bc-header-sub-nav__list\"> ";
+ echo "				<nav class=\"bc-header-sub-nav\">";
+ echo "					<div class=\"bc-header-sub-nav__toggle\"> ";
+ echo "						<h3 class=\"bc-header-sub-nav__toggle__label\">$inner_nav_title:</h3> ";
+ echo "						<a href=\"javascript:void(0)\" class=\"bc-header-sub-nav__toggle__icon\"> ";
+ echo "							<svg class=\"bc-svg-icon\" viewbox=\"0 0 100 100\">";
+ echo "								<use xlink:href=\"./media/svg/icons/bc-svgs.svg#close-x\"></use> ";	
+ echo "							</svg>";
+ echo "						</a>	";
+ echo "					</div>";
+ echo "					<ul class=\"bc-header-sub-nav__list\"> ";
 	foreach ($inner_nav_links as $link_text => $link) {
- 		echo "					<li class=\"bc-header-sub-nav__item\">";
-		echo "						<a href=\"$link\" class=\"bc-header-sub-nav__link bc-icon-link\">";
-		echo "								$link_text";
-		echo "								<svg class=\"bc-svg-icon\">";							
-		echo " 									<use xlink:href=\"./media/svg/icons/bc-svgs.svg#arrow\"></use>";						
-		echo " 								</svg>";
-		echo " 						</a>";
-		echo " 					</li>";
+ 		echo "				<li class=\"bc-header-sub-nav__item\">";
+		echo "					<a href=\"$link\" class=\"bc-header-sub-nav__link bc-icon-link\">";
+		echo "							$link_text";
+		echo "							<svg class=\"bc-svg-icon\">";							
+		echo " 								<use xlink:href=\"./media/svg/icons/bc-svgs.svg#arrow\"></use>";						
+		echo " 							</svg>";
+		echo " 					</a>";
+		echo " 				</li>";
 	}
- echo "				</ul>";
- echo "			</nav><!-- // .bc-header-sub-nav -->";
+ echo "					</ul>";
+ echo "				</nav><!-- // .bc-header-sub-nav -->";
 }
- echo "		</div><!-- // .bc-innerpage-header__content -->";
+ echo "			</div><!-- // .bc-innerpage-header__content -->";
+ echo "		</div><!-- // .bc-innerpage-header__wrap -->";
+ echo " 	<div class=\"wave-wrap\">";
+ echo "			<?xml version=\"1.0\" encoding=\"utf-8\"?>";
+ echo "			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->";
+ echo "			<svg version=\"1.0\" class=\"wave-wrap__svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" x=\"0px\" y=\"0px\"";
+ echo "				 viewBox=\"0 0 1440 50\" xml:space=\"preserve\">";
+ echo "				<path id=\"isd-rainbow-wave\" class=\"wave-wrap__rainbow\" d=\"M0,1v1v25.2c0,0,200.9-24.7,360-24.7S923.9,50,1080,50s360-23.5,360-23.5V2V1H0z\"/>";
+ echo "				<path class=\"isd-wave wave-wrap__wave\" id=\"isd-wave\" d=\"M0,0v1v24.7C0,25.7,200.9,1,360,1s563.9,47,720,47s360-22.5,360-22.5V1V0H0z\"/>";
+ echo "			</svg>";
+ echo "		</div><!-- // .bc-wave-wrap -->";
  echo "	</section><!-- // .bc-innerpage-header -->";
  echo "	<nav class=\"bc-breadcrumbs\">";
  echo "		<div class=\"bc-breadcrumbs__wrap\">";

@@ -66,18 +66,21 @@
 /* On-page navigation */
 .is-floating-nav
 	box-shadow: 4px 4px 8px rgba($black, 0.16), -4px -4px 8px rgba($black, 0.16);
+.bc-feature-component
+	&.site-quicklinks-component
+	padding-top: 		$vertical-unit * 2
+	padding-bottom: $vertical-unit * 2
+	@media screen and (min-width: $large)
+		padding-top: 		$vertical-unit *2
 .site-quicklinks
-	&.bc-feature-component
-		padding-top: 		$vertical-unit * 2
-		padding-bottom: $vertical-unit * 2
-		@media screen and (min-width: $large)
-			padding-top: 		$vertical-unit *2
-		.site-quicklinks__content
-			min-width: 100%
-			max-width: none
-	padding-left: 	$gutter/2;
-	padding-right: 	$gutter/2;
 	position: relative
+	padding-right: 	$gutter/2
+	padding-bottom: $gutter/2
+	padding-left: 	$gutter/2
+	background-color: transparent
+	border-bottom: 1px solid $brand-secondary
+	@include makeMarkRight($brand-secondary)
+	
 	& &__heading
 		position: relative	
 		z-index: 10
@@ -92,12 +95,11 @@
 		padding-top:  	$vertical-unit/2
 		padding-bottom: $vertical-unit/2
 		font-weight: 500
-		font-size: $h1
-		font-weight: 300
-		background-color: $white
+		font-size: $h2
+		font-weight: 500
 	& &__toggle 
 		position: absolute
-		right: -1%
+		right: -0.5%
 		border-radius: 50%
 		background-color: $brand-primary
 		.bc-menu-icon
@@ -114,33 +116,33 @@
 		z-index: 0
 		height: 0
 		overflow: hidden
-		margin-bottom: $vertical-unit
+		margin-bottom: $vertical-unit/2
 		transition: border-width 320ms
 	& &__list
-		margin: 0
-		padding: 0
-		display: grid
+		display: flex
 		flex-direction: row
 		flex-wrap: wrap
 		grid-template: auto / repeat(2, 1fr)
+		margin: 0
+		padding: 0
 		margin-left: 	-$gutter/2
 		margin-right: -$gutter/2
 	& &__item 
-		padding-left: $gutter/2
-		padding-right: $gutter/2
+		flex: 1 1 100%
 		display: flex
 		align-items: flex-end 
+		padding-left: $gutter/2
+		padding-right: $gutter/2
 		margin-top: $vertical-unit/4 
 		margin-bottom: $vertical-unit/4 
 		> a
-			flex: 1 1 100%
+			flex: 1 1 100% 
+			
 			display: inline-flex
 			align-items: flex-end
 			height: 100%
 			padding-top: $vertical-unit/2
 			padding-bottom: $vertical-unit/2
-			padding-left: $gutter/2
-			border-bottom: 1px solid $brand-primary
 			font-weight: 300
 			transition: background-color 280ms ease-out
 			&:active, &:hover, &:focus
@@ -168,6 +170,14 @@
 		&__menu-icon
 		&__menu
 			display: none
+@media screen and (min-width: $small)
+	.site-quicklinks
+		& &__list
+			flex-wrap: wrap
+		& &__item 
+			flex: 1 1 50%
+			max-width: 50%
+	
 //Floating nav at the bottom of pages
 .bc-floating-widget
 	position: fixed

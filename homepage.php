@@ -5,27 +5,20 @@
 <body class="bc-feature-page"> 
 	<?php get_site_header(); ?>
 	<section class="bc-hero bc-hero--is-feature has-waves">
-		<div class="bc-hero__background-image">
-		</div>    
 		<div class="bc-hero__content">
-			<div class="bc-hero__header">
-				<!-- empty -->
-			</div><!-- // .hero-header -->
-			<div class="bc-hero__body bc-fade-in-up--is-not-visible">
-				<div class="bc-hero__body__text__IB">
+			<div class="bc-hero__body">
+				<div class="bc-hero__body__text__IB bc-fade-in-up--is-not-visible">
 					<img src="media/ib-world-school-logo-2-colour.png" alt="ISD is an International Baccalaureate World School">
 					<p>ISD is an International Baccalaureate World School</p> 
 				</div>
-				<div class="bc-hero__body__text">
+				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible"> 
 					<h1 class="bc-hero__heading">International School of Dublin</h1>
 					<p class="bc-hero__tagline">International Education in the heart of Dublin</p> 
 				</div><!-- // .bc-hero__body__text -->
 			</div><!-- // .bc-hero__body -->
-			<div class="bc-hero__footer feature-page-navigation">
-				
-			</div><!-- // .feature-page-navigation-->
+			<div class="bc-hero__background-image"></div><!-- // .bc-hero__background-image -->  
+			<div class="media-overlay"></div><!-- // .media-overlay -->
 		</div><!-- // .bc-hero__content -->
-		<div class="media-overlay"></div> 
 		<div class="wave-wrap">
 			<?php
 				echo '<?xml version="1.0" encoding="utf-8"?>'
@@ -38,52 +31,67 @@
 			</svg>
 		</div><!-- // .bc-wave-wrap -->
 	</section><!-- // .bc-hero -->
-	<section class="bc-feature-component">
-		<div class="bc-feature-component__content">
-			<div class="bc-content-component__content__text-content">
-					<nav class="site-quicklinks">
-					<h2 class="site-quicklinks__heading">
-						<span class="site-quicklinks__heading__label">
-							What would you like to know?	
-						</span>
-						
-						<a href="javascript:void(0)" class="site-quicklinks__toggle bc-navigation-toggle">
-								<?php
+	<section class="bc-feature-component site-quicklinks-component has-waves has-shade-01">
+		<div class="bc-content-component__wrap">
+			<div class="bc-feature-component__content">
+				<div class="bc-content-component__content__text-content">
+						<nav class="site-quicklinks">
+						<h2 class="site-quicklinks__heading">
+							<span class="site-quicklinks__heading__label">
+								What would you like to know?	
+							</span>
+							
+							<a href="javascript:void(0)" class="site-quicklinks__toggle bc-navigation-toggle">
+									<?php
 							echo '<?xml version="1.0" encoding="utf-8"?>'
 						?>
-								<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-								<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-									 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
-									<g class="bc-menu-icon__lines">
-										<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top" x1="1" y1="25" x2="99" y2="25"/>
-										<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle" x1="1" y1="50" x2="99" y2="50"/>
-										<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom" x1="1" y1="75" x2="99" y2="75"/>						
-									</g>
-									<g class="bc-menu-icon__active-lines">
-										<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first" x1="-70" y1="-70" x2="0" y2="0"/>
-										<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second" x1="100" y1="0" x2="170" y2="-70"/>
-									</g>
-								</svg>
-						</a>
-					</h2>
-					<div class="site-quicklinks__wrapper">
-						<ul class="site-quicklinks__list" style="padding-bottom: 0.75rem"> 
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="landing-page-2.html">Admissions</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#community">About the School</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#teaching-learning">Teaching and Learning at ISD</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">The International Baccalaureate</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Support for your transition</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Language support for your children</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Parents&apos; Community</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">After School Care</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">International Mix</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Our Mission &amp; Values</a></li>
-							<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Meet the people at ISD</a></li>
-						</ul>		
-					</div>
-				</nav><!-- // .site-quicklinks -->
-			</div><!-- // .bc-feature-component__content -->
-		</div><!-- // .bc-feature-component__content -->
+									<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+									<svg version="1.1" class="bc-menu-icon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+										 viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+										<g class="bc-menu-icon__lines">
+											<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--top" x1="1" y1="25" x2="99" y2="25"/>
+											<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--middle" x1="1" y1="50" x2="99" y2="50"/>
+											<line class="bc-menu-icon__line bc-menu-icon__lines__line bc-menu-icon__lines__line--bottom" x1="1" y1="75" x2="99" y2="75"/>						
+										</g>
+										<g class="bc-menu-icon__active-lines">
+											<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--first" x1="-70" y1="-70" x2="0" y2="0"/>
+											<line class="bc-menu-icon__line bc-menu-icon__lines__active-line bc-menu-icon__lines__active-line--second" x1="100" y1="0" x2="170" y2="-70"/>
+										</g>
+									</svg>
+							</a>
+						</h2>
+						<div class="site-quicklinks__wrapper">
+							<ul class="site-quicklinks__list" style="padding-bottom: 0.75rem"> 
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="landing-page-2.html">Admissions</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#community">About the School</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#teaching-learning">Teaching and Learning at ISD</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">The International Baccalaureate</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Support for your transition</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Language support for your children</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Parents&apos; Community</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">After School Care</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">International Mix</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Our Mission &amp; Values</a></li>
+								<li class="site-quicklinks__item "><a class="is-site-quicklink" href="#get-started">Meet the people at ISD</a></li>
+							</ul>		
+						</div>
+					</nav><!-- // .site-quicklinks --> 
+				</div><!-- // .bc-feature-component__content -->
+			</div><!-- // .bc-feature-component__content .site-quicklinks --> 
+			<div class="media-overlay"></div><!-- // .media-overlay -->
+		</div><!-- // .bc-content-component__wrap -->
+		<div class="wave-wrap">
+			<?php
+				echo '<?xml version="1.0" encoding="utf-8"?>'
+			?>
+			<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+				 viewBox="0 0 1440 50" xml:space="preserve">
+				<path style="fill: url(#isd-rainbow-grad)" id="isd-rainbow-wave" class="st1" d="M0,1v1v25.2c0,0,200.9-24.7,360-24.7S923.9,50,1080,50s360-23.5,360-23.5V2V1H0z"/>
+				<path class="isd-wave" id="isd-wave" d="M0,0v1v24.7C0,25.7,200.9,1,360,1s563.9,47,720,47s360-22.5,360-22.5V1V0H0z"/>
+			</svg>
+		</div><!-- // .bc-wave-wrap -->
+		
 	</section><!-- // .bc-feature-component -->
 	<section class="bc-one-col-feature bc-feature-component" aria-label="Welcome to ISD"> 
 		<article class="bc-feature-component__content"> 
@@ -204,16 +212,15 @@
 	</section><!-- // .bc-4x4-grid-feature -->
 	
 	<section class="bc-hero bc-hero--inpage has-waves has-mid-green-grad"> 
-		<div class="bc-hero__background-image"></div>   
 		<div class="bc-hero__content">
 			<div class="bc-hero__body">
+				<div class="bc-hero__body__text__IB bc-content-label bc-fade-in-up--is-not-visible">
+					<svg class="bc-svg-icon"> 
+						<use xlink:href="media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
+					</svg>
+					For Families in Ireland
+				</div><!-- // .bc-content-label -->
 				<div class="bc-hero__body__text bc-fade-in-up--is-not-visible">
-					<p class="bc-content-label">
-						<svg class="bc-svg-icon"> 
-							<use xlink:href="media/svg/icons/bc-svgs.svg#family-simple-icon"></use>  
-						</svg>
-						For Families in Ireland
-					</p>
 					<h1 class="bc-hero__heading">A progressive learning alternative</h1>
 					<p class="bc-hero__tagline">International education for families in Ireland</p>
 					<!--<p class="">Find out why the International Baccalaureate is the multi-denominational, co-educational and inclusive gold standard for universities and graduate employers</p>
@@ -227,10 +234,11 @@
 							</svg>
 						</a> 
 					</div>
-				</div> 
-			</div>
+				</div><!-- // .bc-hero__body__text --> 
+			</div><!-- // .bc-hero__body -->
+			<div class="media-overlay"></div> 
+			<div class="bc-hero__background-image"></div>   
 		</div><!-- // .bc-hero__content -->
-		<div class="media-overlay"></div> 
 		<div class="wave-wrap">
 			<?php
 				echo '<?xml version="1.0" encoding="utf-8"?>'

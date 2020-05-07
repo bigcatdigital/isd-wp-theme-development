@@ -16,7 +16,7 @@
 		background-size: cover
 		background-position: center		
 		background-color: transparent
-	h1, p, a
+	h1, p, a, .bc-content-label
 		color: $white
 		margin-top: 0
 		margin-bottom: 0
@@ -42,9 +42,10 @@
 	&__body
 		position: relative
 		flex: 1 0 80%
-		//@include contentContainer 
-		padding-left: 0
 		padding-right: 0
+		padding-bottom: $vertical-unit*2
+		padding-left: 0
+		
 	&__heading
 		font-size: $large-text
 	&__tagline
@@ -53,7 +54,6 @@
 	&__header, &__footer
 		flex: 0 1 10%
 	.media-overlay	
-		z-index: 0
 		@include gradOverlay('main-hero', $start-colour: rgba($black, 0.618), $mid-colour: rgba($black, 0.382), $end-colour: $black)
 	&__header
 		position: relative
@@ -79,22 +79,15 @@
 			fill: $white
 	@media screen and (min-width: $med) and (max-width: ($large - 1px)) and (orientation: portrait) 
 		height: 75vh
-
-.bc-hero
-	&.bc-hero--inpage
-		background-image: linear-gradient(to bottom, rgba($brand-primary, 0) 10%, rgba($brand-primary, 1) 72%)
 	
 
 @media screen and (min-width: 720px)
 	.bc-hero
 		&__body
+			padding-bottom: $vertical-unit*2.5
 			&__text
 				padding-left:  	$gutter
 				padding-right:  $gutter
-	
-@media screen and (max-width: 800px) and (orientation: landscape)
-	.bc-hero
-		min-height: 200vh
 	
 
 @media screen and (min-width: $large) 
@@ -104,6 +97,12 @@
 			.bc-hero__body__text
 				padding-left: 	0
 				padding-right: 	0
+		&__content
+			margin-left: auto
+			margin-right: auto
+			width: 100%
+			padding-left: (4.444rem + $gutter/2)
+			padding-right: (4.444rem + $gutter/2)	
 
 
 
