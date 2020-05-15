@@ -1,6 +1,6 @@
 <?php
-	echo "<footer class=\"bc-content-component has-brand-darker-background \">"; 
-	echo "	<div class=\"bc-content-component__content\">";
+	echo "<footer class=\"bc-feature-component has-brand-darker-background \">"; 
+	echo "	<div class=\"bc-feature-component__content\">";
 	echo "		<div class=\"bc-2-columns\">";
 	echo "			<div class=\"bc-column\">";
 	echo "				<h2>How to find us</h2>";

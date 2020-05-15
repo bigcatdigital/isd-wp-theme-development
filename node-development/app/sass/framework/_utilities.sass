@@ -104,7 +104,6 @@
 	.has-#{$name}-gradient
 		@include gradOverlay($start-colour: $shade, $mid-colour: darken($shade, 6%), $end-colour: darken($shade, 12.5%), $stop: 100%)
 
-	
 .has-mark-right
 	position: relative
 	&:after
@@ -135,7 +134,7 @@
 		@include makeForgroundColour($color-invert, $color)
 	@if $name != 'secondary' and $name != 'yellow'
 		.has-#{$name}-text
-			color: $color
+			color: $color !important
 .has-white-background 
 	background-color: $white
 

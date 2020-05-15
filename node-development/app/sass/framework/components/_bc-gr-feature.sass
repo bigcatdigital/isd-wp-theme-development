@@ -1,0 +1,36 @@
+.bc-gr-feature
+	margin-bottom: $vertical-unit*2.5
+	&__text
+		display: flex
+		flex-direction: column
+		justify-content: center
+		p:last-child 
+			margin-bottom: 0
+	& &__heading
+		margin-top: 0
+		margin-bottom: $vertical-unit/1.5
+		font-size: $text-04
+		display: flex
+		align-items: center
+		img 
+			max-width: 2.5rem
+			margin-right: $gutter/2
+	p, a
+		margin-bottom: $vertical-unit/1.5
+	& &__intro
+		font-weight: 500	
+	&:last-of-type
+		margin-bottom: $vertical-unit
+	&:nth-of-type(2n)
+		@media screen and (min-width: $med) 
+			grid-template: auto / 61.8fr 38.2fr
+			.bc-gr-feature__text 
+				order: 0
+			.bc-gr-feature__media 
+				order: 1 
+	@media screen and (min-width: $med) 
+		&__text, &__media
+			margin-bottom: 0
+	
+	
+	

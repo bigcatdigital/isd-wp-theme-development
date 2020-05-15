@@ -149,17 +149,6 @@
 						</ul>
 					</li>
 					<li>
-						<h4><a href="landing-page-2.php" class="">Landing page#2</a></h4>
-						<p><b>Includes:</b></p>
-						<ul>
-							<li>Hero block</li>
-							<li>Text only feature - About Dublin</li>
-							<li>Text only feature - Join the community</li> 
-							<li>Expandable blocks</li>
-							<li>Major call to action</li>
-						</ul>
-					</li>
-					<li>
 						<h4><a href="inner-content-page.php" class="">Inner content page</a></h4>
 						<p><b>Includes:</b></p>
 						<ul>

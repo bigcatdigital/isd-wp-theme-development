@@ -10,7 +10,7 @@
  echo	"	</a>";
  echo	"	<nav class=\"feature-page-navigation feature-page-navigation--floating\">";
  echo	"		<div class=\"feature-page-navigation__toggle\">";
- echo	"			<a href=\"javascript:void(0)\" class=\"feature-page-navigation__toggle__link bc-navigation-toggle\">";
+ echo	"			<a href=\"javascript:void(0)\" class=\"feature-page-navigation__toggle__link  bc-navigation-toggle\">";
  echo	"				<?xml version=\"1.0\" encoding=\"utf-8\"?>";
  echo	"				<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->";
  echo	"				<svg version=\"1.1\" class=\"bc-menu-icon\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\"";

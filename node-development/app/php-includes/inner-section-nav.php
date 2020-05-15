@@ -1,7 +1,7 @@
 <?php 
-	echo "<section class=\"bc-content-component bc-section-navigation  has-shade-02\">";
-	echo "	<article class=\"bc-content-component__content\">";
-	echo "			<div class=\"bc-content-component__content__text-content\">";
+	echo "<section class=\"bc-feature-component bc-section-navigation  has-shade-02\">";
+	echo "	<article class=\"bc-feature-component__content\">";
+	echo "			<div class=\"bc-feature-component__content__text-content\">";
 	echo "				<nav class=\"bc-section-navigation\">";
 	echo "					<h1 class=\"bc-section-navigation__heading\">$inner_sect_nav_title</h1>";
 	echo "					<ul class=\"bc-section-navigation__links\">"; 

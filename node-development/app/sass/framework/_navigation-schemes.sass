@@ -1,14 +1,12 @@
 /* Navigation toggle icon */
 .bc-navigation-toggle
 	position: relative
-	//max-width: 100%
-	//max-height: 100%
 	display: flex
 	justify-content: center
 	align-items: center
 	width: 	#{(36/14)}rem
 	height: #{(36/14)}rem
-	overflow: hidden
+	/*overflow: hidden*/
 	.bc-menu-icon
 		position: relative
 		width: 	100%
@@ -95,7 +93,7 @@
 		padding-top:  	$vertical-unit/2
 		padding-bottom: $vertical-unit/2
 		font-weight: 500
-		font-size: $h2
+		font-size: $h3
 		font-weight: 500
 	& &__toggle 
 		position: absolute
@@ -170,6 +168,9 @@
 		&__menu-icon
 		&__menu
 			display: none
+@media screen and (min-width: $med)
+	& &__heading
+		font-size: $h2
 @media screen and (min-width: $small)
 	.site-quicklinks
 		& &__list
@@ -218,6 +219,9 @@
 			background-color: $brand-primary
 			@include activeLink
 				background-color: darken($brand-primary, 8%)
+			@include makeNeumporphic($position: relative, $isLink: true) 
+			&:before, &:after
+				border-radius: 50%
 		.feature-page-navigation__wrapper
 			position: absolute
 			right: $gutter/2
@@ -231,6 +235,7 @@
 				margin:  0
 				padding: 0
 				list-style: none
+			@include makeNeumporphic($position: absolute)
 		.feature-page-navigation__heading
 			padding: 1rem $gutter/2
 			margin-bottom: 0
@@ -264,6 +269,9 @@
 		height: 1.25rem
 		stroke: $brand-primary
 		stroke-width: #{(2/14)}rem
+	@include makeNeumporphic($isLink: true)
+	&:before, &:after
+		border-radius: 2.75rem
 	@include activeLink
 		background-color: darken($brand-secondary, 8%)
 //Section nav in inner pages
@@ -325,6 +333,7 @@
 	margin-top: 	 $vertical-unit*2 
 	&.is-active
 		z-index: 20
+	
 	ul, li
 		list-style: none
 		margin: 0
@@ -365,12 +374,15 @@
 		top: 3rem
 		margin: $vertical-unit/2 auto 
 		overflow: hidden
+		&.is-active
+			overflow: visible
+			@include makeNeumporphic($position: absolute)
 	& &__item
 		padding: 0	
 		display: flex
 		&:last-of-type
 			> .bc-header-sub-nav__link
-				//border-bottom: none
+				border-bottom: none
 	& &__link
 		flex: 1 1 auto
 		padding: $gutter/2 $gutter

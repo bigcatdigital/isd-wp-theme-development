@@ -73,8 +73,8 @@
 	</section><!-- // .bc-hero--inpage -->
 	
 	<section class="bc-feature-component bc-expandible-blocks-component"  id="learning-for-life">
-		<div class="bc-content-component__header">
-			<div class="bc-content-component__content__text-content">
+		<div class="bc-feature-component__header">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label ib-world-school"> 
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#learning-icon-reverse"></use> 	
@@ -165,7 +165,7 @@
 	</section><!-- // .bc-expandible-blocks-component -->
 	<section id="learning-for-life-2-col" class="bc-3-col-feature bc-feature-component has-shade-01-gradient is-full-vh" aria-label="Learning for Life"> 
 		<header class="bc-feature-component__header "> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label ib-world-school"> 
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#learning-icon-reverse"></use> 	
@@ -212,7 +212,7 @@
 			
 		</article><!-- // .bc-4-col-feature__content -->
 		<div class="bc-feature-component__cta ">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button " href="javascript:void(0)">
 					Find out more about
 					<svg class="bc-svg-icon">	

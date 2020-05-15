@@ -4,10 +4,10 @@
 ?>
 <body> 
 	<?php get_inner_site_header('Admissions', 'Apply to ISD', 'More about admissions', array('FAQs' => 'javascript:void(0)', 'Admission fees' => 'javascript:void(0)'), array('Homepage' => 'homepage.php', 'Admissions' => 'javascript:void(0)')); ?>
-	<section class="bc-content-component">
-		<article class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
-			<h1 class="bc-content-component__heading">ISD Admissions Overview</h1>
+	<section class="bc-feature-component">
+		<article class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
+			<h1 class="bc-feature-component__heading">ISD Admissions Overview</h1>
 				<p class="bc-intro-paragraph">Admission to ISD is open year-round to students of all nationalities, faiths and backgrounds. We are committed to meeting each student’s individual needs to the best of our ability. Acceptance and placement is based on the potential of the applicant to benefit from the programme and educational services available.</p>
 				<h2>The ISD Admissons Process</h2>
 				<div class="bc-stepped-process">
@@ -48,11 +48,11 @@
 			</div>
 		</article><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content -->
-	<section class="bc-content-component bc-4x4-layout  has-high-chroma">	
-		<article class="bc-content-component__content ">
+	<section class="bc-feature-component bc-4x4-layout  has-high-chroma">	
+		<article class="bc-feature-component__content ">
 			<div class="bc-2-columns bc-4x4-layout__row-1">
 				<div class="bc-column bc-4x4-layout__intro-column">
-					<h1 class="bc-content-component__heading">Transition Support</h1>	
+					<h1 class="bc-feature-component__heading">Transition Support</h1>	
 					<p class="bc-intro-paragraph">At ISD we pride ourselves on our strong, vibrant community. From your initial expression of interest we provide you with support. We adapt our communication to suit your needs and try to provide support through mother tongues.</p>
 				</div>
 				<div class="bc-column">

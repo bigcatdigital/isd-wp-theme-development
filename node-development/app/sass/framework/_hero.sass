@@ -16,13 +16,12 @@
 		background-size: cover
 		background-position: center		
 		background-color: transparent
-	h1, p, a, .bc-content-label
+	h1, p, a:not(.bc-button), .bc-content-label
 		color: $white
 		margin-top: 0
 		margin-bottom: 0
-	.bc-icon-link 
+	.bc-svg-icon 
 		fill: $white
-		color: $white
 	&__content
 		@include contentContainer
 		position: relative
@@ -66,17 +65,10 @@
 		display: flex
 		justify-content: stretch
 		width: 100%
-		a
-			flex: 1 1 100%
-			min-width: 100%
-			&:active, &:hover, &:focus
-				.bc-svg-icon
-					fill: $white
-	.bc-button
-		border-color: $white
-		margin-top: $vertical-unit
-		.bc-svg-icon
-			fill: $white
+		margin-top: 	 $vertical-unit*1.5
+		margin-bottom: $vertical-unit*1.5
+		
+	
 	@media screen and (min-width: $med) and (max-width: ($large - 1px)) and (orientation: portrait) 
 		height: 75vh
 	

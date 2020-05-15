@@ -28,13 +28,21 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		margin-top: $vertical-unit/2
+		margin-top: 		$vertical-unit*2
+		margin-bottom:  $vertical-unit
 		.bc-button
 			flex: 0 1 auto
 	&__heading
 		font-size: $text-11 
 		@include doFeatureHeading($heading-line-height, $h1)
 		margin-bottom: $vertical-unit
+	&.bc-cta-feature
+		.bc-feature-component__cta
+			margin-top: $vertical-unit 
+			.bc-icon-link--featured
+				font-size: $text-02
+				font-weight: 300
+				
 
 @media screen and (min-width: $large)
 	.bc-feature-component
@@ -47,3 +55,4 @@
 @import 'bc-2-col-media-feature'
 @import 'bc-one-col-feature'
 @import 'bc-2-col-cards-feature'
+@import 'bc-gr-feature'

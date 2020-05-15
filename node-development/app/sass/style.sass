@@ -19,7 +19,7 @@
 @import 'framework/hero' 
 @import 'framework/site-header'
 @import 'framework/components/full-width-slider'   
-@import 'framework/components/bc-content-component'
+@import 'framework/components/bc-feature-component'
 @import 'framework/components/bc-feature-component'   
 @import 'framework/components/bc-inner-page-header'   
 @import 'framework/components/bc-inner-page-content'    
@@ -43,22 +43,68 @@ iframe
 /* Project custom utilities */
 .bc-svg-icon
 	fill: $brand-darker
+
+.is-neumorphic	
+	position: relative
+	&:after, &:before
+		transition: opacity 380ms ease-out
+		background-color: transparent
+		content: ""
+		position: absolute
+		top: 0px
+		left: 0px
+		width: calc(100%)
+		height: calc(100%
+		z-index: -1
+	&:before
+		opacity: 1
+		box-shadow: -0.18rem -0.18rem 0.8rem 0.0rem rgba($white, 0.2), 0.2rem 0.2rem 0.8rem 0.0rem rgba($black, 0.2)
+	&:after
+		opacity: 0
+		box-shadow: -0.45rem -0.45rem 0.8rem 0.0rem rgba($white, 0.2), 0.6rem 0.6rem 0.8rem 0.0rem rgba($black, 0.24)
+	
 .bc-button
 	font-weight: 500
+	position: relative
 	display: inline-flex
 	justify-content: space-between
 	align-items: center
-	background-color: transparent
 	color: $brand-primary
+	background-color: $white
+	background-clip: padding-box
 	border-radius: 2rem
-	border-color: $brand-primary
+	border: solid 1px transparent
+	&:before, &:after
+		transition: opacity 380ms ease-out
+		position: absolute
+		z-index: -1
+		content: ""
+		top: -1px
+		left: -1px
+		width: calc(100% + 2px)
+		height: calc(100% + 2px)
+		border-radius: 2rem
+		border-radius: 2rem
+	&:before
+		opacity: 1
+		box-shadow: -0.18rem -0.18rem 0.8rem 0.0rem rgba($white, 0.2), 0.2rem 0.2rem 0.8rem 0.0rem rgba($black, 0.2)
+		@include makeRainbowGrad
+	&:after
+		opacity: 0
+		box-shadow: -0.4rem -0.4rem 0.8rem 0.0rem rgba($white, 0.2), 0.5rem 0.5rem 0.8rem 0.0rem rgba($black, 0.24)
+		@include makeRainbowGrad2
 	.bc-svg-icon
 		fill: $brand-primary
 	@include linkHover
-		background-color: $brand-primary
-		color: $white
+		color: $brand-primary
+		background-color: darken($white, 2%)
 		.bc-svg-icon
-			fill: $white
+			fill: $brand-primary
+		&:before
+			opacity: 0 
+		&:after
+			opacity: 1
+			
 .bc-content-label
 	font-size: $text--2
 	margin-top: 0
@@ -67,8 +113,8 @@ iframe
 		max-width: 	2.4rem
 		max-height: 2.4rem
 .has-high-chroma
-	&--orange
-		@include makeHighChroma($start-colour: rgba($orange, 1), $end-colour: $dark-red)
+	&--orange 
+		@include makeHighChroma($start-colour: rgba($orange, 1), $end-colour: $dark-red, $opposite: $dark-red)
 		@include makeWhiteText
 		.bc-elipses__elipse
 			fill: url(#linear-gradient--orange)
@@ -86,6 +132,7 @@ iframe
 .bc-fade-in-up--is-not-visible
 	opacity: 0
 	transform: translateY(2.5rem)
+
 /* Project custom site header */
 .bc-site-header
 	&__logo
@@ -174,28 +221,44 @@ iframe
 			background-color: darken($brand-secondary, 6%)
 /* Project custom Heroes */
 .bc-hero
+	overflow: hidden
 	.media-overlay 
 		background-color: transparent
 		@include gradOverlay('main-hero', $start-colour: rgba($brand-primary, 0.618), $mid-colour: rgba($brand-primary, 0.382), $end-colour: $brand-darker)
-	.bc-svg-icon
-		fill: white
-	&__body
+	& &__body
+		position: relative
 		justify-content: flex-end
 		align-items: flex-start
 		z-index: 30
 		&__text
+			z-index: 5
 			background-color: $brand-primary
 			padding: $vertical-unit $gutter/2
 			&__IB
 				display: flex
 				align-items: center
 				margin-bottom: $vertical-unit/2
+				z-index: 5
 				img
 					flex: 0 1 6%  
 					max-width: 6%
 					margin-right: $gutter/2
 				p
 					flex: 0 1 auto
+	.is-kids-lines
+		display: none
+		position: absolute
+		object-fit: cover
+		left: 50%
+		bottom: 0
+		opacity: 0.8	
+		max-width: none
+		width: 120%
+		transform: translate(-50%, 0%)
+		@media screen and (min-width: $med)
+			display: block
+		@media screen and (min-width: $med) and (orientation: portrait)
+			transform: translate(-50%, -30%)
 	& &__heading
 		color: $brand-secondary
 		border-bottom: 1px solid $brand-secondary
@@ -203,6 +266,7 @@ iframe
 		margin-bottom: $vertical-unit/1.5
 	&.bc-hero--inpage
 		.bc-hero__body
+			padding-bottom: $vertical-unit * 1.5
 			&__text
 				background-color: transparent
 				padding: $vertical-unit/2 0
@@ -215,6 +279,11 @@ iframe
 		.bc-hero__tagline
 			margin-bottom: $vertical-unit/2
 		&.has-mid-green-grad
+			.bc-button
+				color: darken($mid-green, 6%)
+				.bc-svg-icon
+					fill: darken($mid-green, 6%)
+			
 			.media-overlay
 			  background-image: linear-gradient(to bottom, rgba($mid-green, 0) 10%, rgba($mid-green, 1) 72%)
 			.wave-wrap
@@ -230,10 +299,20 @@ iframe
 		height: auto
 		.bc-hero__content
 			height: 100vh
+	
+	
+	@media screen and (min-width: $med) and (orientation: portrait)
+		& &__body
+			padding-bottom: $vertical-unit * 6 
 	@media screen and (min-width: $large)
+		.bc-hero__body
+			padding-bottom: $vertical-unit * 4
 		&.bc-hero--inpage
 			.bc-hero__body
 				max-width: $text-max-width
+	@media screen and (min-width: $x-large)
+		.bc-hero__body
+			padding-bottom: $vertical-unit * 3
 	&.bc-hero--is-feature
 		.bc-hero__content
 			position: relative
@@ -259,9 +338,7 @@ iframe
 					background-size: 150%
 				@media screen and (min-width: $large)
 					background-position: 50% 90%
-					
-			
-		
+
 /* Project custom bc-cards */
 .bc-card, .bc-two-col-card
 	display: 				flex  
@@ -270,9 +347,13 @@ iframe
 	justify-content: flex-start 
 	margin-bottom: $vertical-unit*1.5
 	&__heading
+		font-size: $h2
+		font-weight: 300
 		margin-bottom: $vertical-unit * 0.5
 		@include doFeatureHeading($font-size: $h2) 
 	&__sub-heading
+		font-size: $text-00
+		font-weight: 500
 		margin-bottom: $vertical-unit * 0.5
 	img
 		width: 100%
@@ -314,6 +395,104 @@ iframe
 
 /* Project custom feature components */
 .bc-feature-component
+	hr 
+		display: block
+		position: relative
+		margin-top: 	 0
+		margin-bottom: $vertical-unit*2
+		border: none
+		border-top: 2px solid transparent
+		//border-bottom: 2px solid $shade-01
+		background-clip: padding-box
+		width: 100%
+		height: 0px
+		overflow: visible
+		max-width: calc(100% - #{$gutter})
+		margin-left: 	auto
+		margin-right: auto
+		
+		&:before
+			content: ""
+			position: absolute
+			top: -1px
+			left: 0px
+			width: 100%
+			height: 1px
+			@include makeRainbowGrad
+			z-index: -1
+		@media screen and (min-width: $large)
+			max-width: calc(100% - 8.888rem - #{$gutter})
+	@each $name, $shade in $shades	
+		&.has-#{$name}
+			.bc-feature-component__cta
+				position: relative
+				z-index: 5
+	@each $name, $shade in $shades	
+		&.has-#{$name}-gradient
+			.bc-feature-component__cta
+				position: relative
+				z-index: 5
+	@each $name, $color in $colors	
+		.has-#{$name}-background 
+			.bc-feature-component__cta
+				position: relative
+				z-index: 5
+				.bc-button
+					background-color: $white
+	&.has-shade-gradient
+		.bc-feature-component__cta
+				position: relative
+				z-index: 5
+				.bc-button
+					background-color: $white
+	&.has-background-svg
+		padding-top: $vertical-unit * 4
+		padding-bottom: $vertical-unit * 4
+		.isd-background-svg
+			width: 100%
+			min-width: 350%
+			position: absolute
+			bottom: 0
+			left: 0
+			object-fit: cover
+			object-position: bottom center
+			&.isd-children-sillouette--wide
+				opacity: 0.9
+				min-width: 454%
+				left: -176%
+		@media screen and (min-width: $small)
+			.isd-background-svg
+				&.isd-children-sillouette--wide
+					min-width: 400%
+					left: -160%
+		@media screen and (min-width: 700px)
+			.isd-background-svg
+				&.isd-children-sillouette--wide
+					min-width: 300%
+					left: -120%
+		@media screen and (min-width: $med)
+			.isd-background-svg
+				&.isd-dublin-skyline
+					min-width: 200%
+				&.isd-children-sillouette--wide
+					min-width: 200%
+					left: -70%
+		@media screen and (min-width: $large)
+			.isd-background-svg
+				&.isd-dublin-skyline
+					min-width: 200%
+				&.isd-children-sillouette--wide
+					min-width: 170%
+					left: -48%
+		@media screen and (min-width: $x-large)
+			.isd-background-svg
+				&.isd-dublin-skyline
+					min-width: 150%
+		@media screen and (min-width: $xx-large)
+			.isd-background-svg
+				&.isd-dublin-skyline
+					min-width: 120%
+	
 	/* 4-col feature */
 	&.bc-4-col-feature, &.bc-3-col-feature, &.bc-4x4-grid-feature
 		position: relative
@@ -478,11 +657,77 @@ iframe
 				line-height: 1.6
 		&.has-high-chroma
 			.bc-intro-paragraph
-				border-bottom-color: $brand-secondary 
+				border-bottom-color: $brand-secondary
+/* gr Feature */
+.bc-gr-feature
+	.bc-expandible-block__expander
+		grid-column: 2
+		order: 3
+	&:nth-child(2n)
+		.bc-expandible-block__expander
+			grid-column: 1
+	.bc-feature-component__content
+		&:nth-child(1n)
+			.bc-gr-feature 
+				&__heading
+					color: $mid-green
+		&:nth-child(2n)
+			.bc-gr-feature 
+				&__heading
+					color: $red
+		&:nth-child(3n)
+			.bc-gr-feature 
+				&__heading
+					color: $orange
+		&:nth-child(4n)
+			.bc-gr-feature 
+				&__heading
+					color: $purple
 /* 
  *	2-column cards - they are pulled left and right consecutively into the page margin in larger screens 
  */ 
 /* Card wrapper - pulls into the left and right page margins */
+.has-coloured-cards
+	.bc-card
+		& .bc-card__heading 
+			font-size: $text-04
+			padding-bottom: $vertical-unit/2
+			margin-bottom: $vertical-unit*0.75
+			color: $brand-primary
+			border-bottom: 2px solid $brand-primary
+		&:nth-child(1n)
+			& .bc-card__heading  
+				color: $mid-green 
+				border-bottom-color: $mid-green
+			.bc-icon-link
+				color: $mid-green 
+				.bc-svg-icon
+					fill: $mid-green 
+		&:nth-child(2n)
+			& .bc-card__heading  
+				color: $red 
+				border-bottom-color: $red
+			.bc-icon-link
+				color: $red 
+				.bc-svg-icon
+					fill: $red 
+		&:nth-child(3n)
+			& .bc-card__heading  
+				color: $orange 
+				border-bottom-color: $orange
+			.bc-icon-link
+				color: $orange 
+				.bc-svg-icon
+					fill: $orange
+		&:nth-child(4n)
+			& .bc-card__heading  
+				color: $purple 
+				border-bottom-color: $purple
+			.bc-icon-link
+				color: $purple 
+				.bc-svg-icon
+					fill: $purple
+		
 .bc-two-col-card-wrap
 	background-color: $white
 	&:nth-child(1n)
@@ -541,9 +786,12 @@ iframe
 		margin-bottom: $vertical-unit/2
 
 /* Heroes and content features next links */
+.bc-feature-component
+	& &__header
+		 &--minor
+			margin-bottom: $vertical-unit	
 .bc-feature-component, .bc-hero
 	& &__cta
-		margin-top: $vertical-unit
 		.bc-button
 			margin-top: 0
 	& &__next
@@ -583,6 +831,7 @@ iframe
 	.bc-svg-icon
 		fill: $orange
 	&__heading
+		font-size: $text-02
 		width: 100%
 	&__icon
 		flex: 1 1 9%
@@ -601,27 +850,11 @@ iframe
 		
 /* Expandible blocks - custom for ISD */
 .bc-expandible-block
-	padding-top: 		$vertical-unit
-	padding-bottom: $vertical-unit
-	display: flex
-	flex-direction: column
-	&__intro, &__body
-		display: flex
-		flex-direction: column
-		&__intro
-			font-weight: 500
-		&__text
-			order: 1
-		&__media
-			order: 0
-			picture
-				margin-bottom: $vertical-unit
-	&__intro
-		&__heading
-			margin-bottom: $vertical-unit
+	
+	
 	&__body
 		overflow: hidden
-		height: 0;
+		height: 0
 		h2
 			font-size: $h3
 		h3 
@@ -727,83 +960,11 @@ iframe
 				&:hover, &:active, &:focus
 					.bc-expandible-block__expander__button__icon
 						background-color: $purple 
-		
-	@media screen and (max-width: #{$med - 1px})
-		&__body
-			&__media
-				width: 100%
-				display: flex
-				flex-wrap: wrap
-				picture
-					margin-bottom: 0
-					flex: 0 0 50%
-					@include mediaContainer()
-					padding-top: 50%
-	@media screen and (min-width: $small) and (max-width: #{$med - 1px})
-		&__body
-			&__media
-				picture
-					flex: 0 0 33.333%
-					padding-top: 33.333%
-	@media screen and (min-width: $med)
-		&__intro, &__body
-			flex-direction: row
-			flex-wrap: wrap
-			grid-template: auto / 7fr 3fr
-			grid-column-gap: $gutter
-			&__heading
-				width: 100%
-			&__media
-				flex: 0 1 30%
-			&__text
-				order: 0
-				flex: 1 0 70%
-			&__heading
-				//@include doFeatureHeading($font-size: $h2)
-				margin-top: 0
-		&__intro
-			&__heading
-				grid-column: span 2
-		&__body
-			h2:first-child, h3:first-child, h4:first-child, h4:first-child, p, ul
-				margin-top: 0
 
-.bc-feature-component
-	&.bc-expandible-blocks-component
-		+ .bc-feature-component.bc-expandible-blocks-component
-			padding-top: 0
-		.bc-feature-component__header, .bc-feature-component__content
-			max-width: none
-			width: 100%
-		.bc-feature-component__header
-			padding-bottom: 0
-			margin-bottom: $vertical-unit
-		@media screen and (min-width: $large)
-			.bc-feature-component__header, .bc-feature-component__content
-				width: calc(100% - 8.888rem)
-
-@media screen and (min-width: $large)
-	.bc-content-component__content 
-		&.bc-expandible-block
-			max-width: none
-
-.bc-inner-page-content
-	.bc-expandible-block
-		margin-top: $vertical-unit*1.5
-		&__body
-			display: initial
-		&__image
-			margin-bottom: $vertical-unit
-	@media screen and (min-width: $med)
-		.bc-expandible-block
-			&__image
-	@media screen and (min-width: $med)
-		.bc-expandible-block
-			&__image
 				
 		
 /* CTA feature */
-.bc-feature-component, .bc-content-component
+.bc-feature-component, .bc-feature-component
 	&.bc-cta-feature
 		min-height: 100vh
 		display: flex
@@ -1013,15 +1174,15 @@ $waves-height: 50px
 	&.has-waves
 		padding-top: 0
 		padding-bottom: 0
-		.bc-content-component__wrap
+		.bc-feature-component__wrap
 			position: relative
 			width: 100%
 			padding-top: $vertical-unit * 3
 			padding-bottom: $vertical-unit * 3
 		&.site-quicklinks-component
-			.bc-content-component__wrap
+			.bc-feature-component__wrap
 				padding-top: $vertical-unit 
-				padding-bottom: $vertical-unit * 2
+				padding-bottom: $vertical-unit * 1
 .has-waves 
 	position: relative
 	z-index: 5

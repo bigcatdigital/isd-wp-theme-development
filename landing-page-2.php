@@ -79,7 +79,7 @@
 	</section><!-- // .feature-page-navigation-->
 	<section class="bc-one-col-feature bc-feature-component has-background-svg isd-about-dublin"  id="about-dublin"> 
 		<article class="bc-feature-component__content"> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label">
 					<svg class="bc-svg-icon"> 
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#community-icon-reverse"></use> 
@@ -93,7 +93,7 @@
 			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button" href="javascript:void(0)">
 					Find out more about
 					<svg class="bc-svg-icon">
@@ -107,7 +107,7 @@
 	</section><!-- // .bc-one-col-feature - About Dublin -->
 	<section class="bc-one-col-feature bc-feature-component has-background-svg isd-community"  id="community">  
 		<article class="bc-feature-component__content">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label">
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#community-icon-reverse"></use> 
@@ -121,7 +121,7 @@
 			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button" href="javascript:void(0)">
 					Find out more about
 					<svg class="bc-svg-icon">
@@ -134,7 +134,7 @@
 	</section><!-- // .bc-one-col-feature - ISD Community -->
 	<section class="bc-feature-component bc-expandible-blocks-component"  id="teaching-learning">
 		<div class="bc-feature-component__header">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label ib-world-school"> 
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#learning-icon-reverse"></use> 	
@@ -145,7 +145,7 @@
 			</div>
 		</div><!-- // .bc-feature-component__header -->
 		<article class="bc-feature-component__content bc-expandible-block"> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 			<div class="bc-expandible-block__intro"> 
 				<h2 class="bc-expandible-block__intro__heading">About the International Baccalaureate</h2>
 				<div class="bc-expandible-block__intro__text">
@@ -205,7 +205,7 @@
 			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<article class="bc-feature-component__content bc-expandible-block"> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<div class="bc-expandible-block__intro"> 
 					<h2 class="bc-expandible-block__intro__heading">About the International Baccalaureate</h2>
 					<div class="bc-expandible-block__intro__text">

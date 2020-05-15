@@ -1,5 +1,5 @@
 <?php
- echo  	"<section id=\"global-cta\" class=\"bc-content-component bc-feature-component bc-cta-feature has-high-chroma\">"; 
+ echo  	"<section id=\"global-cta\" class=\"bc-feature-component bc-feature-component bc-cta-feature has-high-chroma\">"; 
  echo  	"	<div class=\"bc-elipses\">"; 
  echo  	"		<svg class=\"bc-elipses__svg\" xmlns=\"http://www.w3.org/2000/svg\" xmlns:xlink=\"http://www.w3.org/1999/xlink\" viewBox=\"0 0 500 280\">"; 
  echo  	"			<title>Elipses</title>";
@@ -11,8 +11,8 @@
  echo  	"			<circle class=\"bc-elipses__elipse\" />"; 
  echo  	"		</svg>";
  echo  	"	</div> ";
- echo  	"	<article class=\"bc-content-component__content\">";
- echo  	"		<div class=\"bc-content-component__content__text-content\">";
+ echo  	"	<article class=\"bc-feature-component__content\">";
+ echo  	"		<div class=\"bc-feature-component__content__text-content\">";
  echo  	"		<p class=\"bc-content-label\">";
  echo  	"			<svg class=\"bc-svg-icon bc-svg-icon--admissions\">";
  echo  	"				<use xlink:href=\"./media/svg/icons/bc-svgs.svg#admissions-icon\"></use>"; 
@@ -28,16 +28,30 @@
  echo  	"			</svg>";
  echo  	"		</h1>";
  echo  	"		<p class=\"bc-feature-component__intro\">If you feel ISD is a right fit for your family, make an expression of interest to begin communication with our Admissions team.</p>";
+ echo  	"		<p>Express your interest here:</p>";
  echo  	"		</div>";
  echo  	"	</article>";
  echo  	"	<div class=\"bc-feature-component__cta\">"; 
- echo  	"		<div class=\"bc-content-component__content__text-content\">";
- echo  	"			<a href=\"javascript:void(0)\" class=\"bc-button\">";
- echo  	"				Express your interest";
- echo  	"				<svg class=\"bc-svg-icon\">";
- echo  	"					<use xlink:href=\"./media/svg/icons/bc-svgs.svg#arrow\"></use>";
- echo  	"				</svg>";
- echo  	"			</a>";
+ echo  	"		<div class=\"bc-feature-component__content__text-content\">";
+ echo  	"			<p>";
+ echo		"				<b>";
+ echo		"					<a class=\"bc-icon-link--featured\" href=\"https://docs.google.com/forms/d/19N_bz_sMx1yy0TEWD0qamubdOROFOiqDtOSdhC9AuaY/edit\">Pre-enrolment 2020 - 2021";
+ echo  	"						<svg class=\"bc-svg-icon\">";
+ echo  	"							<use xlink:href=\"./media/svg/icons/bc-svgs.svg#arrow\"></use>"; 
+ echo  	"						</svg>";
+ echo  	"					</a></b>";
+ echo  	"				</b>";
+ echo  	"			</p>";
+ echo  	"			<p>";
+ echo		"				<b>";
+ echo		"					<a class=\"bc-icon-link--featured\" href=\"https://docs.google.com/a/internationalschooldublin.ie/forms/d/1vQdv9Tbh7zk2pkZXY_6PbyATVMQsahwSwmopeuO1LJ0/edit?usp=forms_home&ths=true\">Pre-enrolment 2021 - 2022";
+ echo  	"						<svg class=\"bc-svg-icon\">";
+ echo  	"							<use xlink:href=\"./media/svg/icons/bc-svgs.svg#arrow\"></use>"; 
+ echo  	"						</svg>";
+ echo  	"					</a></b>";
+ echo  	"				</b>";
+ echo  	"			</p>";
+ 
  echo  	"		</div>";
  echo  	"	</div>";
  echo  	"</section><!-- // .bc-cta-component -->";

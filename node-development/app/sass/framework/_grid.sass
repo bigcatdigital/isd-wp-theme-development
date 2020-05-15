@@ -2,7 +2,7 @@
 	padding: 1rem
 	max-width: $content-max-width
 	margin: auto auto
-.bc-content-component
+.bc-feature-component
 	position: relative
 	@include makeSection
 	padding-top: 		$vertical-unit * 2 
@@ -23,12 +23,14 @@
 			max-width: $text-max-width	
 			margin-left: auto
 			margin-right: auto
+	&__content
+		margin-bottom: $vertical-unit
 	&__heading
 		font-size: $text-11 
 		@include doFeatureHeading($heading-line-height, $h1)
 		margin-bottom: $vertical-unit
 @media screen and (min-width: $large)
-	.bc-content-component
+	.bc-feature-component
 		&__content, &__header
 			max-width: $content-max-width 	
 .bc-row
@@ -52,9 +54,14 @@
 			padding-right: $gutter*0.5
 	.bc-1-columns
 		grid-template: auto / repeat(1, 1fr) 
+	.bc-gr-columns 
+		max-width: none !important
+		grid-template: auto / 38.2fr 61.8fr
 @media screen and (min-width: $large)
+	.bc-2-columns
+		grid-template: auto / repeat(2, 1fr) 
 	.bc-3-columns
-		grid-template: auto / repeat(3, 1fr) 
+		grid-template: auto / repeat(3, 1fr)  
 	.bc-4-columns
 		grid-template: auto / repeat(4, 1fr) 
 	

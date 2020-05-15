@@ -5,9 +5,9 @@
 <body> 
 	
 	<?php get_inner_site_header('Inner Content Page', 'Be part of it'); ?>
-	<section class="bc-content-component">   
-		<div class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
+	<section class="bc-feature-component">   
+		<div class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
 				<h1 class="bc-inner-page-content__heading--large">A warm welcome</h1>
 				<p class="bc-inner-page-content__intro">Welcome from Principal Schwab. For instance, whenever I go back to the guest house during the morning to copy out the contract.</p>
 				<p>These gentlemen are always still sitting there eating their breakfasts. I ought to just try that with my boss; I’d get kicked out on the spot. But who knows, maybe that would be the best thing for me.</p>
@@ -15,9 +15,9 @@
 			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content -->
-	<section class="bc-content-component has-shade-01 ">   
-		<div class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
+	<section class="bc-feature-component has-shade-01 ">   
+		<div class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
 				<h1 class="bc-inner-page-content__heading">Our Story</h1>
 				<div class="bc-media-embed">
 					<div class="bc-media-embed__media">
@@ -33,18 +33,18 @@
 			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Our Story-->
-	<section class="bc-content-component has-brand-darker-background bc-content-section">     
-		<div class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
+	<section class="bc-feature-component has-brand-darker-background bc-content-section">     
+		<div class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
 				<h1 class="bc-inner-page-content__heading">Mission statement</h1>
 				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
 				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
 			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Mission Statement -->
-	<section class="bc-content-component has-shade-02 bc-content-section">     
-		<div class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
+	<section class="bc-feature-component has-shade-02 bc-content-section">     
+		<div class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
 				<h1>Values</h1>
 				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
 				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
@@ -52,9 +52,9 @@
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Values-->
 	
-	<section class="bc-content-component has-shade-01">     
-		<div class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
+	<section class="bc-feature-component has-shade-01">     
+		<div class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
 			
 			<h1 class="bc-inner-page-content__heading">Frquently Asked Questions</h1>
 			<p class="bc-inner-page-content__intro">We got you covered right here.</p> 	
@@ -198,9 +198,9 @@
 			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Frequently asked questions-->
-	<section class="bc-content-component has-shade-01">     
-		<div class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
+	<section class="bc-feature-component has-shade-01">     
+		<div class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
 				<h1 class="bc-inner-page-content__heading">Frquently Asked Questions#2</h1>
 				<p class="bc-inner-page-content__intro">We got you covered right here.</p> 	
 				<div class="bc-accordion"> 

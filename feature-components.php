@@ -78,7 +78,7 @@
 	</section><!-- // .bc-hero--inpage -->
 	<section class="bc-feature-component">
 		<div class="bc-feature-component__content">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<nav class="site-quicklinks">
 					<h2 class="site-quicklinks__heading">
 						<span class="site-quicklinks__heading__label">
@@ -125,7 +125,7 @@
 	</section><!-- // .bc-feature-component .site-quicklinks -->
 	<section id="bc-one-col-feature" class="bc-one-col-feature has-shade-01-gradient bc-feature-component" aria-label="Welcome to ISD"> 
 		<article class="bc-feature-component__content"> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label">
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
@@ -138,7 +138,7 @@
 			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button" href="about.html">
 					Find out more about
 					<svg class="bc-svg-icon">
@@ -151,7 +151,7 @@
 	</section><!-- // .bc-one-col-feature -->
 	<section id="bc-one-col-feature-white" class="bc-one-col-feature bc-feature-component is-white" aria-label="An International Baccalaureate World School"> 
 		<article class="bc-feature-component__content"> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label">
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
@@ -164,7 +164,7 @@
 			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button" href="about.html">
 					Find out more about
 					<svg class="bc-svg-icon">
@@ -176,7 +176,7 @@
 	</section><!-- // .bc-one-col-feature -->
 	<section id="bc-one-col-feature-svg" class="bc-one-col-feature bc-feature-component has-background-svg--centered isd-kids-feature is-full-vh" aria-label="Student Experience"> 
 		<article class="bc-feature-component__content"> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label">
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
@@ -190,7 +190,7 @@
 			</div>
 		</article><!-- // .bc-feature-component__content -->
 		<div class="bc-feature-component__cta">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button" href="javascript:void(0)">
 					Find out more about
 					<svg class="bc-svg-icon">
@@ -362,7 +362,7 @@
 	
 	<section id="bc-4-col-feature" class="bc-4-col-feature bc-feature-component has-shade-01-gradient is-full-vh" aria-label="Learning for Life"> 
 		<header class="bc-feature-component__header "> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label">
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
@@ -416,7 +416,7 @@
 			</div>
 		</article><!-- // .bc-4-col-feature__content -->
 		<div class="bc-feature-component__cta ">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button " href="javascript:void(0)">
 					Find out more about
 					<svg class="bc-svg-icon">	
@@ -439,7 +439,7 @@
 			</svg>
 		</div>
 		<header class="bc-feature-component__header "> 
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<p class="bc-content-label">
 					<svg class="bc-svg-icon">
 						<use xlink:href="./media/svg/icons/bc-svgs.svg#about-isd"></use> 
@@ -469,7 +469,7 @@
 			</div>
 		</article><!-- // .bc-4-col-feature__content -->
 		<div class="bc-feature-component__cta">
-			<div class="bc-content-component__content__text-content">
+			<div class="bc-feature-component__content__text-content">
 				<a class="bc-button bc-fade-in-up--is-not-visible" href="javascript:void(0)">
 					Find out more about
 					<svg class="bc-svg-icon">	
@@ -479,18 +479,18 @@
 			</div>
 		</div>
 	</section><!-- // .bc-4-col-feature.has-high-chroma -->
-	<section id="bc-plain-text-component-grey" class="bc-content-component  has-shade-02 bc-content-section">     
-		<div class="bc-content-component">
-			<div class="bc-content-component__content__text-content">
+	<section id="bc-plain-text-component-grey" class="bc-feature-component  has-shade-02 bc-content-section">     
+		<div class="bc-feature-component">
+			<div class="bc-feature-component__content__text-content">
 				<h1 class="bc-inner-page-content__heading">Plain text component - light grey</h1>
 				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
 				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>
 			</div>
 		</div><!-- // .bc-inner-page-content__content -->
 	</section><!-- // .bc-inner-page-content Mission Statement -->
-	<section id="bc-plain-text-component-blue" class="bc-content-component has-brand-darker-background bc-content-section">     
-		<div class="bc-content-component__content">
-			<div class="bc-content-component__content__text-content">
+	<section id="bc-plain-text-component-blue" class="bc-feature-component has-brand-darker-background bc-content-section">     
+		<div class="bc-feature-component__content">
+			<div class="bc-feature-component__content__text-content">
 				<h1>Plain text component - dark blue</h1>
 				<p>ISD endeavours to develop the intellectual, aesthetic, moral, physical, social and emotional potential of its students through inquiry-based teaching and learning. </p>
 				<p>ISD strives to be a centre for professional and curriculum development. The school provides excellent international education through the promotion of high academic standards, international understanding and full parental involvement.</p>

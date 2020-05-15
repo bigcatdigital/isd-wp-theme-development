@@ -13,15 +13,6 @@
 		color: $white	
 	.bc-svg-icon
 		fill: $white
-	.bc-button
-		border-color: $white
-		background-color: transparent
-		color: $white
-		@include linkHover
-			background-color: $white	
-			color: $brand-primary
-			.bc-svg-icon
-				fill: $brand-primary
 	.bc-icon-link
 		@include linkHover
 			.bc-svg-icon
@@ -32,14 +23,9 @@
 	.bc-svg-icon
 		fill: $color
 	.bc-button
-		border-color: $color
-		background-color: transparent
-		color: $white
-		@include linkHover 
-			background-color: $color	
-			color: $opposite-color
-			.bc-svg-icon
-				fill: $opposite-color
+		color: $opposite-color
+		.bc-svg-icon
+			fill: $opposite-color
 	.bc-icon-link
 		@include linkHover
 			.bc-svg-icon
@@ -47,10 +33,40 @@
 
 @mixin makeHighChroma($start-colour: rgba($brand-primary, .618), $end-colour:  $brand-darker, $opposite: $white) 
 	@include gradOverlay('high-chroma', $start-colour: $start-colour, $end-colour: $end-colour)
-	@include makeForgroundColour($opposite, $start-colour)
+	@include makeForgroundColour($opposite, $end-colour)
 	.bc-feature-component__cta
 		.bc-feature-component__next
 			.bc-svg-icon
 				fill: $end-colour
 		
-		
+@mixin makeRainbowGradBorder
+	border-image: linear-gradient(to right, #05D1D1 0%, #6881DB 25%, #D02CE5 50%, #F2EF11 75%, #3B857E 100%)
+@mixin makeRainbowGrad
+	background-image: linear-gradient(to right, #05D1D1 0%, #6881DB 25%, #D02CE5 50%, #F2EF11 75%, #3B857E 100%)
+@mixin makeRainbowGrad2
+	background-image: linear-gradient(to right, #3B857E 0%, #05D1D1 25%, #6881DB 50%, #D02CE5 75%, #F2EF11 100%)
+
+@mixin makeNeumporphic($position: relative, $isLink: false)
+	position: $position
+	&:after, &:before
+		transition: opacity 380ms ease-out
+		background-color: transparent
+		content: ""
+		position: absolute
+		top: 0px
+		left: 0px
+		width: calc(100%)
+		height: calc(100%
+		z-index: -1
+	&:before
+		opacity: 1
+		box-shadow: -0.18rem -0.18rem 0.8rem 0.0rem rgba($white, 0.2), 0.2rem 0.2rem 0.8rem 0.0rem rgba($black, 0.2)
+	&:after
+		opacity: 0
+		box-shadow: -0.45rem -0.45rem 0.8rem 0.0rem rgba($white, 0.2), 0.6rem 0.6rem 0.8rem 0.0rem rgba($black, 0.24)
+	@if $isLink
+		@include linkHover
+			&:before
+				opacity: 0 
+			&:after
+				opacity: 1
