@@ -36,9 +36,9 @@
 		</header><!-- // .bc-feature-component__header -->
 		<div class="bc-feature-component__content ">
 			<!-- IB Overview -->
-			<article class="bc-gr-feature bc-gr-columns bc-expandible-block">
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block   has-colored-text">
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+					<img src="media/inquiry-based-learning3.jpg" alt="The International Baccalaureate">
 				</picture>
 				<div class="bc-gr-feature__text bc-column">
 					<p class="bc-gr-feature__intro">The International Baccalaureate (IB) offers education for students aged 3 to 19.</p>  
@@ -71,9 +71,9 @@
 			</article><!-- // .bc-expandible-block -->
 			<!-- // IB Intro -->
 			<!-- IB History -->
-			<article class="bc-gr-feature bc-gr-columns bc-expandible-block">
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block   has-colored-text">
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+					<img src="media/ib-world-school-logo-1-colour.svg" alt="Happy kids">
 				</picture>
 				<div class="bc-gr-feature__text bc-column">
 					<h2 class="bc-gr-feature__heading">History of the International Baccalaureate Organisation</h2>
@@ -102,13 +102,13 @@
 			</article><!-- // .bc-expandible-block -->
 			<!-- // IB history -->
 			<!-- IB Benefits -->
-			<article class="bc-gr-feature bc-gr-columns  bc-expandible-block">
+			<article class="bc-gr-feature bc-gr-columns  bc-expandible-block   has-colored-text">
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+					<img src="./media/student-centred-learning1.jpg" alt="Benefits of an International Baccalaureate Education"> 
 				</picture>
 				<div class="bc-gr-feature__text bc-column">
 					<h2 class="bc-gr-feature__heading">Benefits of an International Baccalaureate Education</h2>
-					<p class="bc-gr-feature__intro">The benefits of an IB education reach far and wide across the educational community.</p>  
+					<p><b>The benefits of an IB education reach far and wide across the educational community.</b></p>  
 					<p>Students learn how to learn, are curious inquirers and confident and take their responsibilities as world citizens seriously</p>
 					<div class="bc-expandible-block__body">
 						<div class="bc-expandible-block__body__text">
@@ -142,7 +142,7 @@
 							</ul>
 						</div>
 					</div><!-- // .bc-expandible-block__body -->
-				</div>
+				</div><!-- // .bc-expandible-block__body -->
 				<div class="bc-expandible-block__expander">
 					<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
 						<span class="bc-expandible-block__expander__button__text">
@@ -159,9 +159,9 @@
 			</article><!-- // .bc-expandible-block -->
 			<!-- // IB Benefits -->
 			<!-- About the Primary Years Programme -->
-			<article class="bc-gr-feature bc-gr-columns bc-expandible-block"> 
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block   has-colored-text"> 
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+					<img src="./media/inquiry-based-learning1.jpg" alt="Happy kids">
 				</picture>
 				<div class="bc-gr-feature__text bc-column">
 					<h2 class="bc-gr-feature__heading">About the Primary Years Programme</h2>
@@ -193,9 +193,9 @@
 			</article><!-- // .bc-expandible-block__intro -->
 			<!-- // About the Primary Years Programme -->
 			<!-- Personal Development -->
-			<article class="bc-gr-feature bc-gr-columns bc-expandible-block">
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block   has-colored-text"> 
 				<picture class="bc-gr-feature__media bc-column">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+					<img src="./media/student-centred-learning.jpg" alt="Happy kids">
 				</picture>
 				<div class="bc-gr-feature__text bc-column">
 					<h2 class="bc-gr-feature__heading">Personal Development</h2>

@@ -85,143 +85,74 @@
 					<p class="bc-feature-component__intro">At ISD we offer a different option for education. ISD is <b class="has-light-blue-text">multi-denominational</b>, <b class="has-orange-text">co-educational</b> and <b class="has-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
 			</div>	
 		</div><!-- // .bc-feature-component__heading -->
-		<article class="bc-feature-component__content bc-expandible-block"> 
-			<div class="bc-expandible-block__intro"> 
-				<h2 class="bc-expandible-block__intro__heading">Language development</h2>
-				<div class="bc-expandible-block__intro__text"> 
-					<p class="bc-expandible-block__intro__intro">We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</p> 
-				</div>
-				<div class="bc-expandible-block__intro__media">
-					<picture>
-						<img src="media/multicultural-kids.jpg" alt="Happy kids">
-					</picture>			
-				</div>
-			</div><!-- // .bc-expandible-block__intro | Language development -->
-			<!-- .bc-expandible-block__body -->
-			<!-- // .bc-expandible-block__body -->
-		</article><!-- // .bc-expandible-block -->
-		<article class="bc-feature-component__content bc-expandible-block">
-			<div class="bc-expandible-block__intro"> 
-				<h2 class="bc-expandible-block__intro__heading">The International Baccalaureate</h2>
-				<div class="bc-expandible-block__intro__text"> 
-					<p class="bc-expandible-block__intro__intro">ISD offers the <a href="teaching-and-learning.html">International Baccalaureate (IB)</a>, which is an inquiry based curriculum falling outside national and political agendas. It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</p> 
-					<p>It is regarded as the gold-standard measurement of academic and intellectual development both by universities and leading graduate employers.</p>	
-					<p class="bc-icon-link">
-						<a href="teaching-and-learning.html">Find out more about the International Baccalaureate</a>
+		<div class="bc-feature-component__content">
+			<article class="bc-gr-feature bc-gr-columns"> 
+				<picture class="bc-gr-feature__media bc-column">
+					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+				</picture>
+				<div class="bc-gr-feature__text bc-column">
+					<h2 class="bc-gr-feature__heading">Language development</h2>
+					<p><b>We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</b></p> 
+				</div><!-- // .bc-gr-feature__text bc-column -->
+			</article><!-- // .bc-gr-columns.bc-expandible-block -->
+			<article class="bc-gr-feature bc-gr-columns">
+				<picture class="bc-gr-feature__media bc-column">
+					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+				</picture>
+				<div class="bc-gr-feature__text bc-column"> 
+					<h2 class="bc-gr-feature__heading">The International Baccalaureate</h2>
+					<p><b>ISD offers the <a href="teaching-and-learning.html">International Baccalaureate (IB)</a>, which is an inquiry based curriculum falling outside national and political agendas. It is based on a continuum which is innovative and relevant and focuses on the total growth of the developing learner.</b></p> 
+					<p>Regarded as the gold-standard measurement of academic and intellectual development both by universities and graduate employers.</p>	
+					<a href="teaching-and-learning.html" class="bc-icon-link">
+						Find out more about the International Baccalaureate
 						<svg class="bc-svg-icon">
 							<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
 						</svg>
-					</p>	
-				</div>
-				<div class="bc-expandible-block__intro__media">
-					<picture>
-						<img src="media/multicultural-kids.jpg" alt="Happy kids">
-					</picture>			
-				</div>
-			</div><!-- // .bc-expandible-block__intro | Language development -->
-		</article><!-- // .bc-expandible-block -->
-		<article class="bc-feature-component__content bc-expandible-block">
-			<div class="bc-expandible-block__intro"> 
-				<h2 class="bc-expandible-block__intro__heading">International-mindedness</h2>
-				<div class="bc-expandible-block__intro__text"> 
-					<p class="bc-expandible-block__intro__intro">We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</p> 
-					<p>International-mindedness is at the heart of an IB and ISD education.  This includes the understanding of one’s local, regional, national as well as international context and begins with understanding of the uniqueness of oneself, one’s home and one’s nationality and culture.</p>
-					<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
-				</div>
-				<div class="bc-expandible-block__intro__media">
-					<picture>
-						<img src="media/multicultural-kids.jpg" alt="Happy kids">
-					</picture>			
-				</div>
-			</div><!-- // .bc-expandible-block__intro | International-mindedness -->
-			<div class="bc-expandible-block__body">
-				<div class="bc-expandible-block__body__text">
-				<h3>Global citizenship</h3>
-				<p>Any Irish citizen will develop in an ever increasingly interconnected world where their home location will be influenced by global forces; and there are proven benefits for children attending international schools, whether they are local citizens or expatriates.</p>  
-				<p>Allowing students to interact and have experience with global awareness and understanding in a first person context from the very start of their education sets them apart from others; this plants the seed for future worldwide networking.</p>  
-				<p>It provides valuable skills for later life such as building relationships with people from a variety of cultures and backgrounds, it also equips students with the confidence to travel and work in other countries opening opportunities and experiences throughout adulthood.</p>
-				<p class="bc-icon-link">
-					<a href="teaching-and-learning.html">International School of Dublin and global-citizenship</a>
-					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
-					</svg>
-				</p>
-				</div>
-			</div><!-- // .bc-expandible-block__body -->
-			<div class="bc-expandible-block__expander">
-				<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
-					<span class="bc-expandible-block__expander__button__text">
-						<span class="inactive-text">Show more</span> 
-						<span class="active-text">Show less</span>
-					</span>
-					<span class="bc-expandible-block__expander__button__icon">
-						<svg class="bc-svg-icon">
-							<use xlink:href="./media/svg/icons/bc-svgs.svg#close-x"></use> 	
-						</svg>	
-					</span>
-				</a>
-			</div><!-- // .bc-expandible-block__expander -->
-		</article><!-- // .bc-expandible-block --> 
+					</a>
+				</div><!-- // bc-gr-feature__text.bc-column | About the International Baccalaureate -->
+			</article><!-- // .bc-gr-columns.bc-expandible-block -->
+			<article class="bc-gr-feature bc-gr-columns bc-expandible-block">
+				<picture class="bc-gr-feature__media bc-column">
+					<img src="media/multicultural-kids.jpg" alt="Happy kids">
+				</picture>
+				<div class="bc-gr-feature__text bc-column"> 
+					<h2 class="bc-gr-feature__heading">International-mindedness</h2>
+						<p class="bc-expandible-block__intro__intro">We provide Spanish as a foreign language and we promote mother-tongue development. The school is culturally diverse with over 20 nationalities amongst students, staff and parents/guardians.</p> 
+						<p>International-mindedness is at the heart of an IB and ISD education.  This includes the understanding of one’s local, regional, national as well as international context and begins with understanding of the uniqueness of oneself, one’s home and one’s nationality and culture.</p>
+						
+						<div class="bc-expandible-block__body">
+							<div class="bc-expandible-block__body__text">
+								<p>The diverse nature of our community allows the students to naturally and continually revisit what it is to be globally connected.</p>
+								<h3>Global citizenship</h3>
+								<p>Any Irish citizen will develop in an ever increasingly interconnected world where their home location will be influenced by global forces; and there are proven benefits for children attending international schools, whether they are local citizens or expatriates.</p>  
+								<p>Allowing students to interact and have experience with global awareness and understanding in a first person context from the very start of their education sets them apart from others; this plants the seed for future worldwide networking.</p>  
+								<p>It provides valuable skills for later life such as building relationships with people from a variety of cultures and backgrounds, it also equips students with the confidence to travel and work in other countries opening opportunities and experiences throughout adulthood.</p>
+								<a class="bc-icon-link" href="teaching-and-learning.html">
+									International School of Dublin and global-citizenship
+									<svg class="bc-svg-icon">
+										<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use>
+									</svg>
+								</a>
+							</div>
+						</div><!-- // .bc-expandible-block__body -->
+				</div><!-- // .bc-gr-feature__text.bc-column | International-mindedness -->
+				<div class="bc-expandible-block__expander">
+					<a href="javascript:void(0)" class="bc-expandible-block__expander__button">
+						<span class="bc-expandible-block__expander__button__text">
+							<span class="inactive-text">Show more</span> 
+							<span class="active-text">Show less</span>
+						</span>
+						<span class="bc-expandible-block__expander__button__icon">
+							<svg class="bc-svg-icon">
+								<use xlink:href="./media/svg/icons/bc-svgs.svg#close-x"></use> 	
+							</svg>	
+						</span>
+					</a>
+				</div><!-- // .bc-expandible-block__expander -->
+			</article><!-- // .bc-expandible-block --> 
+		</div> <!-- // .bc-feature-component__content -->	
 	</section><!-- // .bc-expandible-blocks-component -->
-	<section id="learning-for-life-2-col" class="bc-3-col-feature bc-feature-component has-shade-01-gradient is-full-vh" aria-label="Learning for Life"> 
-		<header class="bc-feature-component__header "> 
-			<div class="bc-feature-component__content__text-content">
-				<p class="bc-content-label ib-world-school"> 
-					<svg class="bc-svg-icon">
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#learning-icon-reverse"></use> 	
-					</svg>	
-					Teaching and learning
-				</p>
-				<h1 class="bc-feature-component__heading">Learning for Life</h1>
-				<p class="bc-feature-component__intro">At ISD we offer a different option for education. ISD is <b class="has-light-blue-text">multi-denominational</b>, <b class="has-orange-text">co-educational</b> and <b class="has-mid-green-text">inclusive</b>. We have small class sizes to promote individualised education.</p>
-			</div>	
-		</header>
-		<article class="bc-feature-component__content">
-			<div class="bc-card bc-fade-in-up--is-not-visible">	
-				<picture class="bc-card__media">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
-				</picture>
-				<div class="bc-card__text">
-					<h2 class="bc-card__heading">Language development</h2>
-					<p>We provide Spanish as a foreign language and we promote mother-tongue development.</p>
-					<div class="bc-card__cta">
-						<a href="javascript:void(0)" class="bc-card__link">Find out more</a>	
-					</div>	
-				</div>
-			</div>
-			<div class="bc-card bc-fade-in-up--is-not-visible">
-				<picture class="bc-card__media"> 
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
-				</picture>
-				<h2 class="bc-card__heading">The International Baccalaureate</h2>
-				<p>ISD offers the International Baccalaureate (IB), which is an inquiry based curriculum falling outside national and political agendas</p>
-				<div class="bc-card__cta">
-					<a href="javascript:void(0)" class="bc-card__link">Find out more</a>	
-				</div>
-			</div>
-			<div class="bc-card bc-fade-in-up--is-not-visible">
-				<picture class="bc-card__media">
-					<img src="media/multicultural-kids.jpg" alt="Happy kids">
-				</picture>
-				<h2 class="bc-card__heading">Global citizenship</h2>
-				<p>International-mindedness is at the heart of an IB and ISD education. This includes the understanding of one’s local, regional, national and international context</p>
-				<div class="bc-card__cta">
-					<a href="javascript:void(0)" class="bc-card__link">Find out more</a>	
-				</div>
-			</div>
-			
-		</article><!-- // .bc-4-col-feature__content -->
-		<div class="bc-feature-component__cta ">
-			<div class="bc-feature-component__content__text-content">
-				<a class="bc-button " href="javascript:void(0)">
-					Find out more about
-					<svg class="bc-svg-icon">	
-						<use xlink:href="./media/svg/icons/bc-svgs.svg#arrow"></use> 	
-					</svg>
-				</a>
-			</div>
-		</div>
-	</section><!-- // .bc-4-col-feature -->
+	
 	<?php  
 		get_global_CTA();
 		get_footer();

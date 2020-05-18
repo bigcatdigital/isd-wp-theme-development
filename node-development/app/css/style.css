@@ -967,9 +967,13 @@ figcaption {
     max-height: 1.5rem;
     margin-right: 0.75rem; }
 
-.bc-intro-paragraph {
+.bc-intro-paragraph, .bc-intro-paragraph--minor {
   font-size: 1.1487rem;
   font-weight: 300; }
+
+.bc-intro-paragraph--minor {
+  font-size: 1rem;
+  font-weight: 500; }
 
 /* Navigation toggle icon */
 .bc-navigation-toggle {
@@ -2997,8 +3001,12 @@ iframe {
   display: flex;
   flex-direction: column;
   align-self: stretch;
-  justify-content: flex-start;
+  justify-content: stretch;
   margin-bottom: 2.25rem; }
+  .bc-card p, .bc-two-col-card p {
+    flex: 1 1 100%; }
+  .bc-card__heading, .bc-card a, .bc-two-col-card__heading, .bc-two-col-card a {
+    flex: 0 1 auto; }
   .bc-card__heading, .bc-two-col-card__heading {
     font-size: 1.5157rem;
     font-weight: 300;
@@ -3011,7 +3019,6 @@ iframe {
   .bc-card img, .bc-two-col-card img {
     width: 100%; }
   .bc-card p, .bc-two-col-card p {
-    flex: 1 1 100%;
     margin-bottom: 0.75rem; }
   .bc-card__cta, .bc-two-col-card__cta {
     flex: 1 1 100%;
@@ -3358,7 +3365,7 @@ iframe {
     .bc-feature-component.bc-one-col-feature.isd-community .bc-feature-component__grad-overlay {
       background-width: auto; }
 
-.bc-4x4-layout .bc-intro-paragraph {
+.bc-4x4-layout .bc-intro-paragraph, .bc-4x4-layout .bc-intro-paragraph--minor {
   margin-bottom: 3rem; }
 
 .bc-4x4-layout .bc-4x4-layout__row-1 {
@@ -3371,7 +3378,7 @@ iframe {
     display: flex;
     flex-direction: column;
     justify-content: flex-end; }
-  .bc-4x4-layout .bc-intro-paragraph {
+  .bc-4x4-layout .bc-intro-paragraph, .bc-4x4-layout .bc-intro-paragraph--minor {
     margin-bottom: 0;
     padding-bottom: 2.25rem;
     border-bottom: 3px solid #fff; }
@@ -3379,7 +3386,7 @@ iframe {
     margin-bottom: 1.5rem; }
   .bc-4x4-layout .bc-4x4-layout__row-1 p {
     line-height: 1.6; }
-  .bc-4x4-layout.has-high-chroma .bc-intro-paragraph {
+  .bc-4x4-layout.has-high-chroma .bc-intro-paragraph, .bc-4x4-layout.has-high-chroma .bc-intro-paragraph--minor {
     border-bottom-color: #F2EF11; } }
 
 /* gr Feature */
@@ -3573,7 +3580,8 @@ iframe {
 
 .bc-expandible-block__expander {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  margin-top: 1.5rem; }
   .bc-expandible-block__expander__button {
     display: inline-flex;
     align-items: stretch;
@@ -3664,6 +3672,34 @@ iframe {
 
 .bc-expandible-block:nth-child(4n) .bc-expandible-block__expander__button:hover .bc-expandible-block__expander__button__icon, .bc-expandible-block:nth-child(4n) .bc-expandible-block__expander__button:active .bc-expandible-block__expander__button__icon, .bc-expandible-block:nth-child(4n) .bc-expandible-block__expander__button:focus .bc-expandible-block__expander__button__icon {
   background-color: #651A7B; }
+
+.bc-expandible-block .bc-gr-feature__text {
+  justify-content: flex-start;
+  padding-top: 0.75rem; }
+
+.bc-gr-feature.has-colored-text:nth-child(1n) .bc-gr-feature__heading {
+  color: #3B857E; }
+
+.bc-gr-feature.has-colored-text:nth-child(1n) .bc-icon-link, .bc-gr-feature.has-colored-text:nth-child(1n) .bc-icon-link--featured, .bc-gr-feature.has-colored-text:nth-child(1n) a:not(.bc-expandible-block__expander__button) {
+  color: #3B857E; }
+
+.bc-gr-feature.has-colored-text:nth-child(2n) .bc-gr-feature__heading {
+  color: #EC1C24; }
+
+.bc-gr-feature.has-colored-text:nth-child(2n) .bc-icon-link, .bc-gr-feature.has-colored-text:nth-child(2n) .bc-icon-link--featured, .bc-gr-feature.has-colored-text:nth-child(2n) a:not(.bc-expandible-block__expander__button) {
+  color: #EC1C24; }
+
+.bc-gr-feature.has-colored-text:nth-child(3n) .bc-gr-feature__heading {
+  color: #F6921E; }
+
+.bc-gr-feature.has-colored-text:nth-child(3n) .bc-icon-link, .bc-gr-feature.has-colored-text:nth-child(3n) .bc-icon-link--featured, .bc-gr-feature.has-colored-text:nth-child(3n) a:not(.bc-expandible-block__expander__button) {
+  color: #F6921E; }
+
+.bc-gr-feature.has-colored-text:nth-child(4n) .bc-gr-feature__heading {
+  color: #651A7B; }
+
+.bc-gr-feature.has-colored-text:nth-child(4n) .bc-icon-link, .bc-gr-feature.has-colored-text:nth-child(4n) .bc-icon-link--featured, .bc-gr-feature.has-colored-text:nth-child(4n) a:not(.bc-expandible-block__expander__button) {
+  color: #651A7B; }
 
 /* CTA feature */
 .bc-feature-component.bc-cta-feature, .bc-feature-component.bc-cta-feature {

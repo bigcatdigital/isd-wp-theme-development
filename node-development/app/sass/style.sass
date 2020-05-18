@@ -344,8 +344,12 @@ iframe
 	display: 				flex  
 	flex-direction: column
 	align-self: stretch
-	justify-content: flex-start 
+	justify-content: stretch 
 	margin-bottom: $vertical-unit*1.5
+	p
+		flex: 1 1 100%
+	&__heading, a 
+		flex: 0 1 auto
 	&__heading
 		font-size: $h2
 		font-weight: 300
@@ -358,7 +362,6 @@ iframe
 	img
 		width: 100%
 	p 
-		flex: 1 1 100% 
 		margin-bottom: $vertical-unit * 0.5
 	&__cta  
 		flex: 1 1 100%  
@@ -850,8 +853,6 @@ iframe
 		
 /* Expandible blocks - custom for ISD */
 .bc-expandible-block
-	
-	
 	&__body
 		overflow: hidden
 		height: 0
@@ -867,6 +868,7 @@ iframe
 	&__expander
 		display: flex
 		justify-content: flex-end
+		margin-top: $vertical-unit
 		&__button
 			display: inline-flex
 			align-items: stretch
@@ -921,6 +923,8 @@ iframe
 					max-width: 	$text--1
 					max-height: $text--1
 					transition: transform 380ms ease-out
+	
+		
 	&.is-active		
 		.bc-expandible-block__body
 			padding-top: $vertical-unit * 0.5  
@@ -960,9 +964,33 @@ iframe
 				&:hover, &:active, &:focus
 					.bc-expandible-block__expander__button__icon
 						background-color: $purple 
-
+	& .bc-gr-feature__text
+		justify-content: flex-start
+		padding-top: $vertical-unit/2
+.bc-gr-feature
+	&.has-colored-text 
+		&:nth-child(1n)
+			.bc-gr-feature__heading
+				color: $mid-green
+			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
+				color: $mid-green
+		&:nth-child(2n)
+			.bc-gr-feature__heading
+				color: $red
+			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
+				color: $red
+		&:nth-child(3n)
+			.bc-gr-feature__heading
+				color: $orange
+			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
+				color: $orange
 				
-		
+		&:nth-child(4n)
+			.bc-gr-feature__heading
+				color: $purple
+			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
+				color: $purple
+			
 /* CTA feature */
 .bc-feature-component, .bc-feature-component
 	&.bc-cta-feature
