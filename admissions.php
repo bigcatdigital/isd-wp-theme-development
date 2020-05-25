@@ -3,7 +3,7 @@
 	get_header('Welcome [Admissions]');
 ?>
 <body> 
-	<?php get_inner_site_header('Admissions', 'Apply to ISD', 'More about admissions', array('FAQs' => 'javascript:void(0)', 'Admission fees' => 'javascript:void(0)'), array('Homepage' => 'homepage.php', 'Admissions' => 'javascript:void(0)')); ?>
+	<?php get_inner_site_header('Admissions', 'Apply to ISD', 'More about admissions', array('FAQs' => 'admissions-faqs.php', 'Admission fees' => 'javascript:void(0)'), array('Homepage' => 'homepage.php', 'Admissions' => 'javascript:void(0)')); ?>
 	<section class="bc-feature-component">
 		<article class="bc-feature-component__content">
 			<div class="bc-feature-component__content__text-content">

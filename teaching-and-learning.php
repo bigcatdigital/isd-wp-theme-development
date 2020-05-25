@@ -235,7 +235,7 @@
 		</div><!-- // ..bc-feature-component__content -->
 	</section><!-- // .bc-feature-component About the IB -->
 	<?php  
-		get_inner_section_nav();
+		get_inner_section_nav('More about Learning & Teaching', ['School timetable' => 'javascript:void(0)', 'Teaching subjects' => 'javascript:void(0)', 'Class groupings' => 'javascript:void(0)', 'Catered lunch program' => 'javascript:void(0)', 'School calendar' => 'javascript:void(0)', 'After school program' => 'javascript:void(0)']);
 		get_global_CTA();
 		get_footer();
 	?>

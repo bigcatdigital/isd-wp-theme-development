@@ -114,8 +114,7 @@ iframe
 		max-height: 2.4rem
 .has-high-chroma
 	&--orange 
-		@include makeHighChroma($start-colour: rgba($orange, 1), $end-colour: $dark-red, $opposite: $dark-red)
-		@include makeWhiteText
+		@include makeHighChroma($start-colour: rgba($orange, 1), $end-colour: $dark-red)
 		.bc-elipses__elipse
 			fill: url(#linear-gradient--orange)
 
@@ -828,17 +827,16 @@ iframe
 		& &__next
 			display: inline-flex
 .bc-featured-quote	
-	display: flex
-	flex-wrap: wrap
+	display: grid
+	grid-template: auto / 9% 91%
 	margin-bottom: $vertical-unit*1.5
 	.bc-svg-icon
 		fill: $orange
 	&__heading
 		font-size: $text-02
-		width: 100%
+		grid-column: 1 / span 2
 	&__icon
-		flex: 1 1 9%
-		max-width: 9%
+		grid-column: 1
 		display: flex
 		justify-content: center
 		padding-top: $vertical-unit/4
@@ -846,10 +844,23 @@ iframe
 			max-width: 1.5rem
 			max-height: 1.5rem
 	&__body
-		flex: 0 1 100% - 9%
-		max-width: 100% - 9%
+		grid-column: 2
 		padding-left: $gutter/2
-		
+	&.is-testimonial
+		.bc-featured-quote__body
+			p, ul, a, h3, h4, h5 
+				font-style: italic
+			p, ul, a
+				font-weight: 300
+	&__attribution
+		grid-column: 2
+		font-weight: bold
+		padding-left: 	$gutter/2
+		padding-right: 	$gutter/2
+.bc-expandible-block
+	.bc-featured-quote
+		margin-bottom: 0
+			
 		
 /* Expandible blocks - custom for ISD */
 .bc-expandible-block

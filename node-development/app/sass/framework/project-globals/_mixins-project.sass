@@ -9,18 +9,22 @@
 		background-image: linear-gradient(#{$direction},  $shade-01 0%, $shade-03 $stop)
 
 @mixin makeWhiteText()
-	h1, h2, h3, h4, h5, ul, li, p, a, bloquote, .bc-inner-page-content__heading, .bc-feature-component__heading 
+	h1, h2, h3, h4, h5, ul, li, p, a:not(.bc-button), bloquote, .bc-inner-page-content__heading, .bc-feature-component__heading 
 		color: $white	
 	.bc-svg-icon
 		fill: $white
+	.bc-button
+		color: $brand-primary
+		.bc-svg-icon
+			fill: $brand-primary
 	.bc-icon-link
 		@include linkHover
 			.bc-svg-icon
 				fill: $white
 @mixin makeForgroundColour($color: $white, $opposite-color: $brand-primary)
-	h1, h2, h3, h4, h5, ul, li, p, a, bloquote, .bc-inner-page-content__heading, .bc-feature-component__heading 
+	h1, h2, h3, h4, h5, ul, li, p, a:not(.bc-button), bloquote, .bc-inner-page-content__heading, .bc-feature-component__heading 
 		color: $color	
-	.bc-svg-icon
+	.bc-svg-icon 
 		fill: $color
 	.bc-button
 		color: $opposite-color

@@ -133,6 +133,9 @@
 					<li>
 						<h4><a href="about-isd.php" class="">About ISD</a></h4>
 					</li>
+					<li>
+						<h4><a href="usable-content-store.php">Usable content store</a></h4>
+					</li>
 				</ul>
 				<hr>
 				<h2>Example pages</h2>

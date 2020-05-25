@@ -289,25 +289,34 @@
 	&__links
 		margin: 0
 		padding: 0
-		display: flex
-		flex-direction: column
+		display: grid
+		grid-template: auto / 1fr
 	&__item
-		flex: 1 1 auto
+		
 		display: flex
+		
 	&__link
 		flex: 1 1 auto
-		padding-top: 		$vertical-unit / 4
-		padding-bottom: $vertical-unit / 4
+		display: inline-flex
+		align-items: flex-end
+		padding: $vertical-unit / 4
+		padding-top: $vertical-unit*1.5
+		margin-bottom: $vertical-unit/2
+		color: $white
+		background-color: $brand-primary
 		font-size: $text-01
 		font-weight: 300
+		.bc-svg-icon
+			fill: $white
 		@include linkHover
-			background-color: rgba($brand-primary, 0.8)
-			color: $white
-			.bc-svg-icon
-				fill: $white
+			background-color: darken($brand-primary, 4%)
+	@media screen and (min-width: $small)
+		.bc-section-navigation__links
+			grid-template: auto / 2fr
 	@media screen and (min-width: $med)
 		.bc-section-navigation__links
 			flex: 1 1 100%
+			grid-template: auto / repeat(3, 1fr)
 			width: 100%
 			margin-left: 	-$gutter/2
 			margin-right: -$gutter/2
@@ -319,6 +328,7 @@
 			max-width: $text-max-width 
 			margin-left: auto
 			margin-right: auto 
+	
 .bc-sidebar-widget
 	.bc-section-navigation 
 		&__links 
