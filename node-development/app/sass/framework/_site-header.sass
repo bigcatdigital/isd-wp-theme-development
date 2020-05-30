@@ -137,6 +137,8 @@ $desktop-break: $x-large
 		justify-content: flex-start
 		align-items: stretch
 		&__link
+			font-size: $text-01
+			font-weight: 400
 			padding: $vertical-unit/2 0
 			flex: 1 0 100%
 			text-align: left
@@ -147,6 +149,11 @@ $desktop-break: $x-large
 		&:last-child
 			.bc-main-navigation__item__link
 				border-bottom: none
+	& &__sub-navigation
+		.bc-main-navigation__links
+			.bc-main-navigation__item
+				&__link 
+					font-size: $text-00
 	&-toggle
 		display: inherit
 	&__underlay
@@ -215,6 +222,7 @@ $desktop-break: $x-large
 				grid-template: auto / repeat(2, 1fr)
 				.bc-main-navigation__item
 					&__link 
+						font-size: $text-00
 						padding-top: 		$vertical-unit / 2
 						padding-bottom: $vertical-unit / 2
 @media screen and (min-width: $large)

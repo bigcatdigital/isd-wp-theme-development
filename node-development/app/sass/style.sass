@@ -1,4 +1,5 @@
 /*
+/*
 	Theme Name: International School of Dublin 2020 Theme
 	Author: Michael Mason
 	Author URI: https://internationalschoolofdublin.com
@@ -394,7 +395,35 @@ iframe
 					pading-left: $gutter
 				.bc-card__heading
 					font-size: $text-02
-
+.has-colored-text
+	.bc-card:nth-child(1n)
+		.bc-card__heading, .bc-card__cta a
+			color: $mid-green 
+		.bc-card__heading 
+			border-bottom-color: $mid-green 
+		.bc-svg-icon
+			fill: $mid-green 
+	.bc-card:nth-child(2n)
+		.bc-card__heading, .bc-card__cta a
+			color: $red 
+		.bc-card__heading 
+			border-bottom-color: $red 
+		.bc-svg-icon
+			fill: $red
+	.bc-card:nth-child(3n)
+		.bc-card__heading, .bc-card__cta a
+			color: $orange 
+		.bc-card__heading 
+			border-bottom-color: $orange 
+		.bc-svg-icon
+			fill: $orange
+	.bc-card:nth-child(4n)
+		.bc-card__heading, .bc-card__cta a
+			color: $purple 
+		.bc-card__heading 
+			border-bottom-color: $purple 
+		.bc-svg-icon
+			fill: $purple 
 /* Project custom feature components */
 .bc-feature-component
 	hr 
@@ -944,6 +973,8 @@ iframe
 			color: $mid-green
 		.bc-expandible-block__expander__button__icon 
 			background-color: darken($mid-green, 10%) 
+			.svg-icon
+				fill: $white
 		.bc-expandible-block__expander__button
 				&:hover, &:active, &:focus
 					.bc-expandible-block__expander__button__icon
@@ -951,17 +982,21 @@ iframe
 	&:nth-child(2n)
 		.bc-expandible-block__intro__heading
 			color: $red
-		.bc-expandible-block__expander__button__icon
+		.bc-expandible-block__expander__button__icon 
 			background-color: darken($red, 10%)
+			.svg-icon
+				fill: $white
 		.bc-expandible-block__expander__button
 				&:hover, &:active, &:focus
-					.bc-expandible-block__expander__button__icon
+					.bc-expandible-block__expander__button__icon 
 						background-color: $red
 	&:nth-child(3n)
 		.bc-expandible-block__intro__heading
 			color: $orange
 		.bc-expandible-block__expander__button__icon
 			background-color: darken($orange, 10%)
+			.svg-icon
+				fill: $white
 		.bc-expandible-block__expander__button
 				&:hover, &:active, &:focus
 					.bc-expandible-block__expander__button__icon
@@ -971,6 +1006,8 @@ iframe
 			color: $purple
 		.bc-expandible-block__expander__button__icon
 			background-color: darken($purple, 10%)
+			.svg-icon
+				fill: $white
 		.bc-expandible-block__expander__button
 				&:hover, &:active, &:focus
 					.bc-expandible-block__expander__button__icon
@@ -985,22 +1022,29 @@ iframe
 				color: $mid-green
 			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
 				color: $mid-green
+			.bc-svg-icon
+				fill: $mid-green
 		&:nth-child(2n)
 			.bc-gr-feature__heading
 				color: $red
 			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
 				color: $red
+			.bc-svg-icon
+				fill: $red
 		&:nth-child(3n)
 			.bc-gr-feature__heading
 				color: $orange
 			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
 				color: $orange
-				
+			.bc-svg-icon
+				fill: $orange
 		&:nth-child(4n)
 			.bc-gr-feature__heading
 				color: $purple
 			.bc-icon-link, a:not(.bc-expandible-block__expander__button)
 				color: $purple
+			.bc-svg-icon
+				fill: $purple
 			
 /* CTA feature */
 .bc-feature-component, .bc-feature-component
@@ -1224,7 +1268,7 @@ $waves-height: 50px
 				padding-bottom: $vertical-unit * 1
 .has-waves 
 	position: relative
-	z-index: 5
+	z-index: 20
 	.wave-wrap
 		width: 100%
 		svg
